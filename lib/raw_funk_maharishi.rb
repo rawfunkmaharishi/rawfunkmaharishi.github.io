@@ -1,8 +1,9 @@
 require 'sinatra/base'
 require 'haml'
+require 'rack-google-analytics'
 
 class RawFunkMaharishi < Sinatra::Base
-
+  use Rack::GoogleAnalytics, :tracker => 'UA-52131829-1'
   get '/' do
 
     title = "Raw Funk Maharishi"
