@@ -1,0 +1,20 @@
+!!! 5
+%html(lang='en')
+  %head
+    %title= title
+    %link{:rel => 'stylesheet', :href => '//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css', :type => "text/css"}
+    %link{:rel => 'stylesheet', :href => '../styles.css', :type => "text/css"}
+
+  %body
+    %container
+      %h1
+        %img.text-center.row{:src => 'Raw_Funk_Maharishi_Logo.png', :alt => 'Raw Funk Maharishi'}
+
+      = yield
+
+      %h2
+        %a{:href => 'https://soundcloud.com/rawfunkmaharishi'}Soundcloud
+        |
+        %a{:href => 'https://www.facebook.com/rawfunkmaharishi'}Facebook
+        |
+        %a{:href => 'https://twitter.com/uncookedfunk'}Twitter
