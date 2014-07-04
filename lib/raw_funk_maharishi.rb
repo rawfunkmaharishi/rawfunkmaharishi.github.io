@@ -7,6 +7,7 @@ class SoundcloudPlaylistEmbed
     @list_id = list_id
     @width = 100
     @height = 300
+    @colour = '86cabc'
   end
 
   def to_s
@@ -17,7 +18,9 @@ class SoundcloudPlaylistEmbed
     s << 'https://w.soundcloud.com/player/?'
     s << 'url=https%3A//api.soundcloud.com/playlists/'
     s << @list_id.to_s
-    s << '&amp;amp;color=ff5500&amp;amp;auto_play=false&amp;amp;'
+    s << '&amp;amp;color='
+    s << @colour
+    s << '&amp;amp;auto_play=false&amp;amp;'
     s << 'hide_related=false&amp;amp;show_comments=true&amp;amp;'
     s << 'show_user=true&amp;amp;show_reposts=false"'
     s << ' width="'
