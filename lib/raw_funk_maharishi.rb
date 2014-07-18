@@ -39,7 +39,7 @@ class RawFunkMaharishi < Sinatra::Base
 
     haml :index, :locals => {
         :title => title,
-        :embed => SoundcloudPlaylistEmbed.new(41994900).to_s
+        :embed => SoundcloudPlaylistEmbed.new(43899857).to_s
     }
   end
 
