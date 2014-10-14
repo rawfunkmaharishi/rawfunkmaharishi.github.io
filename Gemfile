@@ -1,10 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.1.2'
-#ruby-gemset=rawfunkmaharishi
+ruby '2.1.3'
 
-gem 'sinatra'
-gem 'rake'
-gem 'travis'
-gem 'haml'
+gem 'github-pages'
 gem 'rack-google-analytics'

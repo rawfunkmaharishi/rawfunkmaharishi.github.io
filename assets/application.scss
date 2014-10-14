@@ -1,0 +1,17 @@
+---
+---
+
+@import 'bootstrap-custom';
+@import 'bootstrap';
+
+body {
+  background-color: $bg-primary;
+}
+
+.page-header {
+  padding-left: 20px;
+  border: none;
+  img {
+    height: 160px;
+  }
+}
