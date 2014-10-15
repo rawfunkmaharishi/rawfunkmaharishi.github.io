@@ -2,4 +2,8 @@
 title: Upcoming Gigs
 ---
 
-{% include archive.html category='gigs' %}
+{% for post in site.posts %}
+<div class="post">
+<h3 class="title">{{ post.date | date_to_long_string }}: <a href="{{ post.url }}">{{ post.title }}</a></h3>
+</div>
+{% endfor %}

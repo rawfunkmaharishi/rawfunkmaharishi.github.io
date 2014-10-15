@@ -47,3 +47,25 @@ body {
     margin-bottom: $padding-large-vertical;
   }
 }
+
+.header {
+  top: 0;
+  width: 100%;
+
+  margin-top: $padding-large-vertical;
+  background: $brand-primary;
+  color: white;
+  height: $footer-height;
+
+  padding: $padding-large-vertical $padding-large-horizontal;
+  margin-top: 0px;
+
+  a {
+    color: white;
+  }
+
+  .logo {
+    height: 120px;
+    margin-bottom: $padding-large-vertical;
+  }
+}

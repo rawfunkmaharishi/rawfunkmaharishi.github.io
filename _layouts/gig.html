@@ -2,6 +2,15 @@
 layout: default
 ---
 
-<h1>{{ page.date | date_to_long_string }}</h1>
+<dl class='dl-horizontal'>
 
-<h2>{{ page.location }}</h2>
+<dt>Date<dt>
+<dd>{{ page.date | date_to_long_string }}</dd>
+
+<dt>Time</dt>
+<dd>{{ page.time }}</dd>
+
+<dt>Location</dt>
+<dd>{{ page.location }}</dd>
+
+</dl>
