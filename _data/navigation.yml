@@ -1,12 +1,15 @@
+- title: Home
+  path: /
+
 - title: The Band
   path: /the-band/
-  children:
-    - title: Joe
-      path: /the-band/joe/
-    - title: Matt
-      path: /the-band/matt/
-    - title: Sam
-      path: /the-band/sam/
+#  children:
+#    - title: Joe
+#      path: /the-band/joe/
+#    - title: Matt
+#      path: /the-band/matt/
+#    - title: Sam
+#      path: /the-band/sam/
 
 - title: Sounds
   path: /sounds/
