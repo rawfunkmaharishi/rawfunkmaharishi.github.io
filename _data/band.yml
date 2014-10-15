@@ -1,0 +1,14 @@
+- name: Joe
+  image: http://placekitten.com/g/200/200
+  instrument: Guitar
+  bio: Worried that he might not have put enough oil into his Alfa.
+
+- name: Matt
+  image: http://placekitten.com/g/200/200
+  instrument: Bass
+  bio: Comes from Wales. Watches a lot of Netflix.
+
+- name: Sam
+  image: http://placekitten.com/g/200/200
+  instrument: Drums
+  bio: Born at a young age. Raised by wolves.
