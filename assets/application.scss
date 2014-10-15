@@ -4,14 +4,45 @@
 @import 'bootstrap-custom';
 @import 'bootstrap';
 
-body {
-  background-color: $bg-primary;
-}
-
 .page-header {
-  padding-left: 20px;
+  padding-left: $padding-large-horizontal;
+  margin-top: 0px;
   border: none;
   img {
-    height: 160px;
+    height: 260px;
+  }
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+$footer-height: 100px;
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: $footer-height;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  margin-top: $padding-large-vertical;
+  background: $brand-primary;
+  color: white;
+  height: $footer-height;
+
+  padding: $padding-large-vertical $padding-large-horizontal;
+
+  a {
+    color: white;
+  }
+
+  .logo {
+    height: 90px;
+    margin-bottom: $padding-large-vertical;
   }
 }

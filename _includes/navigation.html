@@ -12,33 +12,21 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbar-collapse">
-
       <ul class="nav navbar-nav">
-
-        <li class="dropdown">
-          <a href="/the-band" class="dropdown-toggle" data-toggle="dropdown">The Band <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="/the-band/joe">Joe</a></li>
-            <li><a href="/the-band/matt">Matt</a></li>
-            <li><a href="/the-band/sam">Sam</a></li>
-          </ul>
-        </li>
-
-        <li>
-          <a href="/sounds">Sounds</a>
-        </li>
-
-        <li>
-          <a href="/pictures">Pictures</a>
-        </li>
-
-        <li>
-          <a href="/gigs">Gigs</a>
-        </li>
-
-        <li>
-          <a href="/links">Links</a>
-        </li>
+        {% for item in site.data.navigation %}
+          {% if item.children %}
+            <li class="dropdown">
+              <a href="{{item.path}}" class="dropdown-toggle" data-toggle="dropdown">{{item.title}} <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                {% for child in item.children %}
+                  {% include nav-item.html title=child.title path=child.path %}
+                {% endfor %}
+              </ul>
+            </li>
+          {% else %}
+            {% include nav-item.html title=item.title path=item.path %}
+          {% endif %}
+        {% endfor %}
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
