@@ -17,6 +17,8 @@
 /* Sticky footer styles
 -------------------------------------------------- */
 
+$footer-height: 40px;
+
 html {
   position: relative;
   min-height: 100%;
@@ -41,6 +43,8 @@ body {
     color: white;
   }
 }
+
+$header-height: 100px;
 
 .header {
   top: 0;
