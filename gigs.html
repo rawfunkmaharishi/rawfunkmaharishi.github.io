@@ -2,13 +2,21 @@
 title: Upcoming Gigs
 ---
 
+{% assign something = '' %}
 {% capture nowseconds %}{{'now' | date: '%s'}}{% endcapture %}
 
 {% for post in site.posts reversed %}
   {% capture postseconds %}{{post.date | date: '%s'}}{% endcapture %}
   {% if nowseconds < postseconds %}
+    {% capture something %}{{'true'}}{% endcapture %}
     <div class="post">
       <h3 class="title">{{ post.date | date_to_long_string }}: <a href="{{ post.url }}">{{ post.title }}</a></h3>
     </div>
   {% endif %}
 {% endfor %}
+
+{% if something != 'true' %}
+<div class="post">
+  <h3 class="title">No Upcoming Shows</h3>
+</div>
+{% endif %}
