@@ -1,7 +1,11 @@
 <div class='footer'>
-  <div class='container'>
-    <div class='col-md-12'>
-      <a href='/'><img src='/assets/logo.png' alt='Raw Funk Maharishi' class='logo pull-right'/></a>
+  <div class='row'>
+
+    <div class='col-md-12 text-center bottom'>
+      |
+      {% for link in site.data.links %}
+        <a href="{{link.url}}">{{link.title}}</a> |
+      {% endfor %}
     </div>
   </div>
 </div>
