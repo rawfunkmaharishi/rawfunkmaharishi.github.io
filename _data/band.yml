@@ -1,14 +1,14 @@
 - name: Joe
-  image: http://placekitten.com/g/200/200
+  image: http://upload.wikimedia.org/wikipedia/commons/3/35/Charliehunter.jpg
   instrument: Guitar
   bio: Worried that he might not have put enough oil into his Alfa.
 
 - name: Matt
-  image: http://placekitten.com/g/200/200
+  image: http://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/James_Jamerson.jpeg/220px-James_Jamerson.jpeg
   instrument: Bass
   bio: Comes from Wales. Watches a lot of Netflix.
 
 - name: Sam
-  image: http://placekitten.com/g/200/200
+  image: https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgP9sbtaAZVmDzEKtIG49ZcP0kHoMepRgCyH0Qefq0tc0-vgR4Tg
   instrument: Drums
   bio: Born at a young age. Raised by wolves.
