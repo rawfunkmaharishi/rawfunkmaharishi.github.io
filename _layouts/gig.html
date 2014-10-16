@@ -2,15 +2,33 @@
 layout: default
 ---
 
-<dl class='dl-horizontal'>
+<div class='row'>
+  <div class="col-sm-6 col-md-4">
 
-<dt>Date<dt>
-<dd>{{ page.date | date_to_long_string }}</dd>
+    <dl class='dl-horizontal'>
 
-<dt>Time</dt>
-<dd>{{ page.time }}</dd>
+      <dt>Date<dt>
+      <dd>{{ page.date | date_to_long_string }}</dd>
 
-<dt>Location</dt>
-<dd>{{ page.location }}</dd>
+      <dt>Time</dt>
+      <dd>{{ page.time }}</dd>
 
-</dl>
+      <dt>Location</dt>
+      <dd>{{ page.location }}</dd>
+
+      {% if page.facebook_id %}
+        <dt>More info</dt>
+        <dd><a href='https://facebook.com/events/{{page.facebook_id}}/'>Facebook</a></dd>
+      {% endif %}
+
+    </dl>
+
+  </div>
+
+  <div class="col-sm-6 col-md-7">
+
+    <div class='map pull-right'>
+      {{ page.osm }}
+    </div>
+  </div>
+</div>
