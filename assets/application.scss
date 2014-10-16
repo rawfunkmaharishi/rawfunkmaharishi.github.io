@@ -16,7 +16,6 @@
 
 /* Sticky footer styles
 -------------------------------------------------- */
-$footer-height: 100px;
 
 html {
   position: relative;
@@ -41,12 +40,8 @@ body {
   a {
     color: white;
   }
-
-  .logo {
-    height: 90px;
-    margin-bottom: $padding-large-vertical;
-  }
 }
+
 
 .header {
   top: 0;
@@ -55,7 +50,7 @@ body {
   margin-top: $padding-large-vertical;
   background: $brand-primary;
   color: white;
-  height: $footer-height;
+  height: $header-height;
 
   padding: $padding-large-vertical $padding-large-horizontal;
   margin-top: 0px;
