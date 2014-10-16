@@ -67,3 +67,17 @@ $header-height: 100px;
     margin-bottom: $padding-large-vertical;
   }
 }
+
+img.thumb {
+  max-height: 200px;
+}
+
+.caption {
+  h3, p {
+    color: $gray-dark;
+  }
+
+  h4 {
+    color: $gray;
+  }
+}
