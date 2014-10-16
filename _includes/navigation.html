@@ -19,12 +19,12 @@
               <a href='{{item.path}}' class='dropdown-toggle' data-toggle='dropdown'>{{item.title}} <span class='caret'></span></a>
               <ul class='dropdown-menu' role='menu'>
                 {% for child in item.children %}
-                  {% include nav-item.html title=child.title path=child.path current=page.url %}
+                  {% include nav-item.html title = child.title path = child.path current = page.url %}
                 {% endfor %}
               </ul>
             </li>
           {% else %}
-            {% include nav-item.html title=item.title path=item.path current=page.url %}
+            {% include nav-item.html title = item.title path = item.path current = page.url %}
           {% endif %}
         {% endfor %}
       </ul>
