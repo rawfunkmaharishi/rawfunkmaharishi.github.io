@@ -14,8 +14,8 @@
 - title: Sounds
   path: /sounds/
 
-- title: Pictures
-  path: /pictures/
+#- title: Pictures
+#  path: /pictures/
 
 - title: Gigs
   path: /gigs/
