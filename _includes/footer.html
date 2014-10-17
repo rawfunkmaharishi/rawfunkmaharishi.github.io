@@ -1,9 +1,12 @@
 <div class='footer'>
   <div class='row'>
     <div class='col-md-12 text-center bottom'>
-      |
+      {% assign limit = site.data.links.size - 1 %}
       {% for link in site.data.links %}
-        <a href='{{ link.url }}'>{{ link.title }}</a> |
+        <a href='{{ link.url }}'>{{ link.title }}</a>
+        {% if forloop.rindex0 > 0 %}
+          |
+        {% endif %}
       {% endfor %}
     </div>
   </div>
