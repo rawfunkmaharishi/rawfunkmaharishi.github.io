@@ -18,7 +18,7 @@ layout: default
 
       {% if page.facebook_id %}
         <dt>More info</dt>
-        <dd><a href='https://facebook.com/events/{{page.facebook_id}}/'>Facebook</a></dd>
+        <dd><a href='https://facebook.com/events/{{ page.facebook_id }}/'>Facebook</a></dd>
       {% endif %}
 
     </dl>
@@ -28,10 +28,10 @@ layout: default
   <div class='col-md-7'>
     <div class='thumbnail'>
       <div class='embed-responsive embed-responsive-16by9'>
-        <iframe frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='{{page.osm_map}}'></iframe>
+        <iframe frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='{{ page.osm_map }}'></iframe>
       </div>
       <div class='text-right'>
-        <small><a href='{{page.osm_link}}'>View larger map</a></small>
+        <small><a href='{{ page.osm_link }}'>View larger map</a></small>
       </div>
     </div>
   </div>
