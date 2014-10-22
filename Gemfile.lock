@@ -2,15 +2,6 @@ GEM
   remote: https://rubygems.org/
   specs:
     RedCloth (4.2.9)
-    actionpack (4.1.1)
-      actionview (= 4.1.1)
-      activesupport (= 4.1.1)
-      rack (~> 1.5.2)
-      rack-test (~> 0.6.2)
-    actionview (4.1.1)
-      activesupport (= 4.1.1)
-      builder (~> 3.1)
-      erubis (~> 2.7.0)
     activesupport (4.1.1)
       i18n (~> 0.6, >= 0.6.9)
       json (~> 1.7, >= 1.7.7)
@@ -18,7 +9,6 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     blankslate (2.1.2.4)
-    builder (3.2.2)
     celluloid (0.16.0)
       timers (~> 4.0.0)
     classifier-reborn (2.0.1)
@@ -28,7 +18,6 @@ GEM
       execjs
     coffee-script-source (1.8.0)
     colorator (0.1)
-    erubis (2.7.0)
     execjs (2.2.1)
     fast-stemmer (1.0.2)
     ffi (1.9.6)
@@ -105,12 +94,6 @@ GEM
     pygments.rb (0.6.0)
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.1.0)
-    rack (1.5.2)
-    rack-google-analytics (1.1.0)
-      actionpack
-      activesupport
-    rack-test (0.6.2)
-      rack (>= 1.0)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
@@ -132,4 +115,3 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  rack-google-analytics
