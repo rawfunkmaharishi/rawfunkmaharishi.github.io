@@ -94,4 +94,21 @@ p {
 img.splash {
   width: 80%;
   height: auto;
+  margin-top: -200px;
+}
+
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border: none;
+}
+
+.navbar li {
+  text-transform: uppercase;
+  text-align: right;
+}
+
+ul.nav {
+  color: black;
+  font-size: 1.5em;
 }
