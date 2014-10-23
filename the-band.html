@@ -3,13 +3,14 @@ title: The Band
 ---
 
 <div class='row'>
+  <div class='col-md-3'></div>
   {% for member in site.data.band %}
-  <div class='col-md-4'>
+  <div class='col-md-2'>
     <div class='thumbnail'>
-      <img src='{{ member.image }}' alt='{{ member.name }}' title='{{ member.name }}' class='thumb' />
+      <img src='/assets/images/{{ member.image }}' alt='{{ member.name }}' title='{{ member.name }}' class='thumb' />
       <div class='caption'>
-        <h3>{{ member.name }}</h3>
-        <h4>{{ member.instrument }}</h4>
+        <h3 class='text-center'>{{ member.name }}</h3>
+    <!--    <h4>{{ member.instrument }}</h4> -->
     <!--    <p>{{ member.bio }}</p> -->
         {% if member.twitter %}
           <h4>
@@ -20,4 +21,5 @@ title: The Band
     </div>
   </div>
   {% endfor %}
+  <div class='col-md-3'></div>
 </div>

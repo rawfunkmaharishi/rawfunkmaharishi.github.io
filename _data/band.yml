@@ -1,14 +1,14 @@
 - name: Joe
-  image: http://upload.wikimedia.org/wikipedia/commons/3/31/Early_Jeff_Beck.jpg
+  image: scofield.jpg
   instrument: Guitar
   bio: Worried that he might not have put enough oil into his Alfa.
 
 - name: Matt
-  image: http://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/James_Jamerson.jpeg/220px-James_Jamerson.jpeg
+  image: jamerson.jpg
   instrument: Bass
   bio: Comes from Wales. Watches a lot of Netflix.
 
 - name: Sam
-  image: https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgP9sbtaAZVmDzEKtIG49ZcP0kHoMepRgCyH0Qefq0tc0-vgR4Tg
+  image: gadd.jpg
   instrument: Drums
   bio: Born at a young age. Raised by wolves.

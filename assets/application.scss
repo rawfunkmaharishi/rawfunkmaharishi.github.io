@@ -22,6 +22,7 @@ $footer-height: 40px;
 html {
   position: relative;
   min-height: 100%;
+  text-transform: uppercase;
 }
 body {
   /* Margin bottom by footer height */
@@ -33,7 +34,7 @@ body {
   width: 100%;
 
   margin-top: $padding-large-vertical;
-  background: $brand-primary;
+  background: $gray-dark;
   color: white;
   height: $footer-height;
 
@@ -44,7 +45,7 @@ body {
   }
 }
 
-$header-height: 100px;
+$header-height: 250px;
 
 .header {
   top: 0;
@@ -52,10 +53,11 @@ $header-height: 100px;
 
   margin-top: $padding-large-vertical;
   background: $brand-primary;
+  background-image: url('/assets/images/background.png');
   color: white;
   height: $header-height;
 
-  padding: $padding-large-vertical $padding-large-horizontal;
+//  padding: $padding-large-vertical $padding-large-horizontal;
   margin-top: 0px;
 
   a {
@@ -63,9 +65,14 @@ $header-height: 100px;
   }
 
   .logo {
-    height: 85px;
-    margin-bottom: $padding-large-vertical;
-    margin-left: -30px;
+width: 50%;
+height: auto;
+  }
+
+  p {
+    text-transform: uppercase;
+    text-align: right;
+
   }
 }
 
@@ -75,11 +82,10 @@ img.thumb {
 
 .caption {
   h3, p {
-    color: $gray-dark;
+    color: black;
   }
 
   h4 {
-    color: $gray;
   }
 }
 
@@ -103,11 +109,14 @@ p {
 }
 
 .navbar li {
-  text-transform: uppercase;
   text-align: right;
 }
 
 ul.nav {
   color: black;
   font-size: 1.5em;
+}
+
+.thumbnail {
+  border: none;
 }
