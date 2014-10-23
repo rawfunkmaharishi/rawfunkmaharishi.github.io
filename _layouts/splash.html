@@ -8,6 +8,7 @@
 
     <!-- Bootstrap -->
     <link rel='stylesheet' href='/assets/application.css' type='text/css' />
+    <link rel='stylesheet' href='/assets/splash.css' type='text/css' />
 
     <link rel='icon' type='image/png' href='/assets/favicon.ico' />
 
@@ -20,14 +21,11 @@
     {% include google-analytics.html %}
   </head>
   <body>
-    {% include header.html %}
-    {% include navigation.html %}
+    {% include navigation-splash.html %}
 
     <div class='container'>
-      {{ content }}
+        <img src='/assets/images/banner.png' class='splash center-block'/>
     </div>
-
-    {% include footer.html %}
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>

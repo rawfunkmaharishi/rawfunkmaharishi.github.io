@@ -1,4 +1,5 @@
 ---
+layout: splash
 title: Raw Funk Maharishi
 ---
 
