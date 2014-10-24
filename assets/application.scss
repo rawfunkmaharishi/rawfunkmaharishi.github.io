@@ -44,6 +44,11 @@ opacity: 0.7;
   a {
     color: white;
   }
+
+  a:hover {
+    background: $gray-lighter;
+    text-decoration: none;
+  }
 }
 
 $header-height: 250px;
@@ -55,18 +60,14 @@ $header-height: 250px;
   margin-top: $padding-large-vertical;
   background: $brand-primary;
   background-image: url('/assets/images/background.png');
-  color: white;
   height: $header-height;
 
 //  padding: $padding-large-vertical $padding-large-horizontal;
   margin-top: 0px;
-
-  a {
-    color: white;
-  }
+  margin-bottom: 50px;
 
   .logo {
-width: 50%;
+width: 100%;
 height: auto;
   }
 
@@ -116,6 +117,7 @@ p {
 ul.nav {
   color: black;
   font-size: 1.5em;
+  line-height: 10px;
 
 }
 
