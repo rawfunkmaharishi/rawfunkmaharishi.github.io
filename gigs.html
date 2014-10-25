@@ -9,14 +9,13 @@ title: Upcoming Gigs
 
 {% for post in site.posts reversed %}
   {% capture postseconds %}{{ post.date | date: '%s' }}{% endcapture %}
-  {% if nowseconds > postseconds %}
+  {% if nowseconds < postseconds %}
     {% capture something %}{{ 'true' }}{% endcapture %}
     <div class='post'>
       <h3 class='title'>{{ post.date | date_to_long_string }}:
         <a href='{{ post.url }}'>{{ post.title }}</a>
       </h3>
     </div>
-  </div>
   {% endif %}
 {% endfor %}
 
@@ -25,3 +24,10 @@ title: Upcoming Gigs
   <h3 class='title'>No Upcoming Shows</h3>
 </div>
 {% endif %}
+
+<h4>
+  If you'd like to book the band, please contact us on
+  <a href='https://www.facebook.com/rawfunkmaharishi'>Facebook</a>
+  or
+  <a href='https://twitter.com/uncookedfunk'>Twitter</a>.
+</h4>
