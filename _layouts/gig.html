@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-<script src="http://openlayers.org/en/v3.0.0/build/ol.js" type="text/javascript"></script>
 <div class='row'>
   <div class='col-md-5'>
     <dl class='dl-horizontal gig'>
@@ -23,20 +22,27 @@ layout: default
     </dl>
   </div>
   <div class='col-md-7'>
-    <div id="map" class="map"></div>
-    <script type="text/javascript">
-      var map = new ol.Map({
-        target: 'map',
-        layers: [
-          new ol.layer.Tile({
-            source: new ol.source.MapQuest({layer: 'osm'})
-          }),
-        ],
-        view: new ol.View({
-          center: ol.proj.transform([{{ page.lat_long | join: ', '}}], 'EPSG:4326', 'EPSG:3857'),
-          zoom: 17
-        })
-      });
-    </script>
+    <div id='map' class='map'></div>
+      <script src='http://openlayers.org/api/OpenLayers.js'></script>
+      <script>
+          var lat            = {{ page.latitude }};
+          var lon            = {{ page.longitude }};
+          var zoom           = 17;
+
+          var fromProjection = new OpenLayers.Projection('EPSG:4326');   // Transform from WGS 1984
+          var toProjection   = new OpenLayers.Projection('EPSG:900913'); // to Spherical Mercator Projection
+          var position       = new OpenLayers.LonLat(lon, lat).transform( fromProjection, toProjection);
+
+          map = new OpenLayers.Map('map');
+          var mapnik         = new OpenLayers.Layer.OSM();
+          map.addLayer(mapnik);
+
+          var markers = new OpenLayers.Layer.Markers( 'Markers' );
+          map.addLayer(markers);
+          markers.addMarker(new OpenLayers.Marker(position));
+
+          map.setCenter(position, zoom);
+      </script>
+    </div>
   </div>
 </div>
