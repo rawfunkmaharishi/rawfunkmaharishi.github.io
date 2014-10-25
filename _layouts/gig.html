@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<script src="http://openlayers.org/en/v3.0.0/build/ol.js" type="text/javascript"></script>
 
 <div class='row'>
   <div class='col-md-5'>
@@ -22,15 +23,21 @@ layout: default
 
     </dl>
   </div>
-
   <div class='col-md-7'>
-    <div class='thumbnail'>
-      <div class='embed-responsive embed-responsive-16by9'>
-        <iframe src='{{ page.osm_map }}'></iframe>
-      </div>
-      <div class='text-right'>
-        <small><a href='{{ page.osm_link }}'>View larger map</a></small>
-      </div>
-    </div>
+    <div id="map" class="map"></div>
+    <script type="text/javascript">
+      var map = new ol.Map({
+        target: 'map',
+        layers: [
+          new ol.layer.Tile({
+            source: new ol.source.MapQuest({layer: 'sat'})
+          })
+        ],
+        view: new ol.View({
+          center: ol.proj.transform([{{ page.lat_long | join: ', '}}], 'EPSG:4326', 'EPSG:3857'),
+          zoom: 4
+        })
+      });
+    </script>
   </div>
 </div>
