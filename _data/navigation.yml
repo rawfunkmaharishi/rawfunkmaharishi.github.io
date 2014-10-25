@@ -4,11 +4,11 @@
 - title: Sounds
   path: /sounds/
 
-- title: Videos
-  path: /videos/
-
 #- title: Pictures
 #  path: /pictures/
+
+- title: Videos
+  path: /videos/
 
 - title: Gigs
   path: /gigs/
