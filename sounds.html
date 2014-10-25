@@ -3,49 +3,19 @@ title: Sounds
 ---
 
 <div class='row'>
-  <div class='col-md-6'>
-    <div class='thumbnail'>
-      <div class='embed-responsive embed-responsive-4by3'>
-        {% include sound.html id = site.data.sounds.first.id %}
-      </div>
-    </div>
-  </div>
+  {% include sound.html id = site.data.sounds.first.id %}
   <div class='col-md-6'>
     <div class='row'>
-      <div class='col-md-6'>
-        <div class='thumbnail'>
-          <div class='embed-responsive embed-responsive-4by3'>
-            {% assign id = site.data.sounds[1].id%}
-            {% include sound.html id = id %}
-          </div>
-        </div>
-      </div>
-      <div class='col-md-6'>
-        <div class='thumbnail'>
-          <div class='embed-responsive embed-responsive-4by3'>
-            {% assign id = site.data.sounds[2].id%}
-            {% include sound.html id = id %}
-          </div>
-        </div>
-      </div>
+      {% assign id = site.data.sounds[1].id%}
+      {% include sound.html id = id %}
+      {% assign id = site.data.sounds[2].id%}
+      {% include sound.html id = id %}
     </div>
     <div class='row'>
-      <div class='col-md-6'>
-        <div class='thumbnail'>
-          <div class='embed-responsive embed-responsive-4by3'>
-            {% assign id = site.data.sounds[3].id%}
-            {% include sound.html id = id %}
-          </div>
-        </div>
-      </div>
-      <div class='col-md-6'>
-        <div class='thumbnail'>
-          <div class='embed-responsive embed-responsive-4by3'>
-            {% assign id = site.data.sounds[4].id%}
-            {% include sound.html id = id %}
-          </div>
-        </div>
-      </div>
+      {% assign id = site.data.sounds[3].id%}
+      {% include sound.html id = id %}
+      {% assign id = site.data.sounds[4].id%}
+      {% include sound.html id = id %}
     </div>
   </div>
 </div>
