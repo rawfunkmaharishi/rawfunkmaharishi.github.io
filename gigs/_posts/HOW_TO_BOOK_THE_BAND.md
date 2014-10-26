@@ -25,4 +25,6 @@ longitude:   {is your place located?}
 * There should be a link to your event
 * If that looks OK, push your branch and submit a PR onto our master
 
+And then I guess we negotiate in the PR discussion and merge when everybody's happy
+
 Seriously, if anybody does this, you have a _very very good chance_ of us playing your show
