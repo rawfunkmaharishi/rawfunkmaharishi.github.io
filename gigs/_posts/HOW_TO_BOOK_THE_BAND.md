@@ -1,8 +1,8 @@
-#BOOK SOME LIVE MUSIC BY PULL-REQUEST
+#BOOK US BY PULL-REQUEST
 
 * Clone the repo
 * Create a branch
-* Create a YAML file here (in `gigs/_posts/`), named as `YYYY-MM-DD-this-bit-will-become-the-title`
+* Create a YAML file here (in `gigs/_posts/`), named as `YYYY-MM-DD-this-bit-will-become-the-title.yml`
 * containing these fields:
 
 ```
@@ -26,4 +26,4 @@ longitude:   {is your place located?}
 
 And then I guess we negotiate in the PR discussion and merge when everybody's happy
 
-Seriously, if anybody does this, you have a _very very good chance_ of us playing your show
+Seriously, if you do this, you have a _very very good chance_ of us playing your show
