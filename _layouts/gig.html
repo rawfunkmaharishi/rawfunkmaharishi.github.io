@@ -39,7 +39,12 @@ layout: default
 
           var markers = new OpenLayers.Layer.Markers( 'Markers' );
           map.addLayer(markers);
-          markers.addMarker(new OpenLayers.Marker(position));
+          markers.addMarker(
+            new OpenLayers.Marker(
+              position,
+              new OpenLayers.Icon('http://www.openstreetmap.org/assets/marker-red-b8b47a812d7ea38509ac24368c689ba8.png')
+            )
+          );
 
           map.setCenter(position, zoom);
       </script>
