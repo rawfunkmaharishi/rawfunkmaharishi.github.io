@@ -5,6 +5,17 @@
 @import 'bootstrap-custom';
 @import 'bootstrap';
 
+body {
+  color: black;
+}
+
+h1 {
+  color: $gray-lighter;
+}
+
+a {
+  color: $gray-dark;
+}
 /* Sticky footer styles
 -------------------------------------------------- */
 
@@ -82,7 +93,11 @@ $header-height: 250px;
    background: transparent;
    border: none;
 
-   ul {
+  a {
+    color: black;
+  }
+
+  ul {
     color: black;
     font-size: 1.5em;
     line-height: 10px;
@@ -100,10 +115,6 @@ img.thumb {
   h1, h2 {
     color: black;
   }
-}
-
-dl.gig {
-  font-size: 1.5em;
 }
 
 p {
@@ -143,4 +154,8 @@ p.splash{
   h3 {
     font-size: 1em;
   }
+}
+
+.gig {
+  font-size: 1.5em;
 }
