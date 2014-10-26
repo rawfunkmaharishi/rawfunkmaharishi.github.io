@@ -2,7 +2,7 @@
 
 * Clone this repo
 * Create a branch
-* Create a YAML file here, named as:
+* Create a YAML file here (in `gigs/_posts/`), named as:
   `YYYY-MM-DD-name-of-your-venue-or-night-or-whatever`
 * containing these fields:
 
