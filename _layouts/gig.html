@@ -14,6 +14,11 @@ layout: default
       <dt>Location</dt>
       <dd>{{ page.location }}</dd>
 
+      {% if page.price %}
+        <dt>Price</dt>
+        <dd>{{ page.price }}</dd>
+      {% endif %}
+
       {% if page.facebook_id %}
         <dt>More info</dt>
         <dd><a href='https://facebook.com/events/{{ page.facebook_id }}/' title='Facebook event'>Facebook</a></dd>
