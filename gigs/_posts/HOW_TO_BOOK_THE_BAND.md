@@ -16,11 +16,11 @@ longitude:   {is your place located?}
 ---
 ```
 
-(See this [existing event](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/gigs/_posts/2014-10-22-the-comedy.yml) as a guide)
+(The dashes top-and-bottom are __important__. See this [existing event](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/gigs/_posts/2014-10-22-the-comedy.yml) as a guide)
 
 * `bundle`
 * `jekyll serve`
-* Look at http://localhost:4000/gigs/
+* Look at [http://localhost:4000/gigs/](http://localhost:4000/gigs/)
 * There should be a link to your event
 * If that looks OK, push your branch and submit a PR onto our master
 
