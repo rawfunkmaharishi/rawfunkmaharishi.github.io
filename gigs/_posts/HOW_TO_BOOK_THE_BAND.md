@@ -2,8 +2,7 @@
 
 * Clone the repo
 * Create a branch
-* Create a YAML file here (in `gigs/_posts/`), named as:
-  `YYYY-MM-DD-this-bit-will-become-the-title`
+* Create a YAML file here (in `gigs/_posts/`), named as `YYYY-MM-DD-this-bit-will-become-the-title`
 * containing these fields:
 
 ```
