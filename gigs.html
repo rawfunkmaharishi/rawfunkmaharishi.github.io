@@ -9,7 +9,7 @@ title: Gigs
 <div class='giglist'>
   <div class='row'>
     <div class='col-md-8'>
-      <h2>Upcoming gigs</h2>
+      <h2>Upcoming</h2>
       {% for post in site.posts reversed %}
         {% capture postseconds %}{{ post.date | date: '%s' }}{% endcapture %}
         {% capture future %}{{ nowseconds | minus:postseconds }}{% endcapture %}
