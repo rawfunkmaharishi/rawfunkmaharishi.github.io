@@ -1,11 +1,15 @@
 - title: Twitter
   url: https://twitter.com/uncookedfunk
+  fontawesome: fa-twitter
 
 - title: Facebook
   url: https://www.facebook.com/rawfunkmaharishi
+  fontawesome: fa-facebook-square
 
 - title: Soundcloud
   url: https://soundcloud.com/rawfunkmaharishi
+  fontawesome: fa-soundcloud
 
 - title: Github
   url: https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io
+  fontawesome: fa-github
