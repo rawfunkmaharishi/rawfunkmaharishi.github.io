@@ -1,9 +1,18 @@
-$brand-primary: black;
+//$orange-darker:  #e25900;
+$rfm-green:      #86cabc;
+//$orange-lighter: #ffcba9;
+$rfm-orange:         #fd6400;
 
-$gray-darker: #e25900; // Darker Orange
-$gray-dark: #86cabc;   // Our green
-$gray: #ffcba9;        // Light orange
-$gray-light: #fff0e6;  // Red
+$gray-darker:  lighten(#000, 13.5%); // #222
+$gray-dark:    lighten(#000, 20%);   // #333
+$gray:         lighten(#000, 33.5%); // #555
+$gray-light:   lighten(#000, 46.7%); // #777
+$gray-lighter: lighten(#000, 93.5%); // #eee
+
+$brand-primary: #86cabc;
+//$brand-success: #5cb85c;
+$brand-info:    #fd6400;
+//$brand-warning: #f0ad4e;
+//$brand-danger:  #d9534f;
+
 $gray-lighter: #fd6400;// Orange
-
-$thumbnail-border: $gray;

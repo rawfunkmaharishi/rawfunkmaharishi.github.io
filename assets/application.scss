@@ -14,7 +14,7 @@ h1 {
 }
 
 a {
-  color: $gray-dark;
+  color: $rfm-green;
 }
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -38,7 +38,7 @@ body {
   width: 100%;
 
   margin-top: $padding-large-vertical;
-  background: $gray-dark;
+  background: $brand-primary;
   opacity: 0.7;
   color: white;
   height: $footer-height;
@@ -50,7 +50,7 @@ body {
   }
 
   a:hover {
-    background: $gray-lighter;
+    background: $rfm-orange;
     text-decoration: none;
   }
 }
@@ -95,6 +95,10 @@ $header-height: 250px;
 
   a {
     color: black;
+  }
+
+  a:hover {
+    background: red;
   }
 
   ul {
