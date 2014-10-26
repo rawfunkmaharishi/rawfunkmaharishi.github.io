@@ -27,36 +27,6 @@ layout: default
     </dl>
   </div>
   <div class='col-md-6'>
-    <div id='map' class='map'></div>
-      <script src='http://openlayers.org/api/OpenLayers.js'></script>
-      <script>
-          var lat            = {{ page.latitude }};
-          var lon            = {{ page.longitude }};
-          var zoom           = 17;
-
-          var fromProjection = new OpenLayers.Projection('EPSG:4326');   // Transform from WGS 1984
-          var toProjection   = new OpenLayers.Projection('EPSG:900913'); // to Spherical Mercator Projection
-          var position       = new OpenLayers.LonLat(lon, lat).transform( fromProjection, toProjection);
-
-          map = new OpenLayers.Map('map');
-
-          var mapnik         = new OpenLayers.Layer.OSM();
-          map.addLayer(mapnik);
-
-          var markers = new OpenLayers.Layer.Markers( 'Markers' );
-          map.addLayer(markers);
-          markers.addMarker(
-            new OpenLayers.Marker(
-              position,
-              new OpenLayers.Icon('http://www.openstreetmap.org/assets/marker-red-b8b47a812d7ea38509ac24368c689ba8.png', {w: 20, h:30})
-            )
-          );
-
-          map.setCenter(position, zoom);
-      </script>
-      <p class='pull-right'>
-        <a href='http://www.openstreetmap.org/?mlat={{ page.latitude }}&amp;mlon={{ page.longitude }}#map=17/{{ page.latitude }}/{{ page.longitude }}'>View larger map</a>
-      </p>
-    </div>
+    {% include map.html latitude = page.latitude, longitude = page.longitude %}
   </div>
 </div>
