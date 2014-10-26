@@ -10,6 +10,10 @@
   url: https://soundcloud.com/rawfunkmaharishi
   fontawesome: fa-soundcloud
 
+- title: Flickr
+  url: http://www.flickr.com/photos/rawfunkmaharishi/
+  fontawesome: fa-flickr
+
 - title: Github
   url: https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io
   fontawesome: fa-github
