@@ -5,15 +5,6 @@
 @import 'bootstrap-custom';
 @import 'bootstrap';
 
-.page-header {
-  padding-left: $padding-large-horizontal;
-  margin-top: 0px;
-  border: none;
-  img {
-    height: 260px;
-  }
-}
-
 /* Sticky footer styles
 -------------------------------------------------- */
 
@@ -24,10 +15,12 @@ html {
   min-height: 100%;
   text-transform: uppercase;
 }
+
 body {
   /* Margin bottom by footer height */
   margin-bottom: $footer-height;
 }
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -35,7 +28,7 @@ body {
 
   margin-top: $padding-large-vertical;
   background: $gray-dark;
-opacity: 0.7;
+  opacity: 0.7;
   color: white;
   height: $footer-height;
 
@@ -51,32 +44,35 @@ opacity: 0.7;
   }
 }
 
+/* End footer */
+
+/* Header styles
+-------------------------------------------------- */
+
 $header-height: 250px;
 
 .header {
   top: 0;
   width: 100%;
 
-  margin-top: $padding-large-vertical;
   background: $brand-primary;
   background-image: url('/assets/images/backgrounds/background.png');
   height: $header-height;
-
-//  padding: $padding-large-vertical $padding-large-horizontal;
   margin-top: 0px;
   margin-bottom: 20px;
 
   .logo {
-width: 100%;
-height: auto;
+    width: 100%;
+    height: auto;
   }
 
   p {
     text-transform: uppercase;
     text-align: right;
-
   }
 }
+
+/* End header */
 
 img.thumb {
   max-height: 200px;
