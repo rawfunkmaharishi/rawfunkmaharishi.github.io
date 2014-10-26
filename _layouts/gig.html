@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class='row'>
-  <div class='col-md-5'>
+  <div class='col-md-6'>
     <dl class='dl-horizontal gig'>
 
       <dt>Date<dt>
@@ -26,7 +26,7 @@ layout: default
 
     </dl>
   </div>
-  <div class='col-md-7'>
+  <div class='col-md-6'>
     <div id='map' class='map'></div>
       <script src='http://openlayers.org/api/OpenLayers.js'></script>
       <script>
@@ -39,6 +39,7 @@ layout: default
           var position       = new OpenLayers.LonLat(lon, lat).transform( fromProjection, toProjection);
 
           map = new OpenLayers.Map('map');
+
           var mapnik         = new OpenLayers.Layer.OSM();
           map.addLayer(mapnik);
 
