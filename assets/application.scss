@@ -74,17 +74,31 @@ $header-height: 250px;
 
 /* End header */
 
+/* Nav styles
+-------------------------------------------------- */
+
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border: none;
+
+   ul {
+    color: black;
+    font-size: 1.5em;
+    line-height: 10px;
+    text-align: right;
+  }
+}
+
+/* End nav */
+
 img.thumb {
   max-height: 200px;
 }
 
 .caption {
-  h3, p {
+  h1, h2 {
     color: black;
-  }
-
-  p.splash {
-    color: white;
   }
 }
 
@@ -104,23 +118,6 @@ p {
 
 p.splash{
   color: white;
-}
-
-.navbar {
-   background-color: transparent;
-   background: transparent;
-   border: none;
-}
-
-.navbar li {
-  text-align: right;
-}
-
-ul.nav {
-  color: black;
-  font-size: 1.5em;
-  line-height: 10px;
-
 }
 
 .thumbnail {
