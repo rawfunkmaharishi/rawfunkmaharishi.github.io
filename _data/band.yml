@@ -2,13 +2,16 @@
   image: scofield.jpg
   instrument: Guitar
   bio: Worried that he might not have put enough oil into his Alfa.
+  image_caption: John Scofield, by Wikipedia user nomo. CC BY-SA 2.5
 
 - name: Matt
   image: jamerson.jpg
   instrument: Bass
   bio: Comes from Wales. Watches a lot of Netflix.
+  image_caption: James Jamerson, by Wikipedia user Experimento69. CC BY-SA 3.0
 
 - name: Sam
   image: gadd.jpg
   instrument: Drums
   bio: Born at a young age. Raised by wolves.
+  image_caption: Steve Gadd, by Wikipedia user Stiopa. CC BY-SA 3.0
