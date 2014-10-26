@@ -168,21 +168,8 @@ p.splash{
   padding-top: $padding-large-vertical;
 }
 
-.vertical-text {
-    transform: rotate(-90deg);
-    transform-origin: right, top;
-    -ms-transform: rotate(-90deg);
-    -ms-transform-origin:right, top;
-    -webkit-transform: rotate(-90deg);
-    -webkit-transform-origin:right, top;
-    position: absolute;
-
-    color: #ed217c;
-}
-
 .attribution {
-  text-align: right;
-  font-size: 0.7em;
+  font-size: 0.6em;
   background: $rfm-orange;
   a {
     color: $rfm-green;

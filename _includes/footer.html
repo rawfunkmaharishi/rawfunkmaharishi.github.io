@@ -3,18 +3,16 @@
     <div class='col-md-12 text-center bottom'>
       {% assign limit = site.data.links.size - 1 %}
       {% for link in site.data.links %}
-        <a href='{{ link.url }}' alt='{{ link.title }}' title='{{ link.title }}'><i class='fa {{ link.fontawesome }}'></i> {{ link.title }}</a>
+<!--<a href='{{ link.url }}' alt='{{ link.title }}' title='{{ link.title }}'><i class='fa {{ link.fontawesome }}'></i> {{ link.title }}</a>-->
+          <a href='{{ link.url }}' alt='{{ link.title }}' title='{{ link.title }}'>
+            <i class='fa {{ link.fontawesome }}'></i>
+            <span class='hidden-xs'>{{ link.title }}</span>
+          </a>
         {% if forloop.rindex0 > 0 %}
           |
         {% endif %}
       {% endfor %}
     </div>
   </div>
-  <span class='attribution pull-right'>
-    Background image:
-    <a href='https://www.flickr.com/photos/thomashawk/9280743142/'>Sidewalks of New York</a>
-    by
-    <a href='https://www.flickr.com/photos/thomashawk/'>Thomas Hawk</a> - 
-    <a href='https://creativecommons.org/licenses/by-nc/2.0'>CC-BY-NC</a>
-  </span>
+  {% include background-attribution.html %}
 </div>
