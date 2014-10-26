@@ -98,13 +98,16 @@ dl.gig {
 
 p {
   font-size: 1.5em;
-  color: white;
   text-align: right;
 }
 
 .splash {
   width: 80%;
   height: auto;
+}
+
+p.splash{
+  color: white;
 }
 
 .navbar {
@@ -136,6 +139,7 @@ ul.nav {
   right: 5px;
   top: 280px;
   color: $gray-lighter;
+  font-weight: bold;
 }
 
 .giglist {
