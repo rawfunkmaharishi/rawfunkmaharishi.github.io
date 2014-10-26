@@ -8,7 +8,7 @@ title: Gigs
 {% endcapture %}
 <div class='giglist'>
   <div class='row'>
-    <div class='col-md-8'>
+    <div class='col-md-6'>
       <h2>Upcoming gigs</h2>
       {% for post in site.posts reversed %}
         {% capture postseconds %}{{ post.date | date: '%s' }}{% endcapture %}
@@ -28,7 +28,7 @@ title: Gigs
         </div>
       {% endif %}
     </div>
-    <div class='col-md-4 gig-archive'>
+    <div class='col-md-6 gig-archive'>
       <h2>Archive</h2>
       {% for post in site.posts %}
         {% capture postseconds %}{{ post.date | date: '%s' }}{% endcapture %}
