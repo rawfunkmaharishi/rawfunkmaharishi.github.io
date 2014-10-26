@@ -17,7 +17,7 @@ longitude:   {is your place located?}
 ---
 ```
 
-(This [existing event](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/gigs/_posts/2014-10-22-the-comedy.yml) might help)
+(See this [existing event](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/gigs/_posts/2014-10-22-the-comedy.yml) as a guide)
 
 * `bundle`
 * `jekyll serve`
