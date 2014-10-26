@@ -3,7 +3,7 @@
   <script>
       var lat            = {{ include.latitude }};
       var lon            = {{ include.longitude }};
-      var zoom           = 17;
+      var zoom           = 16;
 
       var fromProjection = new OpenLayers.Projection('EPSG:4326');   // Transform from WGS 1984
       var toProjection   = new OpenLayers.Projection('EPSG:900913'); // to Spherical Mercator Projection
@@ -19,13 +19,19 @@
       markers.addMarker(
         new OpenLayers.Marker(
           position,
-          new OpenLayers.Icon('http://www.openstreetmap.org/assets/marker-red-b8b47a812d7ea38509ac24368c689ba8.png', {w: 20, h:30})
+          new OpenLayers.Icon(
+            'http://www.openstreetmap.org/assets/marker-red-b8b47a812d7ea38509ac24368c689ba8.png',
+            {
+              w: 20,
+              h: 30
+            }
+          )
         )
       );
 
       map.setCenter(position, zoom);
   </script>
   <p class='pull-right'>
-    <a href='http://www.openstreetmap.org/?mlat={{ include.latitude }}&amp;mlon={{ include.longitude }}#map=17/{{ include.latitude }}/{{ page.longitude }}'>View larger map</a>
+    <a href='http://www.openstreetmap.org/?mlat={{ include.latitude }}&amp;mlon={{ include.longitude }}#map=16/{{ include.latitude }}/{{ page.longitude }}'>View larger map</a>
   </p>
 </div>

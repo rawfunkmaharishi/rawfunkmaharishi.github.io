@@ -1,28 +1,48 @@
 ---
-title: Upcoming Gigs
+title: Gigs
 ---
 
 {% assign something = '' %}
 {% capture nowseconds %}
   {{ 'now' | date: '%s' }}
 {% endcapture %}
-
-{% for post in site.posts reversed %}
-  {% capture postseconds %}{{ post.date | date: '%s' }}{% endcapture %}
-  {% if nowseconds > postseconds %}
-    {% capture something %}{{ 'true' }}{% endcapture %}
-    <div class='post'>
-      <h3 class='title'>{{ post.date | date_to_long_string }}:
-        <a href='{{ post.url }}'>{{ post.title }}</a>
-      </h3>
+<div class='giglist'>
+  <div class='row'>
+    <div class='col-md-8'>
+      <h2>Upcoming gigs</h2>
+      {% for post in site.posts reversed %}
+        {% capture postseconds %}{{ post.date | date: '%s' }}{% endcapture %}
+        {% capture future %}{{ nowseconds | minus:postseconds }}{% endcapture %}
+        {% if future < '0' %}
+          {% capture something %}{{ 'true' }}{% endcapture %}
+          <div class='post'>
+            <h3 class='title'>{{ post.date | date_to_long_string }}:
+              <a href='{{ post.url }}'>{{ post.title }}</a>
+            </h3>
+          </div>
+        {% endif %}
+      {% endfor %}
+      {% if something != 'true' %}
+        <div class='post'>
+          <h3 class='title'>No Upcoming Shows</h3>
+        </div>
+      {% endif %}
     </div>
-  {% endif %}
-{% endfor %}
-
-{% if something != 'true' %}
-<div class='post'>
-  <h3 class='title'>No Upcoming Shows</h3>
+    <div class='col-md-4 gig-archive'>
+      <h2>Archive</h2>
+      {% for post in site.posts %}
+        {% capture postseconds %}{{ post.date | date: '%s' }}{% endcapture %}
+        {% capture future %}{{ nowseconds | minus:postseconds }}{% endcapture %}
+        {% if future > '0' %}
+          <div class='post'>
+            <h3 class='title'>{{ post.date | date_to_long_string }}:
+              <a href='{{ post.url }}'>{{ post.title }}</a>
+            </h3>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
 </div>
-{% endif %}
 
 {% include book-us.html %}
