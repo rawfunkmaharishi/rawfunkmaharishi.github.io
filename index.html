@@ -1,40 +1,14 @@
 ---
-layout:
+layout: default
+title: Raw Funk Maharish
+extra_styles: "body { background-image: url('/assets/images/backgrounds/background.png'); background-position: center }"
+no_header: true
+no_title: true
 ---
 
-<!DOCTYPE html>
-<html lang='en'>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1' />
-    <title>Raw Funk Maharish</title>
-
-    <!-- Bootstrap -->
-    <link rel='stylesheet' href='/assets/application.css' type='text/css' />
-    <style>
-      body {
-        background-image: url('/assets/images/backgrounds/background.png');
-        background-position: center;
-      }
-      </style>
-    <link rel='icon' type='image/png' href='/assets/favicon.ico' />
-
-    {% include ie-boilerplate.html %}
-    {% include google-analytics.html %}
-  </head>
-  <body>
-    <div class='container'>
-      {% include navigation.html %}
-
-      <img src='/assets/images/logos/wide/banner.png' alt='Raw Funk Maharish' class='splash center-block hidden-xs hidden-sm'/>
-      <img src='/assets/images/logos/square/logo.png' alt='Raw Funk Maharish' class='splash center-block visible-xs visible-sm'/>
-        <p class='splash pull-right'>
-          Exploring the deep funk grooves of the 70s, fused with improvised avant-groove jams.
-        </p>
-      </div>
-    </div>
-    {% include footer.html %}
-    {% include js-boilerplate.html %}
-  </body>
-</html>
+{% include navigation.html %}
+<img src='/assets/images/logos/wide/banner.png' alt='Raw Funk Maharish' class='splash center-block hidden-xs hidden-sm'/>
+<img src='/assets/images/logos/square/logo.png' alt='Raw Funk Maharish' class='splash center-block visible-xs visible-sm'/>
+<p class='splash pull-right'>
+  Exploring the deep funk grooves of the 70s, fused with improvised avant-groove jams.
+</p>
