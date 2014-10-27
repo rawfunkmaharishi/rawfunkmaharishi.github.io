@@ -179,3 +179,18 @@ p.splash{
     color: $rfm-green;
   }
 }
+
+.flickr {
+  h1 {
+    font-size: 1em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  .caption h1, h2 {
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+}

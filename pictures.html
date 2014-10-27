@@ -4,10 +4,21 @@ title: Pictures
 
 <div class='row'>
   {% for picture in site.data.pictures %}
-    <div class='col-md-3 thumbnail'>
+    <div class='col-md-3 thumbnail flickr'>
       <a href='{{ picture[":photo_page"] }}'>
         <img src='{{ picture[":photo_url"] }}' />
       </a>
+      <div class='caption'>
+        <h1 class='text-center'>
+          {{ picture[':title'] }}
+          <small>
+            Photo by
+            <a href='http://www.kimberlycabbott.com/'>
+              Kim
+            </a>
+          </small>
+        </h1>
+      </div>
     </div>
     {% cycle '', '', '', "</div><div class='row'>" %}
   {% endfor %}
