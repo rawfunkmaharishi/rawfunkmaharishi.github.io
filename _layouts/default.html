@@ -1,15 +1,10 @@
 <!DOCTYPE html>
 <html lang='en'>
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1' />
-    <title>{{ page.title }}</title>
-    <link rel='stylesheet' href='/assets/application.css' type='text/css' />
+    {% include boilerplate.html %}
+
     <style>{{ page.extra_styles }}</style>
-    <link rel='icon' type='image/png' href='/assets/favicon.ico' />
-    {% include ie-boilerplate.html %}
-    {% include google-analytics.html %}
+    <title>{{ page.title }}</title>
   </head>
   <body>
     {% unless page.no_header %}
