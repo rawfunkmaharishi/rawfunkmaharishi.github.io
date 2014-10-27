@@ -9,7 +9,7 @@
 ---
 location:    {whatever address}
 time:        {24hr format, quoted because YAML}
-price:       {optional, with currency units}
+price:       {optional, with currency symbol}
 facebook_id: {optional, if you have an FB event}
 latitude:    {where in the world}
 longitude:   {is your place located?}
