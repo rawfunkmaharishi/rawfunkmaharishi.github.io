@@ -1,18 +1,14 @@
 <div class='footer'>
-  <div class='row'>
-    <div class='col-md-12 text-center bottom'>
-      {% assign limit = site.data.links.size - 1 %}
-      {% for link in site.data.links %}
-<!--<a href='{{ link.url }}' alt='{{ link.title }}' title='{{ link.title }}'><i class='fa {{ link.fontawesome }}'></i> {{ link.title }}</a>-->
-          <a href='{{ link.url }}' alt='{{ link.title }}' title='{{ link.title }}'>
-            <i class='fa {{ link.fontawesome }}'></i>
-            <span class='hidden-xs'>{{ link.title }}</span>
-          </a>
-        {% if forloop.rindex0 > 0 %}
-          |
-        {% endif %}
-      {% endfor %}
-    </div>
+  <div class='text-center bottom'>
+    {% for link in site.data.links %}
+      <a href='{{ link.url }}' alt='{{ link.title }}' title='{{ link.title }}'>
+        <i class='fa {{ link.fontawesome }}'></i>
+        <span class='hidden-xs'>{{ link.title }}</span>
+      </a>
+      {% if forloop.rindex0 > 0 %}
+        ::
+      {% endif %}
+    {% endfor %}
   </div>
   {% include background-attribution.html %}
 </div>
