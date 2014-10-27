@@ -8,6 +8,7 @@ title: Gigs
 {% endcapture %}
 <div class='giglist'>
   <div class='row'>
+
     <div class='col-md-8'>
       <h2>Upcoming</h2>
       {% for post in site.posts reversed %}
@@ -28,6 +29,7 @@ title: Gigs
         </div>
       {% endif %}
     </div>
+
     <div class='col-md-4 gig-archive'>
       <h2>Archive</h2>
       {% for post in site.posts %}
@@ -42,6 +44,7 @@ title: Gigs
         {% endif %}
       {% endfor %}
     </div>
+    
   </div>
 </div>
 

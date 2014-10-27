@@ -1,7 +1,7 @@
 <div class='footer'>
   <div class='text-center bottom'>
     {% for link in site.data.links %}
-      <a href='{{ link.url }}' alt='{{ link.title }}' title='{{ link.title }}'>
+      <a href='{{ link.url }}' title='{{ link.title }}'>
         <i class='fa {{ link.fontawesome }}'></i>
         <span class='hidden-xs'>{{ link.title }}</span>
       </a>

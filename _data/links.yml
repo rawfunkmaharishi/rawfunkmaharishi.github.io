@@ -10,6 +10,14 @@
   url: https://soundcloud.com/rawfunkmaharishi
   fontawesome: fa-soundcloud
 
+- title: Youtube
+  url: https://www.youtube.com/channel/UCB3Xqk2r-vvTfqnNKjFCv5A
+  fontawesome: fa-youtube
+
+- title: Vimeo
+  url: https://vimeo.com/rawfunkmaharishi
+  fontawesome: fa-vimeo-square
+
 - title: Flickr
   url: http://www.flickr.com/photos/rawfunkmaharishi/
   fontawesome: fa-flickr
