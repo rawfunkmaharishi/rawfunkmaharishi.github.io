@@ -10,7 +10,7 @@ body {
 }
 
 h1 {
-  color: $gray-lighter;
+  color: $rfm-orange;
 }
 
 a {
@@ -97,15 +97,19 @@ $header-height: 250px;
     color: black;
   }
 
-  a:hover {
-    background: red;
-  }
-
   ul {
     color: black;
     font-size: 1.5em;
     line-height: 10px;
     text-align: right;
+  }
+}
+
+.nav {
+  li {
+    a:hover, a:focus {
+      background-color: $rfm-orange;
+    }
   }
 }
 
