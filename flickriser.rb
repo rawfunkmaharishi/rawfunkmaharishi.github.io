@@ -11,17 +11,19 @@ FlickRaw.shared_secret = ENV['FLICKR_SECRET']
 
 yaml = File.open '_data/pictures.yml', 'w'
 
-f = flickr.photosets.getPhotos(photoset_id: ENV['FLICKR_ALBUM_ID'])
+l = []
 
+f = flickr.photosets.getPhotos(photoset_id: ENV['FLICKR_ALBUM_ID'])
 f['photo'].each do |p|
   h = {}
 
   data = flickr.photos.getInfo(photo_id: p['id'])
   h[:photo_page] = data['urls'][0]['_content']
   h[:title] = data['title']
-  h[:photo_url] = FlickRaw.url(p)
+  h[:photo_url] = FlickRaw.url_m(p)
 
-  yaml.write h.to_yaml
+  l << h
 end
 
+yaml.write l.to_yaml
 yaml.close
