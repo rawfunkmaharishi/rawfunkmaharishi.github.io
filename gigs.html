@@ -18,7 +18,7 @@ title: Gigs
         {% capture future %}{{ nowseconds | minus:postseconds }}{% endcapture %}
         {% if future < '0' %}
           {% capture something %}{{ 'true' }}{% endcapture %}
-          {% include gig.html date = post.date url = post.url title = post.title %}
+          {% include giglink.html date = post.date url = post.url title = post.title %}
         {% endif %}
       {% endfor %}
       {% if something != 'true' %}
@@ -34,7 +34,7 @@ title: Gigs
         {% capture postseconds %}{{ post.date | date: '%s' }}{% endcapture %}
         {% capture future %}{{ nowseconds | minus:postseconds }}{% endcapture %}
         {% if future > '0' %}
-          {% include gig.html date = post.date url = post.url title = post.title %}
+          {% include giglink.html date = post.date url = post.url title = post.title %}
         {% endif %}
       {% endfor %}
     </div>
