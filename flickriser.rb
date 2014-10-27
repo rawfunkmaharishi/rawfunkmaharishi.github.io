@@ -1,5 +1,8 @@
 #!/usr/bin/env ruby
 
+# This is heavy cruft but I cannot use a Flickr plugin on gh-pages, and anyway
+# what about my API secret?
+
 require 'flickraw'
 require 'dotenv'
 require 'yaml'
