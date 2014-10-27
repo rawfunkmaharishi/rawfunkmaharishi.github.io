@@ -18,13 +18,13 @@ f['photo'].each do |p|
   h = {}
 
   data = flickr.photos.getInfo(photo_id: p['id'])
-  h[:photo_page] = data['urls'][0]['_content']
-  h[:title] = data['title']
-  h[:photo_url] = FlickRaw.url_m(p)
+  h['photo_page'] = data['urls'][0]['_content']
+  h['title'] = data['title']
+  h['photo_url'] = FlickRaw.url_m(p)
 
   data['tags'].each do |tag|
     if tag['raw'].match('photographer')
-      h[:photographer] = tag['raw'].split(':')[1]
+      h['photographer'] = tag['raw'].split(':')[1]
     end
   end
 

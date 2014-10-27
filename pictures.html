@@ -5,19 +5,19 @@ title: Pictures
 <div class='row'>
   {% for picture in site.data.pictures %}
     <div class='col-md-3 thumbnail flickr'>
-      <a href='{{ picture[":photo_page"] }}'>
-        <img src='{{ picture[":photo_url"] }}' />
+      <a href='{{ picture["photo_page"] }}'>
+        <img src='{{ picture["photo_url"] }}' />
       </a>
       <div class='caption'>
         <h1 class='text-center'>
-          {{ picture[':title'] }}
-          {% if picture[':photographer'] %}
-            {% assign key = picture[':photographer'] %}
+          {{ picture['title'] }}
+          {% if picture['photographer'] %}
+            {% assign key = picture['photographer'] %}
             {% assign url = site.data.photographers[key]['website'] %}
             <small>
               Photo by
               <a href='{{ url }}'>
-                {{ picture[':photographer'] | capitalize }}
+                {{ picture['photographer'] | capitalize }}
               </a>
             </small>
           {% endif %}
