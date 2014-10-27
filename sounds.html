@@ -3,19 +3,25 @@ title: Sounds
 ---
 
 <div class='row'>
-  {% include sound.html id = site.data.sounds.first.id %}
+  {% include sound.html id = site.data.sounds.first.id width = 6 %}
   <div class='col-md-6'>
     <div class='row'>
-      {% assign id = site.data.sounds[1].id%}
-      {% include sound.html id = id %}
-      {% assign id = site.data.sounds[2].id%}
-      {% include sound.html id = id %}
+      {% assign id = site.data.sounds[1].id %}
+      {% include sound.html id = id width = 6 %}
+      {% assign id = site.data.sounds[2].id %}
+      {% include sound.html id = id width = 6 %}
     </div>
     <div class='row'>
-      {% assign id = site.data.sounds[3].id%}
-      {% include sound.html id = id %}
-      {% assign id = site.data.sounds[4].id%}
-      {% include sound.html id = id %}
+      {% assign id = site.data.sounds[3].id %}
+      {% include sound.html id = id width = 6 %}
+      {% assign id = site.data.sounds[4].id %}
+      {% include sound.html id = id width = 6 %}
     </div>
   </div>
+</div>
+
+<div class='row'>
+  {% for sound in site.data.sounds limit:4 offset:5 %}
+    {% include sound.html id = sound.id width = 3 %}
+  {% endfor %}
 </div>
