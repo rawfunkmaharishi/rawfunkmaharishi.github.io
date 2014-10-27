@@ -8,7 +8,6 @@ defaults:
 
   -
     scope:
-      path: '/gigs/'
       type: posts
 
     values:
