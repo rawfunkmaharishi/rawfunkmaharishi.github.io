@@ -22,6 +22,12 @@ f['photo'].each do |p|
   h[:title] = data['title']
   h[:photo_url] = FlickRaw.url_m(p)
 
+  data['tags'].each do |tag|
+    if tag['raw'].match('photographer')
+      h[:photographer] = tag['raw'].split(':')[1]
+    end
+  end
+
   l << h
 end
 

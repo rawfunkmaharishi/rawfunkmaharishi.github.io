@@ -11,12 +11,16 @@ title: Pictures
       <div class='caption'>
         <h1 class='text-center'>
           {{ picture[':title'] }}
-          <small>
-            Photo by
-            <a href='http://www.kimberlycabbott.com/'>
-              Kim
-            </a>
-          </small>
+          {% if picture[':photographer'] %}
+            {% assign key = picture[':photographer'] %}
+            {% assign url = site.data.photographers[key]['website'] %}
+            <small>
+              Photo by
+              <a href='{{ url }}'>
+                {{ picture[':photographer'] | capitalize }}
+              </a>
+            </small>
+          {% endif %}
         </h1>
       </div>
     </div>
