@@ -6,21 +6,19 @@ title: Gigs
 {% capture nowseconds %}
   {{ 'now' | date: '%s' }}
 {% endcapture %}
+
 <div class='giglist'>
   <div class='row'>
 
-    <div class='col-md-8'>
+    <div class='col-md-2'></div>
+    <div class='col-md-4'>
       <h2>Upcoming</h2>
       {% for post in site.posts reversed %}
         {% capture postseconds %}{{ post.date | date: '%s' }}{% endcapture %}
         {% capture future %}{{ nowseconds | minus:postseconds }}{% endcapture %}
         {% if future < '0' %}
           {% capture something %}{{ 'true' }}{% endcapture %}
-          <div class='post'>
-            <h3 class='title'>{{ post.date | date_to_long_string }}:
-              <a href='{{ post.url }}'>{{ post.title }}</a>
-            </h3>
-          </div>
+          {% include gig.html date = post.date url = post.url title = post.title %}
         {% endif %}
       {% endfor %}
       {% if something != 'true' %}
@@ -36,15 +34,11 @@ title: Gigs
         {% capture postseconds %}{{ post.date | date: '%s' }}{% endcapture %}
         {% capture future %}{{ nowseconds | minus:postseconds }}{% endcapture %}
         {% if future > '0' %}
-          <div class='post'>
-            <h3 class='title'>{{ post.date | date_to_long_string }}:
-              <a href='{{ post.url }}'>{{ post.title }}</a>
-            </h3>
-          </div>
+          {% include gig.html date = post.date url = post.url title = post.title %}
         {% endif %}
       {% endfor %}
     </div>
-    
+    <div class='col-md-2'></div>
   </div>
 </div>
 
