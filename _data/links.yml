@@ -10,9 +10,9 @@
   url: https://soundcloud.com/rawfunkmaharishi
   fontawesome: fa-soundcloud
 
-- title: Youtube
-  url: https://www.youtube.com/channel/UCB3Xqk2r-vvTfqnNKjFCv5A
-  fontawesome: fa-youtube
+#- title: Youtube
+#  url: https://www.youtube.com/channel/UCB3Xqk2r-vvTfqnNKjFCv5A
+#  fontawesome: fa-youtube
 
 - title: Vimeo
   url: https://vimeo.com/rawfunkmaharishi
