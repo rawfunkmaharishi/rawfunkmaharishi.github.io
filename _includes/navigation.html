@@ -1,13 +1,11 @@
 <nav class='navbar navbar-default hidden-md hidden-lg' role='navigation'>
   {% include mobile-nav.html %}
   <div class='collapse navbar-collapse' id='navbar-collapse'>
-    <div class='container'>
-      <ul class='nav nav-pills' role='tablist'>
-        {% for item in site.data.navigation %}
-          {% include nav-item.html title = item.title path = item.path current = page.url %}
-        {% endfor %}
-      </ul>
-    </div>
+    <ul class='nav nav-pills' role='tablist'>
+      {% for item in site.data.navigation %}
+        {% include nav-item.html title = item.title path = item.path current = page.url %}
+      {% endfor %}
+    </ul>
   </div>
 </nav>
 
