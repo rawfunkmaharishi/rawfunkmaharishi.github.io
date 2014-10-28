@@ -129,7 +129,6 @@ img.thumb {
 
 p {
   font-size: 1.5em;
-  text-align: right;
 }
 
 .splash {
@@ -194,5 +193,12 @@ p.splash{
   .caption h1, h2 {
     padding-top: 0px;
     margin-top: 0px;
+  }
+}
+
+.clinton {
+  padding-top: $padding-large-vertical;
+  h2 {
+    padding-top: $padding-large-vertical;
   }
 }

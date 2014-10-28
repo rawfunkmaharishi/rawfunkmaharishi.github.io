@@ -1,0 +1,42 @@
+---
+title: No funk at this location
+permalink: /404.html
+---
+
+<div class='row'>
+  <div class='col-md-3'></div>
+  <div class='col-md-6' id='clinton'></div>
+  <div class='col-md-3'></div>
+</div>
+
+<script>
+var str = '<p>\
+Make my funk the P. Funk<br />\
+I want my funk uncut<br />\
+Make my funk the P. Funk<br />\
+I wants to get funked up<br />\
+I want the bomb<br />\
+I want the P. Funk<br />\
+I want my funk uncut<br />\
+Make my funk the P. Funk<br />\
+I wants to get funked up</p>\
+<p class="pull-right">-- George Clinton</p>\
+<a href="/"><h2 class="text-center">Return to the One</h2></a>',
+    i = 0,
+    isTag,
+    text;
+
+(function type() {
+    text = str.slice(0, ++i);
+    if (text === str) return;
+
+    document.getElementById('clinton').innerHTML = text;
+
+    var char = text.slice(-1);
+    if( char === '<' ) isTag = true;
+    if( char === '>' ) isTag = false;
+
+    if (isTag) return type();
+    setTimeout(type, 80);
+}());
+</script>
