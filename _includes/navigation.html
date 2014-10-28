@@ -11,7 +11,7 @@
 
 <nav class='navbar navbar-default hidden-xs hidden-sm' role='navigation'>
   <div class='collapse navbar-collapse' id='navbar-collapse'>
-    <ul class='nav nav-stacked pull-right' role='tablist'>
+    <ul class='nav nav-stacked nav-pills pull-right' role='tablist'>
       {% for item in site.data.navigation %}
         {% include nav-item.html title = item.title path = item.path current = page.url %}
       {% endfor %}
