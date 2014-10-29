@@ -2,6 +2,13 @@
 title: Sounds
 ---
 
+<script src="http://connect.soundcloud.com/sdk.js"></script>
+<script>
+  SC.initialize({
+    client_id: '66f16c68bfa3cd3aa4e824cb18e02c5a'
+  });
+</script>
+
 <div class='row'>
   {% include sound.html id = site.data.sounds.first.id width = 6 %}
   <div class='col-md-6'>
