@@ -1,21 +1,17 @@
 <div class='header'>
-  <div class='container hidden-md hidden-lg'>
-    {% include navigation.html %}
-    <a href='/'>
-        <img src='/assets/images/logos/wide/banner.png' alt='Raw Funk Maharishi' class='logo'/>
-    </a>
-  </div>
-
-  <div class='container hidden-xs hidden-sm'>
+  <div class='container'>
     <div class='row'>
-      <div class='col-md-8'>
+
+      <div class='col-md-4 col-md-push-8'>
+        {% include navigation.html %}
+      </div>
+
+      <div class='col-md-8 col-md-pull-4'>
         <a href='/'>
           <img src='/assets/images/logos/wide/banner.png' alt='Raw Funk Maharishi' class='logo'/>
         </a>
       </div>
-      <div class='col-md-4'>
-        {% include navigation.html %}
-      </div>
-    </div>
+
+  </div>
   </div>
 </div>
