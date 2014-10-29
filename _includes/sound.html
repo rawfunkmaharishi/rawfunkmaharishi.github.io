@@ -5,11 +5,11 @@
   </div>
 </div>
 
-
 <script>
   $(document).ready(function() {
     SC.get(
-      '/tracks/{{ include.id }}', function(track) {
+      '/tracks/{{ include.id }}',
+      function(track) {
       SC.oEmbed(
         track.permalink_url,
         document.getElementById('player-{{ include.id }}')
