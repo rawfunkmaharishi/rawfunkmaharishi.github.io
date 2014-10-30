@@ -12,6 +12,9 @@
       function(track) {
       SC.oEmbed(
         track.permalink_url,
+        {
+          
+        },
         document.getElementById('player-{{ include.id }}')
       );
     });
