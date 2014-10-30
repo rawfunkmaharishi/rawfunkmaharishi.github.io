@@ -18,7 +18,7 @@ You need the `gh-pages` gem. Add it to your Gemfile (or just use [ours](https://
 
 ##Liquid
 
-##OpenLayers
+##Open Street Map
 
 ##Soundcloud
 
