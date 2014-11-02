@@ -18,6 +18,9 @@
         <h1 class='text-center'>{{ page.title }}</h1>
       {% endunless %}
       {{ content }}
+      {% if page.license_these %}
+        {% include license_note.html licensed = page.license_these %}
+      {% endif %}
     </div>
     {% include footer.html %}
   </body>
