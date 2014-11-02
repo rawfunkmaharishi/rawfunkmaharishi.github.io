@@ -19,7 +19,7 @@
       {% endunless %}
       {{ content }}
       {% if page.license_these %}
-        {% include license_note.html licensed = page.license_these %}
+        {% include license_note.html licensed = page.license_these version = page.license_version %}
       {% endif %}
     </div>
     {% include footer.html %}
