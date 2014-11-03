@@ -1,2 +1,1 @@
 Disallow: /oembed-sounds/
-Disallow: /how-do-i-soundcloud/
