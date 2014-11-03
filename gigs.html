@@ -2,7 +2,7 @@
 title: Gigs
 ---
 
-{% assign something = '' %}
+{% assign upcoming_gigs = '' %}
 {% capture nowseconds %}
   {{ 'now' | date: '%s' }}
 {% endcapture %}
@@ -17,11 +17,11 @@ title: Gigs
         {% capture postseconds %}{{ post.date | date: '%s' }}{% endcapture %}
         {% capture future %}{{ nowseconds | minus:postseconds }}{% endcapture %}
         {% if future < '0' %}
-          {% capture something %}{{ 'true' }}{% endcapture %}
+          {% capture upcoming_gigs %}{{ 'true' }}{% endcapture %}
           {% include gig.html date = post.date url = post.url title = post.title %}
         {% endif %}
       {% endfor %}
-      {% if something != 'true' %}
+      {% if upcoming_gigs != 'true' %}
         <div class='post'>
           <h3 class='title'>No Upcoming Gigs</h3>
         </div>
