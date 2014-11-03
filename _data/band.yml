@@ -1,14 +1,14 @@
-- name: Joe
-  image: scofield.jpg
-  instrument: Guitar
+- name:          Joe
+  image:         scofield.jpg
+  instrument:    Guitar
   image_caption: John Scofield, by Wikipedia user nomo. CC BY-SA 2.5
 
-- name: Matt
-  image: jamerson.jpg
-  instrument: Bass
+- name:          Matt
+  image:         jamerson.jpg
+  instrument:    Bass
   image_caption: James Jamerson, by Wikipedia user Experimento69. CC BY-SA 3.0
 
-- name: Sam
-  image: gadd.jpg
-  instrument: Drums
+- name:          Sam
+  image:         gadd.jpg
+  instrument:    Drums
   image_caption: Steve Gadd, by Wikipedia user Stiopa. CC BY-SA 3.0

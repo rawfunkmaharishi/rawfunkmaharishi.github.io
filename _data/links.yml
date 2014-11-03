@@ -1,27 +1,23 @@
-- title: Twitter
-  url: https://twitter.com/uncookedfunk
+- title:       Twitter
+  url:         https://twitter.com/uncookedfunk
   fontawesome: fa-twitter
 
-- title: Facebook
-  url: https://www.facebook.com/rawfunkmaharishi
+- title:       Facebook
+  url:         https://www.facebook.com/rawfunkmaharishi
   fontawesome: fa-facebook-square
 
-- title: Soundcloud
-  url: https://soundcloud.com/rawfunkmaharishi
+- title:       Soundcloud
+  url:         https://soundcloud.com/rawfunkmaharishi
   fontawesome: fa-soundcloud
 
-#- title: Youtube
-#  url: https://www.youtube.com/channel/UCB3Xqk2r-vvTfqnNKjFCv5A
-#  fontawesome: fa-youtube
-
-- title: Vimeo
-  url: https://vimeo.com/rawfunkmaharishi
+- title:       Vimeo
+  url:         https://vimeo.com/rawfunkmaharishi
   fontawesome: fa-vimeo-square
 
-- title: Flickr
-  url: http://www.flickr.com/photos/rawfunkmaharishi/
+- title:       Flickr
+  url:         http://www.flickr.com/photos/rawfunkmaharishi/
   fontawesome: fa-flickr
 
-- title: Github
-  url: https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io
+- title:       Github
+  url:         https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io
   fontawesome: fa-github
