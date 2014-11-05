@@ -12,3 +12,6 @@
 
 - title: Gigs
   path:  /gigs/
+
+- title: Bookings
+  path:  /book-the-band/
