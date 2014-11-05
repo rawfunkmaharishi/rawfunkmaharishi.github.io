@@ -1,0 +1,20 @@
+<div class='col-md-{{ include.width }}'>
+  <div class='thumbnail'>
+    <div class='embed-responsive embed-responsive-16by9'
+         id='player-{{ include.id }}'></div>
+  </div>
+</div>
+
+<!-- More John Frum action -->
+<script>
+  $(document).ready(function() {
+    SC.get(
+      '/tracks/{{ include.id }}',
+      function(track) {
+      SC.oEmbed(
+        track.permalink_url,
+        document.getElementById('player-{{ include.id }}')
+      );
+    });
+  });
+</script>

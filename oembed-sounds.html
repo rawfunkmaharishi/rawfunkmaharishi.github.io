@@ -10,16 +10,16 @@ title: Sounds
 </script>
 
 <div class='row'>
-  {% include sound.html id = site.data.sounds.first.id width = 6 %}
+  {% include oembed-sound.html id = site.data.sounds.first.id width = 6 %}
   <div class='col-md-6'>
     <div class='row'>
       {% for sound in site.data.sounds limit:2 offset:1 %}
-        {% include sound.html id = sound.id width = 6 %}
+        {% include oembed-sound.html id = sound.id width = 6 %}
       {% endfor %}
     </div>
     <div class='row'>
       {% for sound in site.data.sounds limit:2 offset:3 %}
-        {% include sound.html id = sound.id width = 6 %}
+        {% include oembed-sound.html id = sound.id width = 6 %}
       {% endfor %}
     </div>
   </div>
@@ -27,6 +27,6 @@ title: Sounds
 
 <div class='row'>
   {% for sound in site.data.sounds limit:4 offset:5 %}
-    {% include sound.html id = sound.id width = 3 %}
+    {% include oembed-sound.html id = sound.id width = 3 %}
   {% endfor %}
 </div>
