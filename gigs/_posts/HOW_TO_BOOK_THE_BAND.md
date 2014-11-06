@@ -26,9 +26,7 @@ longitude:   {is your place located?}
 
 And then I guess we negotiate in the PR discussion and merge when everybody's happy
 
-Seriously, if you do this, you have a _very very good chance_ of us playing your show
-
-This is also now embedding JSON-LD
+This will also embed JSON-LD in the event page:
 
 ```
 <script type="application/ld+json">
@@ -52,3 +50,5 @@ This is also now embedding JSON-LD
 ```
 
 because who doesn't like a bit of Linked Data?
+
+Seriously, if you do this, you have a _very very good chance_ of us playing your show
