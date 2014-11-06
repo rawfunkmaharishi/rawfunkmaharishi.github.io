@@ -39,21 +39,4 @@ layout: default
   </div>
 </div>
 
-<script type="application/ld+json">
-[{
-  "@context" : "http://schema.org",
-  "@type" : "MusicEvent",
-  "name" : "Raw Funk Maharishi live at {{ page.title }}",
-  "startDate" : "{{ page.date }}T {{ page.time }}",
-  "location" : {
-    "@type" : "Place",
-    "name" : "{{ page.title }}",
-    "address" : "{{ page.location }}"
-  },
-  "performer" : [{
-    "@type" : "MusicGroup",
-    "name" : "Raw Funk Maharishi",
-    "sameAs" : "http://rawfunkmaharishi.uk/"
-  }]
-}]
-</script>
+{% include json-ld.html title = page.title date = page.date time = page.time location = page.location %}

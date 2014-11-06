@@ -1,0 +1,18 @@
+<script type="application/ld+json">
+[{
+  "@context" : "http://schema.org",
+  "@type" : "MusicEvent",
+  "name" : "Raw Funk Maharishi live at {{ include.title }}",
+  "startDate" : "{{ include.date }}T{{ include.time }}",
+  "location" : {
+    "@type" : "Place",
+    "name" : "{{ include.title }}",
+    "address" : "{{ include.location }}"
+  },
+  "performer" : [{
+    "@type" : "MusicGroup",
+    "name" : "Raw Funk Maharishi",
+    "sameAs" : "http://rawfunkmaharishi.uk/"
+  }]
+}]
+</script>
