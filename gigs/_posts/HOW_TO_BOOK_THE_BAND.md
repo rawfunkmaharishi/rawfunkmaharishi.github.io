@@ -27,3 +27,28 @@ longitude:   {is your place located?}
 And then I guess we negotiate in the PR discussion and merge when everybody's happy
 
 Seriously, if you do this, you have a _very very good chance_ of us playing your show
+
+This is also now embedding JSON-LD
+
+```
+<script type="application/ld+json">
+[{
+  "@context" : "http://schema.org",
+  "@type" : "MusicEvent",
+  "name" : "Raw Funk Maharishi live at The Comedy",
+  "startDate" : "2014-10-22 00:00:00 +0000T20:00",
+  "location" : {
+    "@type" : "Place",
+    "name" : "The Comedy",
+    "address" : "The Comedy, Oxendon St, SW1"
+  },
+  "performer" : [{
+    "@type" : "MusicGroup",
+    "name" : "Raw Funk Maharishi",
+    "sameAs" : "http://rawfunkmaharishi.uk/"
+  }]
+}]
+</script>
+```
+
+because who doesn't like a bit of Linked Data?
