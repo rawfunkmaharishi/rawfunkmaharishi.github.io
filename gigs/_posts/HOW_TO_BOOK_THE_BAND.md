@@ -1,4 +1,4 @@
-#BOOK US BY PULL-REQUEST
+#Book us by pull-request
 
 * Clone the repo
 * Create a branch
