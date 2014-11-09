@@ -152,7 +152,7 @@ layout: default
 
 at the top of your _index.md_ file.
 
-And now, when you go to [http://localhost:4000](), it should be _marginally_ prettier. Probably a good time to commit and push again...
+And now, when you go to [http://localhost:4000](), it should be _marginally_ prettier. Probably a good time to commit and push again, (but only after having added _.sass-cache_, a new artefact, to your _.gitignore_).
 
 ##Liquid
 
