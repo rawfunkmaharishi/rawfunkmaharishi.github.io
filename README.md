@@ -62,13 +62,13 @@ So you have some content hosted, for free, on Github, at [http://username.github
 echo mysuperawesomedomain.com > CNAME
 ```
 
-then you need to configure your DNS to point that domain at this Github IP address: _185.31.18.133_ and after waiting the requisite DNS-propagation-time (is it just me or is that _much_ quicker these days than it used to be?), your amazing site will be available at [http://mysuperawesomedomain.com]()
+then you need to configure your DNS to point that domain at this Github IP address: _185.31.18.133_ and after committing, pushing, and waiting the requisite DNS-propagation-time (is it just me or is that _much_ quicker these days than it used to be?), your amazing site will be available at [http://mysuperawesomedomain.com]()
 
 ##Bootstrap
 
 So you have some content up there, but it's not very pretty, is it? However, the lovely people at Twitter have given us Bootstrap, which allows even the most design-challenged drummers among us to make something that's at least vaguely presentable.
 
-So [download the Sass version of Bootstrap](http://getbootstrap.com/getting-started/#download) (version 3.2.0 as of this writing), untar the archive: `tar xzvf bootstrap-sass-3.3.0.tar.gz` and copy the bits you need into the (root of the) project:
+So [download the Sass version of Bootstrap](http://getbootstrap.com/getting-started/#download) (version 3.3.0 as of this writing), untar the archive: `tar xzvf bootstrap-sass-3.3.0.tar.gz` and copy the bits you need into the (root of the) project:
 
 ```
 mkdir _sass
@@ -79,7 +79,7 @@ mkdir javascript
 rsync -av ~/Downloads/bootstrap-sass-3.3.0/assets/javascripts/bootstrap.js javascript/
 ```
 
-then, because Reasons, make a file:
+then, because Reasons, make a SCSS file:
 
 ```
 mkdir assets
@@ -142,7 +142,7 @@ and fill it out like this
 
 (I totally boosted this from one of the Bootstrap examples)
 
-Now if you look at [http://localhost:4000]() you will see that it's still as ugly as before. What? Well, remember the dashes at the top of some of these files? As well as telling Jekyll that This Page Is For You, they can also contain some YAML configuration (this is what Jekyll calls _Front-matter_). You can say that your page wants to use the _default_ layout that you just made with something like this:
+Now if you look at [http://localhost:4000]() you will see that it's still as ugly as before. What? Well, remember the dashes at the top of some of these files? As well as telling Jekyll that to _please render this page_, they can also contain some YAML configuration (this is what Jekyll calls _Front-matter_). You can say that your page wants to use the _default_ layout that you just made with something like this:
 
 ```
 ---
