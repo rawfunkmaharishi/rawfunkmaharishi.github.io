@@ -66,13 +66,92 @@ So you have some content hosted, for free, on Github, at [http://username.github
 echo mysuperawesomedomain.com > CNAME
 ```
 
-then you need to configure your DNS to point that domain at this Github IP address: _185.31.18.133_ and after waiting the requisite DNS-propagation-time (is it just me or is that _much_ quicker these days than it used to be?), your amazing site will be available at [http://mysuperawesomedomain.com]
+then you need to configure your DNS to point that domain at this Github IP address: _185.31.18.133_ and after waiting the requisite DNS-propagation-time (is it just me or is that _much_ quicker these days than it used to be?), your amazing site will be available at [http://mysuperawesomedomain.com]()
 
 ##Bootstrap
 
-###Being responsive
+So you have some content up there, but it's not very pretty, is it? However, the lovely people at Twitter have given us Bootstrap, which allows even the most design-challenged drummers among us to make something that's at least vaguely presentable.
+
+So [download the Sass version of Bootstrap](http://getbootstrap.com/getting-started/#download) (version 3.2.0 as of this writing), untar the archive: `tar xzvf bootstrap-sass-3.3.0.tar.gz` and copy the bits you need into the (root of the) project:
+
+```
+mkdir _sass
+rsync -av ~/Downloads/bootstrap-sass-3.3.0/assets/stylesheets/bootstrap _sass/
+cp ~/Downloads/bootstrap-sass-3.3.0/assets/stylesheets/_bootstrap.scss _sass/bootstrap.scss
+
+mkdir javascript
+rsync -av ~/Downloads/bootstrap-sass-3.3.0/assets/javascripts/bootstrap.js javascript/
+```
+
+then, because Reasons, make a file:
+
+```
+mkdir assets
+touch assets/application.scss
+```
+
+and fill it out like this:
+
+```
+---
+---
+
+@import 'bootstrap';
+```
+
+###Layouts
+
+You need to include the Bootstrap stylesheets in your pages somehow. You could turn `index.md` into `index.html` and fully configure everything there, but that sounds like a terrible idea, when you could just use a Jekyll layout!
+
+Make a default layout:
+
+```
+mkdir _layouts
+touch _layouts/default.html
+```
+
+and fill it out like this
+
+```
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js'></script>
+      <script src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js'></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src='/javascript/bootstrap.js'></script>
+
+    <link rel='stylesheet' href='/assets/application.css' type='text/css' />
+    <title>{{ page.title }}</title>
+  </head>
+
+  <body>
+    <div class='container'>
+      {{ content }}
+    </div>
+  </body>
+</html>
+```
+
+(I totally boosted this from one of the Bootstrap examples)
+
+Now if you look at [http://localhost:4000]() you will see that it's still as ugly as before. What? Well, remember the three dashes at the 
+
 
 ##Liquid
+
+##Components
 
 ##Open Street Map
 
@@ -81,3 +160,5 @@ then you need to configure your DNS to point that domain at this Github IP addre
 ##Flickr
 
 ##Vimeo
+
+##Being responsive
