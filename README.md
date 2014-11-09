@@ -142,7 +142,9 @@ and fill it out like this
 
 (I totally boosted this from one of the Bootstrap examples)
 
-Now if you look at [http://localhost:4000]() you will see that it's still as ugly as before. What? Well, remember the dashes at the top of some of these files? As well as telling Jekyll that to _please render this page_, they can also contain some YAML configuration (this is what Jekyll calls _Front-matter_). You can say that your page wants to use the _default_ layout that you just made with something like this:
+This sets up a proper HTML page, and includes the Bootstrap styles, and then inserts the text from the calling page with that `{{ content }}` line.
+
+Now if you look at [http://localhost:4000]() you will see that it's still as ugly as before. What? Well, remember the dashes at the top of some of these files? As well as telling Jekyll to _please render this page_, they can also contain some YAML configuration (this is what Jekyll calls _Front-matter_). You can say that your page wants to use the _default_ layout that you just made with something like this:
 
 ```
 ---
