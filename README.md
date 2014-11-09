@@ -146,8 +146,17 @@ and fill it out like this
 
 (I totally boosted this from one of the Bootstrap examples)
 
-Now if you look at [http://localhost:4000]() you will see that it's still as ugly as before. What? Well, remember the three dashes at the 
+Now if you look at [http://localhost:4000]() you will see that it's still as ugly as before. What? Well, remember the dashes at the top of some of these files? As well as telling Jekyll that This Page Is For You, they can also contain some YAML configuration (this is what Jekyll calls _Front-matter_). You can say that your page wants to use the _default_ layout that you just made with something like this:
 
+```
+---
+layout: default
+---
+```
+
+at the top of your _index.md_ file.
+
+And now, when you go to [http://localhost:4000](), it should be _marginally_ prettier. Probably a good time to commit and push again...
 
 ##Liquid
 
