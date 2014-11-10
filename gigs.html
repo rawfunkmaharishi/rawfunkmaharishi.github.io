@@ -13,7 +13,7 @@ title: Gigs
     <div class='col-md-2'></div>
     <div class='col-md-5'>
       <h2>Upcoming</h2>
-      {% for post in site.posts reversed %}
+      {% for post in site.categories['gigs'] reversed %}
         {% capture postseconds %}{{ post.date | date: '%s' }}{% endcapture %}
         {% capture future %}{{ nowseconds | minus:postseconds }}{% endcapture %}
         {% if future < '0' %}
@@ -30,7 +30,7 @@ title: Gigs
 
     <div class='col-md-4 gig-archive'>
       <h2>Archive</h2>
-      {% for post in site.posts %}
+      {% for post in site.categories['gigs'] %}
         {% capture postseconds %}{{ post.date | date: '%s' }}{% endcapture %}
         {% capture future %}{{ nowseconds | minus:postseconds }}{% endcapture %}
         {% if future > '0' %}
