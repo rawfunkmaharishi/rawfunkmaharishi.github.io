@@ -21,3 +21,7 @@
 - title:       Github
   url:         https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io
   fontawesome: fa-github
+
+- title:       Developer blog
+  url:         /blog/
+  fontawesome: fa-code
