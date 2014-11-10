@@ -2,7 +2,7 @@
 layout: blost
 ---
 
-This is a band site, which means it probably has gig pages, and a good gig page has an embedded map. We could use Google Maps, sure, but [Open Street Map](http://www.openstreetmap.org/) has a [much more appealing license](http://www.openstreetmap.org/copyright). So our choices are:
+This is a band site, which means it has [gig pages](http://rawfunkmaharishi.uk/gigs/), and a good [gig page](http://rawfunkmaharishi.uk/gigs/2014/12/04/buffalo-bar/) has an embedded map. We could use Google Maps, sure, but [Open Street Map](http://www.openstreetmap.org/) has a [much more appealing license](http://www.openstreetmap.org/copyright). So our choices are:
 
 ##Embed the whole thing
 
