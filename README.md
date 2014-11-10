@@ -169,3 +169,5 @@ And now, when you go to [http://localhost:4000](), it should be _marginally_ pre
 ##Vimeo
 
 ##Being responsive
+
+##Licensing
