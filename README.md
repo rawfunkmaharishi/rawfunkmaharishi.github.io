@@ -7,11 +7,15 @@ This is all surprisingly easy
 
 ##Jekyll
 
-You need the `gh-pages` gem. Add it to your Gemfile (or just use [ours](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/Gemfile)) and `bundle`, or do `gem install gh-pages`
+You need the `gh-pages` gem. Add it to your Gemfile (or just use [ours](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/Gemfile)) and `bundle`, or just
+
+```
+gem install gh-pages
+```
 
 ###Create some content
 
-Create a file called `index.md` at the root of the project that looks like this:
+Create a file called _index.md_ at the root of the project that looks like this:
 
 ```
 ---
@@ -22,11 +26,20 @@ Hello from Jekyll
 
 Those dashes at the top are _important_ - without them Jekyll doesn't know that you intend this to be content.
 
-Now from a console do `jekyll serve --watch` and point your browser at [http://localhost:4000/]() and you should see those three words. Well done, you have successfully Jekylled.
+Now from a console do
+```
+jekyll serve --watch
+```
+and point your browser at [http://localhost:4000/]() and you should see those three words. Well done, you have successfully Jekylled.
 
 ###A wild *_site* appears
 
-This is all about building a static site, right? What Jekyll has done, is create a directory called *_site* and filled it with the generated HTML of your actual site. This is an artefact and you don't really want it in Github. So `echo _site/ > .gitignore` to make git leave that well alone. Now it's time to commit. But first...
+This is all about building a static site, right? What Jekyll has done, is create a directory called *_site* and filled it with the generated HTML of your actual site. This is an artefact and you don't really want it in Github. So
+
+```
+echo _site/ > .gitignore
+```
+to make git leave that well alone. Now it's time to commit. But first...
 
 ###Github hosting
 
@@ -97,7 +110,7 @@ and fill it out like this:
 
 ###Layouts
 
-You need to include the Bootstrap stylesheets in your pages somehow. You could turn `index.md` into `index.html` and fully configure everything there, but that sounds like a terrible idea, when you could just use a Jekyll layout!
+You need to include the Bootstrap stylesheets in your pages somehow. You could turn _index.md_ into _index.html_ and fully configure everything there, but that sounds like a terrible idea, when you could just use a Jekyll layout!
 
 Make a default layout:
 
@@ -156,11 +169,21 @@ at the top of your _index.md_ file.
 
 And now, when you go to [http://localhost:4000](), it should be _marginally_ prettier. Probably a good time to commit and push again, (but only after having added _.sass-cache_, a new artefact, to your _.gitignore_).
 
+##Open Street Map
+
+This is a band site, which means it probably has gig pages, and a good gig page has an embedded map. You could use Google Maps, sure, but [Open Street Map](http://www.openstreetmap.org/) has a much more appealing license. So your choices are:
+
+###Embed the whole thing
+
+Before I started this, what I knew about JavaScript would've fitted on the back of a matchbox. So my first move was just to locate the place in the browser, click 'share' on the right-hand-side, and paste in the iframe. Which is a terrible solution. So then I looked at
+
+###Leaflet.js
+
+People tell me this is great
+
 ##Liquid
 
 ##Components
-
-##Open Street Map
 
 ##Soundcloud
 
