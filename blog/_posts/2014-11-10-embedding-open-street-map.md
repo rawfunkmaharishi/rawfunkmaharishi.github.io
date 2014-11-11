@@ -11,7 +11,7 @@ My first move was just to locate the place in the browser, click 'share' on the 
 
 ##Leaflet.js
 
-People tell me this is great, but what I know about JavaScript would fit on the back of a matchbox. I hacked around with it for a while and was unable to produce anything useful. If you can show me how to Leaflet, I am of course accepting pull-requests, but pragmatism led me on towards
+People tell me this is great, but what I know about JavaScript would fit on the back of a matchbox. I hacked around with it for a while and was unable to produce anything useful. If you can show me how to Leaflet, I am of course [accepting pull-requests](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/pulls), but pragmatism led me on towards
 
 ##My OpenLayers *_include* thing
 
