@@ -110,7 +110,7 @@ $header-height: 250px;
   li {
     a:hover, a:focus {
       background-color: $rfm-orange;
-      opacity: 0.9;
+      opacity: 0.7;
     }
   }
 }
@@ -254,4 +254,11 @@ code {
   color: $gray-lighter;
   background-color: $gray-dark;
   font-size: 0.8em;
+}
+
+.subtitle {
+  margin-top: 0px;
+  text-align: center;
+  color: $gray-light;
+  font-size: 1em;
 }
