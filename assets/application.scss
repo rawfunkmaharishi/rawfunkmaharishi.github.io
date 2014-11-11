@@ -223,7 +223,6 @@ p.splash{
 
 .blost {
   text-transform: none;
-  text-align: justify;
 }
 
 .blog-archive {
@@ -232,5 +231,13 @@ p.splash{
 }
 
 .sidebar {
+  text-align: right;
+  h2 {
+    font-size: 2em;
+  }
   font-size: 0.5em;
+  background-color: $gray-lighter;
+  ul {
+    padding-left: $padding-small-horizontal;
+  }
 }
