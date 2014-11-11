@@ -44,3 +44,5 @@ git init
 git add .
 git commit -m 'Committe the Fyrst'
 ```
+
+Now it's time to look at [hosting your site on Github](http://rawfunkmaharishi.uk/blog/2014/11/11/hosting-your-site-on-github/).
