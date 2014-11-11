@@ -6,7 +6,7 @@ Github will host your site for free, which is incredibly nice of them. But for o
 
 Generally, given a repo named _amazingrepo_, if you push your Jekyll site onto a branch called _gh-pages_, the content will appear under [http://username.github.io/amazingrepo/](http://username.github.io/amazingrepo/) (which is what you want for project-specific Jekyll sites); however there are some names that Github considers special and which are subject to different rules: if the Github repo is named like _username.github.io_, or, within a Github organisation, _organisationname.github.io_, then Github will attempt to Jekylify whatever it finds in _master_  and the content will appear under [http://username.github.io/](http://username.github.io/) - that's why this particular repo is named _rawfunkmaharishi.github.io_. For the purposes of this document, I'm going to assume that you have a Github organisation for your band called _bandname_ and your repo is called _bandname.github.io_ (and that you have control of the _bandname.com_ domain). Does that all make sense?
 
-So anyway, presuming you have some [committed content](http://rawfunkmaharishi.uk/blog/2014/11/11/get-started-with-jekyll/), go create a Github repo with the appropriate name, then bring that remote in:
+So anyway, presuming you have some [committed content](http://rawfunkmaharishi.uk/blog/2014/11/11/getting-started-with-jekyll/), go create a Github repo with the appropriate name, then bring that remote in:
 
 ```
 git remote add origin git@github.com:bandname/bandname.github.io.git
