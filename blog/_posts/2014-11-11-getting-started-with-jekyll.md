@@ -40,9 +40,7 @@ echo _site/ > .gitignore
 to make git leave that well alone. Probably a good time to commit:
 
 ```
-git init
-git add .
-git commit -m 'Committe the Fyrst'
+git init && git add . && git commit -m 'Committe the Fyrst'
 ```
 
 Now it's time to look at [hosting your site on Github](http://rawfunkmaharishi.uk/blog/2014/11/11/hosting-your-site-on-github/).
