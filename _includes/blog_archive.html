@@ -1,7 +1,12 @@
-<ul class='blog-archive'>
+<dl class='blog-archive'>
   {% for post in site.categories['blog'] reversed %}
-    <li>
+    <dt>
       <a href='{{ post.url }}'>{{ post.title }}</a>
-    </li>
+    </dt>
+    {% unless include.no_excerpts %}
+      <dd>
+        {{ post.excerpt | strip_html | truncate: 150, '...' }}
+      </dd>
+    {% endunless %}
   {% endfor %}
-</ul>
+</dl>

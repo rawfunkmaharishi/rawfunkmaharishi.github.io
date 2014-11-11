@@ -228,6 +228,11 @@ p.splash{
 .blog-archive {
   list-style-type: none;
   font-size: 2em;
+  dd {
+    text-transform: none;
+    font-size: 0.7em;
+    padding-bottom: $padding-large-vertical;
+  }
 }
 
 .sidebar {
@@ -237,7 +242,8 @@ p.splash{
   }
   font-size: 0.5em;
   background-color: $gray-lighter;
-  ul {
-    padding-left: $padding-small-horizontal;
+
+  dt {
+    padding-bottom: $padding-large-vertical;
   }
 }
