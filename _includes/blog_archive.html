@@ -5,7 +5,7 @@
     </dt>
     {% unless include.no_excerpts %}
       <dd>
-        {{ post.excerpt | strip_html | truncate: 150, '...' }}
+        {{ post.excerpt | strip_html | truncate: 200, '...' }}
       </dd>
     {% endunless %}
   {% endfor %}
