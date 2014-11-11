@@ -248,3 +248,10 @@ p.splash{
     padding-bottom: $padding-large-vertical;
   }
 }
+
+code {
+  font-family: 'Ubuntu Mono';
+  color: $gray-lighter;
+  background-color: $gray-dark;
+  font-size: 0.8em;
+}
