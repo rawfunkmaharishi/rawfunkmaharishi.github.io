@@ -1,8 +1,9 @@
 ---
 layout: blost
+title: Embedding OpenStreetmap
 ---
 
-This is a band site, which means it has [gig pages](http://rawfunkmaharishi.uk/gigs/), and a good [gig page](http://rawfunkmaharishi.uk/gigs/2014/12/04/buffalo-bar/) has an embedded map. We could use Google Maps, sure, but [Open Street Map](http://www.openstreetmap.org/) has a [much more appealing license](http://www.openstreetmap.org/copyright). So our choices are:
+This is a band site, which means it has [gig pages](http://rawfunkmaharishi.uk/gigs/), and a good [gig page](http://rawfunkmaharishi.uk/gigs/2014/12/04/buffalo-bar/) has an embedded map. We could use Google Maps, sure, but [OpenStreetMap](http://www.openstreetmap.org/) has a [much more appealing license](http://www.openstreetmap.org/copyright). So our choices are:
 
 ##Embed the whole thing
 
@@ -14,7 +15,7 @@ People tell me this is great, but what I know about JavaScript would fit on the 
 
 ##My OpenLayers *_include* thing
 
-I strapped on the bamboo headphones and Cargo-Culted my way to [this](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/_includes/map.html). I _kind of_ of understand what it's doing, but some of it is still utterly impenetrable to me. The important thing, however, is that all of the ugliness is trapped in this one file, and we can generate an [embeddable map, complete with a pin](http://rawfunkmaharishi.uk/gigs/2014/12/04/buffalo-bar/), with just a [latitude and a longitude](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/gigs/_posts/2014-12-04-buffalo-bar.yml#L5-L6), which are easily extracted from an [Open Street Map URL](http://www.openstreetmap.org/#map=18/51.54610/-0.10330)
+I strapped on the bamboo headphones and Cargo-Culted my way to [this](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/_includes/map.html). I _kind of_ of understand what it's doing, but some of it is still utterly impenetrable to me. The important thing, however, is that all of the ugliness is trapped in this one file, and we can generate an [embeddable map, complete with a pin](http://rawfunkmaharishi.uk/gigs/2014/12/04/buffalo-bar/), with just a [latitude and a longitude](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/gigs/_posts/2014-12-04-buffalo-bar.yml#L5-L6), which are easily extracted from an [OpenStreetMap URL](http://www.openstreetmap.org/#map=18/51.54610/-0.10330)
 
 ##How to use it
 
