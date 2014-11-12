@@ -1,3 +1,12 @@
 <dt>
   <a href='{{ include.url }}'>{{ include.title }}</a>
 </dt>
+{% unless include.no_excerpts %}
+  <dd>
+    {{ include.excerpt | strip_html | truncate: 150, '...' }}
+    <span class='small'><a href='{{ include.url }}'>[read more]</a></span>
+  </dd>
+  {% if include.hr %}
+    <hr />
+  {% endif %}
+{% endunless %}
