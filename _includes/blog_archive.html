@@ -8,9 +8,9 @@
         {{ post.excerpt | strip_html | truncate: 150, '...' }}
         <span class='small'><a href='{{ post.url }}'>[read more]</a></span>
       </dd>
-{% if forloop.rindex > 1 %}
-  <hr />
-{% endif %}
+      {% if forloop.rindex > 1 %}
+        <hr />
+      {% endif %}
     {% endunless %}
 
   {% endfor %}
