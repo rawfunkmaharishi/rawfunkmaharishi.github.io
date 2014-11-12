@@ -1,17 +1,35 @@
 <dl class='blog-archive'>
-  {% for post in site.categories['blog'] reversed %}
-    <dt>
-      <a href='{{ post.url }}'>{{ post.title }}</a>
-    </dt>
-    {% unless include.no_excerpts %}
-      <dd>
-        {{ post.excerpt | strip_html | truncate: 150, '...' }}
-        <span class='small'><a href='{{ post.url }}'>[read more]</a></span>
-      </dd>
-      {% if forloop.rindex > 1 %}
-        <hr />
+  {% for prioritypost in site.data.priority-blosts %}
+    {% for post in site.categories['blog'] %}
+      {% if post.title == prioritypost %}
+        <dt>
+          <a href='{{ post.url }}'>{{ post.title }}</a>
+        </dt>
+        {% unless include.no_excerpts %}
+          <dd>
+            {{ post.excerpt | strip_html | truncate: 150, '...' }}
+            <span class='small'><a href='{{ post.url }}'>[read more]</a></span>
+          </dd>
+          <hr />
+        {% endunless %}
       {% endif %}
-    {% endunless %}
+    {% endfor %}
+  {% endfor %}
 
+  {% for post in site.categories['blog'] reversed %}
+    {% unless site.data.priority-blosts contains post.title %}
+      <dt>
+        <a href='{{ post.url }}'>{{ post.title }}</a>
+      </dt>
+      {% unless include.no_excerpts %}
+        <dd>
+          {{ post.excerpt | strip_html | truncate: 150, '...' }}
+          <span class='small'><a href='{{ post.url }}'>[read more]</a></span>
+        </dd>
+        {% if forloop.rindex0 > site.data.priority-blosts.size %}
+          <hr />
+        {% endif %}
+      {% endunless %}
+    {% endunless %}
   {% endfor %}
 </dl>
