@@ -79,6 +79,6 @@ which has access to those items via _page.location_, etc:
 
 and of course _page.latitude_ and _page.longitude_ with which it [renders an OSM map](http://rawfunkmaharishi.uk/blog/2014/11/10/embedding-open-street-map/).
 
-This data is also exposed as _site.categories['gigs']_ - the key there is the directory under which our *_posts* appear, we also have _site.categories['blog']_ on this site, or access to all *_posts* as _site.posts_ - which we can [iterate through to construst an archive page](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/gigs.html#L16-L23). 
+This data is also exposed as _site.categories['gigs']_ - the hash key there is the directory under which our *_posts* appear, we also have _site.categories['blog']_ on this site, as well as all *_posts* as _site.posts_ - which we can [iterate through to construct an archive page](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/gigs.html#L16-L23). 
 
 I have a nagging feeling that this might be a misuse of tools, but I'm still feeling my way around Jekyll and this works just fine for now.
