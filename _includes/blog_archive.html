@@ -2,14 +2,9 @@
   {% for prioritypost in site.data.priority-blosts %}
     {% for post in site.categories['blog'] %}
       {% if post.title == prioritypost %}
-        <dt>
-          <a href='{{ post.url }}'>{{ post.title }}</a>
-        </dt>
+        {% include blost-link.html title = post.title url = post.url %}
         {% unless include.no_excerpts %}
-          <dd>
-            {{ post.excerpt | strip_html | truncate: 150, '...' }}
-            <span class='small'><a href='{{ post.url }}'>[read more]</a></span>
-          </dd>
+          {% include blost-excerpt.html excerpt = post.excerpt url = post.url %}
           <hr />
         {% endunless %}
       {% endif %}
@@ -18,14 +13,9 @@
 
   {% for post in site.categories['blog'] reversed %}
     {% unless site.data.priority-blosts contains post.title %}
-      <dt>
-        <a href='{{ post.url }}'>{{ post.title }}</a>
-      </dt>
+      {% include blost-link.html title = post.title url = post.url %}
       {% unless include.no_excerpts %}
-        <dd>
-          {{ post.excerpt | strip_html | truncate: 150, '...' }}
-          <span class='small'><a href='{{ post.url }}'>[read more]</a></span>
-        </dd>
+        {% include blost-excerpt.html excerpt = post.excerpt url = post.url %}
         {% if forloop.rindex0 > site.data.priority-blosts.size %}
           <hr />
         {% endif %}
