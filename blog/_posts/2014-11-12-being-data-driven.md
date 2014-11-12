@@ -2,7 +2,7 @@
 layout: blost
 ---
 
-We're building a static site, but that doesn't mean we're going to hard-code everything and construct all the pages by hand - Jekyll has excellent support for driving your content with data. Let's look an example:
+We're building a static site, but that doesn't mean we're going to hard-code everything and construct all the pages by hand - Jekyll has excellent support for driving your content with data. Let's look at an example:
 
 ##Our Footer
 
@@ -31,7 +31,7 @@ Those titles, URLs and [font-awesome](http://fortawesome.github.io/Font-Awesome/
     {% endfor %}
 {% endraw %}
 
-Being data-driven for a footer or a navigation bar is all very well, but what about entirely data-driven blog posts? Well, those [sets of three dashes](http://rawfunkmaharishi.uk/blog/2014/11/11/getting-started-with-jekyll/#create-some-content) that we have at the top of each content page are delimiters for [Jekyll front matter](http://jekyllrb.com/docs/frontmatter/), where we normally specify things like titles and layouts. However, it's just YAML, and we can put anything we want in there. Which led me to the idea of
+Building a footer or a navigation bar this way is all very well, but what about entirely data-driven blog posts? Well, those [sets of three dashes](http://rawfunkmaharishi.uk/blog/2014/11/11/getting-started-with-jekyll/#create-some-content) that we have at the top of each content page are delimiters for [Jekyll front matter](http://jekyllrb.com/docs/frontmatter/), where we normally specify things like titles and layouts. However, it's just YAML, and we can put anything we want in there. Which led me to the idea of
 
 ##Data-driven gigs
 
@@ -78,5 +78,7 @@ which has access to those items via _page.location_, etc:
 {% endraw %}
 
 and of course _page.latitude_ and _page.longitude_ with which it [renders an OSM map](http://rawfunkmaharishi.uk/blog/2014/11/10/embedding-open-street-map/).
+
+This data is also exposed as _site.categories['gigs']_ - the key there is the directory under which our *_posts* appear, we also have _site.categories['blog']_ on this site, or access to all *_posts* as _site.posts_ - which we can [iterate through to construst an archive page](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/gigs.html#L16-L23). 
 
 I have a nagging feeling that this might be a misuse of tools, but I'm still feeling my way around Jekyll and this works just fine for now.
