@@ -12,7 +12,7 @@
 
   <body>
     {% unless page.no_header %}
-      {% include header.html header_class = page.header_class %}
+      {% include header.html trim_class = page.trim_class %}
     {% endunless %}
     <div class='container'>
       {% unless page.no_title %}
@@ -23,6 +23,6 @@
         {% include license_note.html licensed = page.license_these version = page.license_version %}
       {% endif %}
     </div>
-    {% include footer.html %}
+    {% include footer.html trim_class = page.trim_class %}
   </body>
 </html>

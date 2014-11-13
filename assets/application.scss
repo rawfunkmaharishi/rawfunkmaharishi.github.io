@@ -90,7 +90,7 @@ $header-height: 250px;
   background: $rfm-orange;
   background-image: url('/assets/images/backgrounds/background_orange.jpg');
 
-  .nav {
+ .nav {
     li {
       a:hover, a:focus {
         background-color: $rfm-green;
@@ -98,7 +98,15 @@ $header-height: 250px;
       }
     }
   }
+
+  .links {
+    a:hover, a:focus {
+      background-color: $rfm-green;
+      opacity: 0.9;
+    }
+  }
 }
+
 
 /* Nav styles
 -------------------------------------------------- */
@@ -255,7 +263,7 @@ p.splash{
     font-size: 2em;
   }
   font-size: 0.5em;
-  background-color: $gray-lighter;
+  background-color: $rfm-orange;
   padding-top: $padding-small-vertical;
 
   dt {
