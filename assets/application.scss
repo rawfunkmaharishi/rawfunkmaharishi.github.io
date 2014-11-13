@@ -86,6 +86,20 @@ $header-height: 250px;
 
 /* End header */
 
+.blog {
+  background: $rfm-orange;
+  background-image: url('/assets/images/backgrounds/background_orange.jpg');
+
+  .nav {
+    li {
+      a:hover, a:focus {
+        background-color: $rfm-green;
+        opacity: 0.9;
+      }
+    }
+  }
+}
+
 /* Nav styles
 -------------------------------------------------- */
 
