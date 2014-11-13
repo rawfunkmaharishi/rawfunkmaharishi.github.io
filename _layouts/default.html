@@ -9,10 +9,10 @@
     <style>{{ page.extra_styles }}</style>
     <title>{{ page.title }}</title>
   </head>
-  
+
   <body>
     {% unless page.no_header %}
-      {% include header.html %}
+      {% include header.html header_class = page.header_class %}
     {% endunless %}
     <div class='container'>
       {% unless page.no_title %}
