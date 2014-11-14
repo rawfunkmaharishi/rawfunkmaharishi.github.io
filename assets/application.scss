@@ -42,7 +42,7 @@ body {
   background: $brand-primary;
   background-image: url('/assets/images/backgrounds/background.jpg');
 
-  opacity: 0.7;
+  opacity: 1;
   color: white;
   height: $footer-height;
 
@@ -60,6 +60,7 @@ body {
 
 .plain {
   background-image: none;
+  opacity: 0.7;
 }
 
 /* End footer */
