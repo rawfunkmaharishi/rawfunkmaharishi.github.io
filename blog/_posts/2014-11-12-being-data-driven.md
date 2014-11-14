@@ -1,5 +1,4 @@
 ---
-layout: blost
 ---
 
 We're building a static site, but that doesn't mean we're going to hard-code everything and construct all the pages by hand - Jekyll has excellent support for driving your content with data. Let's look at an example:

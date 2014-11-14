@@ -1,5 +1,4 @@
 ---
-layout: blost
 ---
 
 So you want to build a Github-hosted static site for your band? Turns out this is all surprisingly easy...
