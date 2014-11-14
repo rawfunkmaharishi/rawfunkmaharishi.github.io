@@ -40,6 +40,8 @@ body {
 
   margin-top: $padding-large-vertical;
   background: $brand-primary;
+  background-image: url('/assets/images/backgrounds/background.jpg');
+
   opacity: 0.7;
   color: white;
   height: $footer-height;
@@ -54,6 +56,10 @@ body {
     background: $rfm-orange;
     text-decoration: none;
   }
+}
+
+.plain {
+  background-image: none;
 }
 
 /* End footer */
@@ -89,6 +95,7 @@ $header-height: 250px;
 .blog {
   background: $rfm-orange;
   background-image: url('/assets/images/backgrounds/background_orange.jpg');
+  opacity: 1;
 
  .nav {
     li {
