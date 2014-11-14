@@ -9,8 +9,17 @@ defaults:
   -
     scope:
       type: posts
+      path: gigs
 
     values:
       layout: gig
+
+  -
+    scope:
+      type: posts
+      path: blog
+
+    values:
+      layout: blost
 
 permalink: pretty
