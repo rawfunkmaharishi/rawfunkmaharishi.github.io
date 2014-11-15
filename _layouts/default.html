@@ -7,7 +7,11 @@
     <link rel='icon' type='image/png' href='/assets/favicon.ico' />
     <link rel='stylesheet' href='/assets/application.css' type='text/css' />
     <style>{{ page.extra_styles }}</style>
-    <title>{{ page.title }}</title>
+    {% assign title = page.title %}
+    {% if page.pretitle %}
+      {% capture title %}{{ page.pretitle}} » {{ page.title }}{% endcapture %}
+    {% endif %}
+    <title>{{ title }}</title>
   </head>
 
   <body>

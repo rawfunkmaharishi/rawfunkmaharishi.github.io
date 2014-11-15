@@ -13,6 +13,7 @@ defaults:
 
     values:
       layout: gig
+      pretitle: Gig
 
   -
     scope:
@@ -21,5 +22,6 @@ defaults:
 
     values:
       layout: blost
+      pretitle: Blog
 
 permalink: pretty
