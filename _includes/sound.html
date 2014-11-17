@@ -28,12 +28,4 @@
 {% capture url %}{{ url | append:'&amp;visual=' }}{% endcapture %}
 {% capture url %}{{ url | append:visual }}{% endcapture %}
 
-<div class='col-md-{{ include.width }}'>
-  <div class='thumbnail soundcloud'>
-    <div class='embed-responsive embed-responsive-16by9'>
-      <iframe class='embed-responsive-item'
-              src={{ url }}>
-      </iframe>
-    </div>
-  </div>
-</div>
+<iframe class='embed-responsive-item' src={{ url }}></iframe>
