@@ -1,3 +1,1 @@
----
-layout: blost
----
+A band site needs a [photo gallery](http://rawfunkmaharishi.uk/pictures/), right? We are using [Flickr](https://www.flickr.com/photos/rawfunkmaharishi/) for photo hosting, which does allow you to share a picture or a set as an iframe, but the UI is not great.
