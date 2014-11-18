@@ -7,7 +7,7 @@
     {% endfor %}
   {% endfor %}
 
-  {% for post in site.categories['blog'] reversed %}
+  {% for post in site.categories['blog'] %}
     {% unless site.data.priority-blosts contains post.title %}
       {% assign hr = false %}
       {% if forloop.rindex > 1 %}
