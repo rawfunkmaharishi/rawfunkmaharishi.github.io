@@ -1,4 +1,5 @@
 ---
+priority: 2
 ---
 
 Github will host your site for free, which is incredibly nice of them. But for our purposes, there are some things to consider around how the repo is named:

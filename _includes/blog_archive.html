@@ -1,19 +1,10 @@
 <dl class='blog-archive'>
-  {% for prioritypost in site.data.priority-blosts %}
-    {% for post in site.categories['blog'] %}
-      {% if post.title == prioritypost %}
-        {% include blost-link.html title = post.title url = post.url no_excerpts = include.no_excerpts excerpt = post.excerpt hr = true %}
-      {% endif %}
-    {% endfor %}
-  {% endfor %}
-
-  {% for post in site.categories['blog'] %}
-    {% unless site.data.priority-blosts contains post.title %}
-      {% assign hr = false %}
-      {% if forloop.rindex > 1 %}
-        {% assign hr = true %}
-      {% endif %}
-      {% include blost-link.html title = post.title url = post.url no_excerpts = include.no_excerpts excerpt = post.excerpt hr = hr %}
-    {% endunless %}
+  {% assign blosts = site.categories['blog'] | sort: 'priority' %}
+  {% for blost in blosts %}
+    {% assign hr = false %}
+    {% if forloop.rindex > 1 %}
+      {% assign hr = true %}
+    {% endif %}
+    {% include blost-link.html title = blost.title url = blost.url no_excerpts = include.no_excerpts excerpt = blost.excerpt hr = hr %}
   {% endfor %}
 </dl>

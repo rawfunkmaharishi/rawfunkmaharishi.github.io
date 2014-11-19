@@ -23,5 +23,6 @@ defaults:
     values:
       layout: blost
       pretitle: Blog
+      priority: 100
 
 permalink: pretty
