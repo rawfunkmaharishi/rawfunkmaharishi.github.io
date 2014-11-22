@@ -1,5 +1,5 @@
 <dl class='blog-archive'>
-  {% assign blosts = site.categories['blog'] | sort: 'priority' %}
+  {% assign blosts = site.categories.blog | sort: 'priority' %}
   {% for blost in blosts %}
     {% assign hr = false %}
     {% if forloop.rindex > 1 %}
