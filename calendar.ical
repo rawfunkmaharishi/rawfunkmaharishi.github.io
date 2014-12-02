@@ -35,6 +35,7 @@ DTSTART;TZID='Europe/London':{{ start_time }}
 DTEND;TZID=Europe/London:{{ gig.date | date: '%Y%m%d' }}T230000
 SUMMARY:Raw Funk Maharishi live at {{ gig.title }}
 DESCRIPTION:{{ gig.location }}
+GEO:{{ gig.latitude }};{{ gig.longitude }}
 END:VEVENT
 {% endfor %}
 
