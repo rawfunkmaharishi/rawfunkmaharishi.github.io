@@ -212,8 +212,11 @@ p.splash{
 .olControlAttribution {
   right: 5px;
   top: 280px;
-  color: $gray-lighter;
+  color: $rfm-orange;
   font-weight: bold;
+  a {
+    color: $rfm-dark-green;
+  }
 }
 
 .giglist {
