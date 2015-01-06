@@ -3,7 +3,7 @@
   fontawesome: fa-twitter
 
 - title:       Facebook
-  url:         https://www.facebook.com/rawfunkmaharishi
+  url:         https://facebook.com/rawfunkmaharishi
   fontawesome: fa-facebook-square
 
 - title:       Soundcloud
@@ -15,7 +15,7 @@
   fontawesome: fa-vimeo-square
 
 - title:       Flickr
-  url:         http://www.flickr.com/photos/rawfunkmaharishi/
+  url:         http://flickr.com/photos/rawfunkmaharishi/
   fontawesome: fa-flickr
 
 - title:       Github
