@@ -27,7 +27,7 @@ Now from a console do
 jekyll serve --watch
 ```
 
-and point your browser at `http://localhost:4000/` and you should see those three words. You have successfully Jekylled.
+and point your browser at [http://localhost:4000/]() and you should see those three words. You have successfully Jekylled.
 
 ##A wild *_site* appears
 
