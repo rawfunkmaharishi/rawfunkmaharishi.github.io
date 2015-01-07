@@ -26,3 +26,5 @@ defaults:
       priority: 100
 
 permalink: pretty
+
+exclude: [vendor]
