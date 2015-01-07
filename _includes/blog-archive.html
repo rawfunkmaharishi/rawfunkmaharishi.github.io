@@ -1,10 +1,12 @@
 <dl class='blog-archive'>
   {% assign blosts = site.categories.blog | sort: 'priority' %}
   {% for blost in blosts %}
-    {% assign hr = false %}
-    {% if forloop.rindex > 1 %}
-      {% assign hr = true %}
-    {% endif %}
-    {% include blost-link.html title = blost.title url = blost.url no_excerpts = include.no_excerpts excerpt = blost.excerpt hr = hr %}
+    {% unless blost.url == page.url %}
+      {% assign hr = false %}
+      {% if forloop.rindex > 1 %}
+        {% assign hr = true %}
+      {% endif %}
+      {% include blost-link.html title = blost.title url = blost.url no_excerpts = include.no_excerpts excerpt = blost.excerpt hr = hr %}
+    {% endunless %}
   {% endfor %}
 </dl>
