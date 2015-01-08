@@ -5,27 +5,6 @@ permalink: /404.html
 
 <div class='row'>
   <div class='col-md-3'></div>
-  <div class='col-md-6' id='the-one'></div>
+  <div class='col-md-6' id='the-one'><a href="/"><h2 class="text-center">Get back on The One</h2></a></div>
   <div class='col-md-3'></div>
 </div>
-
-<script>
-var str = '<a href="/"><h2 class="text-center">Get back on The One</h2></a>',
-  i = 0,
-  isTag,
-  text;
-
-(function type() {
-    text = str.slice(0, ++i);
-    if (text === str) return;
-
-    document.getElementById('the-one').innerHTML = text;
-
-    var char = text.slice(-1);
-    if( char === '<' ) isTag = true;
-    if( char === '>' ) isTag = false;
-
-    if (isTag) return type();
-    setTimeout(type, 60);
-}());
-</script>
