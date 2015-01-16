@@ -20,7 +20,11 @@
     {% endunless %}
     <div class='container'>
       {% unless page.no_title %}
-        <h1 class='text-center'>{{ page.title }}</h1>
+        {% assign title = page.title %}
+        {% if page.extra_title %}
+          {% capture title %}{{ page.extra_title }} {{ title }}{% endcapture %}
+        {% endif %}
+        <h1 class='text-center'>{{ title }}</h1>
       {% endunless %}
       {{ content }}
       {% if page.license_these %}
