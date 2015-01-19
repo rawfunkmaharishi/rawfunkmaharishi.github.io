@@ -52,7 +52,7 @@ This is a job for [yet another Jekyll *_include*](https://github.com/rawfunkmaha
     </script>
 {% endraw %}
 
-Then that gets called from [this layout](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/_layouts/gig.html#L42) which already has all the relevant data, and because this stuff is basically like sticking Lego bricks together, every gig page magically gets some Linked Data.
+Then that gets called from [this layout](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/_layouts/gig.html#L42) which already has all the relevant data, and because building with Jekyll is basically like sticking Lego bricks together, every gig page magically gets some Linked Data.
 
 I guess one day this stuff will show up on the right-hand side of the page when you Google for us, like it does for [this guy](https://www.google.co.uk/search?q=squarepusher).
 
