@@ -2,27 +2,27 @@ Due to working at the [Open Data Institute](http://theodi.org), I sometimes cros
 
 ##What does JSON-LD look like, then?
 
-In the source of [this gig page](http://rawfunkmaharishi.uk/gigs/2015/02/26/new-cross-inn/), you will find the following chunk of JSON:
+In the source of [this gig page](http://rawfunkmaharishi.uk/gigs/2015/01/15/nambucca/), you will find the following chunk of JSON:
 
 {% raw %}
     <script type="application/ld+json">
     [{
       "@context" : "http://schema.org",
       "@type" : "MusicEvent",
-      "name" : "Raw Funk Maharishi live at New Cross Inn",
-      "startDate" : "2015-02-26 00:00:00 +0000T21:30",
+      "name" : "Raw Funk Maharishi live at Nambucca",
+      "startDate" : "2015-01-15 00:00:00 +0000T20:00",
       "location" : {
         "@type" : "Place",
-        "name" : "New Cross Inn",
-        "address" : "New Cross Inn Hostel, 323A New Cross Rd, SE14"
-        },
-        "performer" : [{
-          "@type" : "MusicGroup",
-          "name" : "Raw Funk Maharishi",
-          "sameAs" : "http://rawfunkmaharishi.uk/"
-        }]
+        "name" : "Nambucca",
+        "address" : "596 Holloway Road, London, N7"
+      },
+      "performer" : [{
+        "@type" : "MusicGroup",
+        "name" : "Raw Funk Maharishi",
+        "sameAs" : "http://rawfunkmaharishi.uk/"
       }]
-      </script>
+    }]
+    </script>
 {% endraw %}
 
 which neatly describes the event. I [cargo-culted](http://en.wikipedia.org/wiki/Cargo_cult) a most of this directly from [here](https://support.google.com/webmasters/answer/4620133?hl=en), but as far as I can tell, it's valid.
