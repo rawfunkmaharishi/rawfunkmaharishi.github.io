@@ -235,6 +235,10 @@ p.splash{
   dt {
     color: $rfm-orange;
   }
+
+  dd {
+    padding-bottom: $padding-large-vertical;
+  }
 }
 
 .attribution {
@@ -313,12 +317,5 @@ code {
   dd {
     font-size: 1.2em;
     text-align: right;
-  }
-}
-
-// gh-pages needs to liven up
-.gig {
-  dd {
-    padding-bottom: $padding-large-vertical;
   }
 }
