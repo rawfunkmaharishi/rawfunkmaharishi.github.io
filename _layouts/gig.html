@@ -1,6 +1,6 @@
 ---
 layout: default
-extra_title: Live at 
+extra_title: Live at
 ---
 <div class='row'>
   <div class='col-md-6'>
@@ -14,7 +14,7 @@ extra_title: Live at
         <dd>{{ page.time }}</dd>
 
         <dt>Location</dt>
-        <dd>{{ page.location }}</dd>
+        <dd>{{ page.location | replace: ',', ',<br />'}}</dd>
 
         {% if page.price %}
           <dt>Price</dt>
