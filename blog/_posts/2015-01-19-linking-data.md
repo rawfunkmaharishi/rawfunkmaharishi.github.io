@@ -25,7 +25,7 @@ In the source of [this gig page](http://rawfunkmaharishi.uk/gigs/2015/01/15/namb
     </script>
 {% endraw %}
 
-which neatly describes the event. I [cargo-culted](http://en.wikipedia.org/wiki/Cargo_cult) a most of this directly from [here](https://support.google.com/webmasters/answer/4620133?hl=en), but as far as I can tell, it's valid.
+which neatly describes the event. I [cargo-culted](http://en.wikipedia.org/wiki/Cargo_cult) most of this directly from [here](https://support.google.com/webmasters/answer/4620133?hl=en), but as far as I can tell, it's valid.
 
 ##Constructing the JSON blocks
 
