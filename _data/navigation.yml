@@ -16,5 +16,5 @@
 - title: Bookings
   path:  /book-the-band/
 
-#- title: Reviews
-#  path:  /feedback/
+- title: Reviews
+  path:  /feedback/
