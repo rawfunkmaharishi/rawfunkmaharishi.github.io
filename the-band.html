@@ -18,6 +18,9 @@ title: The Band
               </h2>
             {% endif %}
           </div>
+          {% if forloop.rindex0 > 0 %}
+            <hr class='hidden-md hidden-lg visible-sm visible-xs' />
+          {% endif %}
         </div>
       </div>
     {% endfor %}
