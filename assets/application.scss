@@ -321,6 +321,14 @@ code {
   }
 }
 
+.band-member {
+  .twitter {
+    font-size: 1em;
+    margin-top: -10px;
+    text-transform: lowercase;
+  }
+}
+
 /* mobile version */
 .navbar-default .navbar-toggle {
   border-color: $gray;

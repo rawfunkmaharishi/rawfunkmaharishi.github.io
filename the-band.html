@@ -6,12 +6,15 @@ title: The Band
   <div class='col-md-3'></div>
     {% for member in site.data.band %}
       <div class='col-md-2'>
-        <div class='thumbnail'>
+        <div class='thumbnail band-member'>
           <a href='{{ member.image_url }}'>
             <img src='/assets/images/the-band/{{ member.image }}' alt='{{ member.image_caption }}' title='{{ member.image_caption }}' class='thumb' />
           </a>
           <div class='caption'>
             <h1 class='text-center'>{{ member.name }}</h1>
+            {% if member.twitter %}
+              <h2 class='text-center twitter'><a href='https://twitter.com/{{ member.twitter }}'>@{{ member.twitter }}</a></h2>
+            {% endif %}
           </div>
         </div>
       </div>
