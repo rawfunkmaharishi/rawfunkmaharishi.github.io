@@ -13,6 +13,9 @@ title: Some reviews we have received
         <dd>
           -- {{ review.source }}
         </dd>
+        {% if forloop.rindex0 > 0 %}
+          <hr />
+        {% endif %}
       {% endfor %}
       </dl>
   </div>
