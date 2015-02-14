@@ -24,7 +24,7 @@
         {% if page.extra_title %}
           {% capture title %}{{ page.extra_title }} {{ title }}{% endcapture %}
         {% endif %}
-        <h1 class='text-center'>{{ title }}</h1>
+        <h1 class='text-center main-title'>{{ title }}</h1>
       {% endunless %}
       {{ content }}
       {% if page.license_these %}

@@ -309,6 +309,8 @@ code {
 }
 
 .book-us {
+  font-weight: lighter;
+  color: $gray-light;
 }
 
 .reviews {
@@ -331,6 +333,10 @@ code {
     margin-top: -12px;
     text-transform: lowercase;
   }
+}
+
+.main-title {
+  font-weight: bolder;
 }
 
 /* mobile version */
