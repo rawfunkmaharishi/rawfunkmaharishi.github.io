@@ -1,5 +1,5 @@
 ---
-title: Some reviews we have received
+title: What people are saying about us
 ---
 
 <div class='row'>
@@ -11,7 +11,7 @@ title: Some reviews we have received
           '{{ review.quote }}'
         </dt>
         <dd>
-          -- {{ review.source }}
+          -- {{ review.source }}{% if review.occasion %}, {{ review.occasion }}{% endif %} 
         </dd>
         {% if forloop.rindex0 > 0 %}
           <hr />
