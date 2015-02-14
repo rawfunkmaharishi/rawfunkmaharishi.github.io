@@ -13,7 +13,9 @@ title: The Band
           <div class='caption'>
             <h1 class='text-center'>{{ member.name }}</h1>
             {% if member.twitter %}
-              <h2 class='text-center twitter'><a href='https://twitter.com/{{ member.twitter }}'>@{{ member.twitter }}</a></h2>
+              <h2 class='text-center twitter'>
+                <a href='https://twitter.com/{{ member.twitter }}' alt='{{ member.name }} on Twitter' title='{{ member.name }} on Twitter'>@{{ member.twitter }}</a>
+              </h2>
             {% endif %}
           </div>
         </div>
