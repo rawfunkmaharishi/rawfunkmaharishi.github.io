@@ -3,7 +3,7 @@
   <div class='collapse navbar-collapse' id='navbar-collapse'>
 
     <!-- mobile -->
-    <ul class='nav nav-pills pull-right hidden-md hidden-lg' role='tablist'>
+    <ul class='nav nav-pills pull-right hidden-md hidden-lg mobile' role='tablist'>
       {% for item in site.data.navigation %}
         {% include nav-item.html title = item.title path = item.path current = page.url %}
       {% endfor %}
