@@ -1,4 +1,4 @@
-##Copyright (c) 2014 Sam Pikesley
+##Copyright (c) 2015 Raw Funk Maharishi
 
 #MIT License
 
