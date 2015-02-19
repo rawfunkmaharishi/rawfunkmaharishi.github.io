@@ -1,4 +1,37 @@
 ---
+# Islington Academy
+- photo_page: https://www.flickr.com/photos/cluttercup/15950875724/
+  title: Islington Academy session
+  photo_url: https://farm8.staticflickr.com/7398/15950875724_23d58be214_m.jpg
+  license: Attribution-NonCommercial
+  license_url: https://creativecommons.org/licenses/by-nc/2.0/
+  photographer: jane
+- photo_page: https://www.flickr.com/photos/cluttercup/16579675721/
+  title: Islington Academy session
+  photo_url: https://farm8.staticflickr.com/7418/16579675721_f765c42f99_m.jpg
+  license: Attribution-NonCommercial
+  license_url: https://creativecommons.org/licenses/by-nc/2.0/
+  photographer: jane
+- photo_page: https://www.flickr.com/photos/cluttercup/16393865760/
+  title: Islington Academy session
+  photo_url: https://farm8.staticflickr.com/7395/16393865760_bfbfc1c267_m.jpg
+  license: Attribution-NonCommercial
+  license_url: https://creativecommons.org/licenses/by-nc/2.0/
+  photographer: jane
+- photo_page: https://www.flickr.com/photos/cluttercup/15958752984/
+  title: Islington Academy session
+  photo_url: https://farm9.staticflickr.com/8658/15958752984_25fa81f121_m.jpg
+  license: Attribution-NonCommercial
+  license_url: https://creativecommons.org/licenses/by-nc/2.0/
+  photographer: jane
+- photo_page: https://www.flickr.com/photos/cluttercup/16395047119/
+  title: Islington Academy session
+  photo_url: https://farm9.staticflickr.com/8608/16395047119_942a0f35b1_m.jpg
+  license: Attribution-NonCommercial
+  license_url: https://creativecommons.org/licenses/by-nc/2.0/
+  photographer: jane
+
+# The Comedy
 - photo_page: https://www.flickr.com/photos/rawfunkmaharishi/15010630514/
   title: The Comedy, October 2014
   photo_url: https://farm6.staticflickr.com/5602/15010630514_0e44c0dfc4_m.jpg
@@ -20,12 +53,6 @@
 - photo_page: https://www.flickr.com/photos/rawfunkmaharishi/15444724049/
   title: The Comedy, October 2014
   photo_url: https://farm4.staticflickr.com/3946/15444724049_1281b5890a_m.jpg
-  license: Attribution-NonCommercial-ShareAlike
-  license_url: https://creativecommons.org/licenses/by-nc-sa/2.0/
-  photographer: kim
-- photo_page: https://www.flickr.com/photos/rawfunkmaharishi/15607756696/
-  title: The Comedy, October 2014
-  photo_url: https://farm6.staticflickr.com/5601/15607756696_ff8fb1e61e_m.jpg
   license: Attribution-NonCommercial-ShareAlike
   license_url: https://creativecommons.org/licenses/by-nc-sa/2.0/
   photographer: kim
