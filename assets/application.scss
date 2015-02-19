@@ -355,3 +355,11 @@ code {
 .navbar-default .navbar-toggle .icon-bar {
   background-color: $gray;
 }
+
+.merch {
+  img {
+    max-width: 100%;
+  }
+
+  font-size: 1.5em;
+}
