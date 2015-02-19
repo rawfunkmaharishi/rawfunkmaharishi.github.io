@@ -14,7 +14,7 @@ FlickRaw.shared_secret = ENV['FLICKR_SECRET']
 
 licenses = flickr.photos.licenses.getInfo
 
-yaml = File.open '_data/pictures.yml', 'w'
+yaml = File.open '_data/intermediate_pictures.yml', 'w'
 
 l = []
 
@@ -30,6 +30,8 @@ f['photo'].each do |p|
   license = licenses.select {|l| l['id'] == data['license']}[0]
   h['license'] = license['name'].split(' License')[0]
   h['license_url'] = license['url']
+  h['photographer'] = 'jane'
+  h['title'] = 'Islington Academy session'
 
   data['tags'].each do |tag|
     if tag['raw'].match('photographer')
