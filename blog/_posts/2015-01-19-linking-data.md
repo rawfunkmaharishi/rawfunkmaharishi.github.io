@@ -58,7 +58,7 @@ I guess one day this stuff will show up on the right-hand side of the page when 
 
 ##Certified Open Data
 
-Something else we've developed at the ODI is the [Open Data Certificate](https://certificates.theodi.org/), so of course I [got a certificate for this data](http://rawfunkmaharishi.uk/about/).
+Something else we've developed at the ODI is the [Open Data Certificate](https://certificates.theodi.org/), so of course I [got a certificate for this data](http://rawfunkmaharishi.uk/licensing/).
 
 ##Help yourself
 
