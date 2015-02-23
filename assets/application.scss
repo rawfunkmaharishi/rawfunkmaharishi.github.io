@@ -349,9 +349,14 @@ code {
 }
 
 .band-member {
-  h1 {
+  h1, h2, h3, h4 {
     margin-top: 0px;
   }
+  h2, h3, h4 {
+    text-align: center;
+    font-size: 0.7em;
+  }
+  
   .twitter {
     font-size: 1em;
     margin-top: -12px;

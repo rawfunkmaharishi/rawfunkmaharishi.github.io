@@ -1,18 +1,24 @@
 - name:          Joe
-  image:         scofield.jpg
+  image:         joe.jpg
   instrument:    Guitar
-  image_caption: John Scofield, by Wikipedia user nomo. CC BY-SA 2.5
-  image_url:     http://commons.wikimedia.org/wiki/File:John-scofield.jpg
+  image_caption: Joe
+  photographer:  jane
+  license:       Attribution-NonCommercial
+  license_url:   https://creativecommons.org/licenses/by-nc/2.0/
 
 - name:          Matt
-  image:         jamerson.jpg
+  image:         matt.jpg
   instrument:    Bass
-  image_caption: James Jamerson, by Wikipedia user Experimento69. CC BY-SA 3.0
-  image_url:     http://en.wikipedia.org/wiki/James_Jamerson#mediaviewer/File:James_Jamerson.jpeg
+  image_caption: Matt
+  photographer:  jane
+  license:       Attribution-NonCommercial
+  license_url:   https://creativecommons.org/licenses/by-nc/2.0/
 
 - name:          Sam
-  image:         purdie.jpg
+  image:         sam.jpg
   instrument:    Drums
-  image_caption: Bernard Purdie, by Flickr user Geoff Bosco. CC BY 2.0
-  image_url:     https://www.flickr.com/photos/109434304@N07/16072593055/
+  image_caption: Sam
+  photographer:  jane
   twitter:       pikesley
+  license:       Attribution-NonCommercial
+  license_url:   https://creativecommons.org/licenses/by-nc/2.0/
