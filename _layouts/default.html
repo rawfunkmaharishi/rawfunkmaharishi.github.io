@@ -18,6 +18,9 @@
     {% unless page.no_header %}
       {% include header.html trim_class = page.trim_class %}
     {% endunless %}
+    {% if page.with_nav %}
+      {% include navigation.html %}
+    {% endif %}
     <div class='container'>
       {% unless page.no_title %}
         {% assign title = page.title %}
