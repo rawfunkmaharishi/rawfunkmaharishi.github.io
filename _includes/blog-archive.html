@@ -6,7 +6,7 @@
       {% if forloop.rindex > 1 %}
         {% assign hr = true %}
       {% endif %}
-      {% include blost-link.html title = blost.title url = blost.url no_excerpts = include.no_excerpts excerpt = blost.excerpt hr = hr %}
+      {% include blost-link.html title = blost.title url = blost.url no_excerpts = include.no_excerpts excerpt = blost.excerpt hr = hr with_caps = include.with_caps %}
     {% endunless %}
   {% endfor %}
 </dl>

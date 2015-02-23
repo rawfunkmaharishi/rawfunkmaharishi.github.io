@@ -125,10 +125,8 @@ $header-height: 270px;
   }
 }
 
-.blog-page {
-  dt {
-    text-transform: uppercase;
-  }
+dt.heading {
+  text-transform: uppercase;
 }
 
 /* Nav styles
@@ -356,7 +354,7 @@ code {
     text-align: center;
     font-size: 0.7em;
   }
-  
+
   .twitter {
     font-size: 1em;
     margin-top: -12px;
@@ -382,10 +380,6 @@ code {
 
 .navbar-default .navbar-toggle .icon-bar {
   background-color: $gray;
-}
-
-ul.mobile {
-  //height: 5em;
 }
 
 .merch {

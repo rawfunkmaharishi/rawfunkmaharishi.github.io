@@ -1,4 +1,8 @@
-<dt>
+<dt
+{% if include.with_caps %}
+ class='heading'
+{% endif %}
+>
   <a href='{{ include.url }}'>{{ include.title }}</a>
 </dt>
 {% unless include.no_excerpts %}
