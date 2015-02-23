@@ -9,10 +9,10 @@ title: The Band
         <div class='thumbnail band-member'>
           <img src='/assets/images/the-band/{{ member.image }}' alt='{{ member.image_caption }}' title='{{ member.image_caption }}' class='thumb' />
           <div class='caption'>
-            <h1 class='text-center'>{{ member.name }}</h1>
+            <h1>{{ member.name }}</h1>
 
             {% if member.twitter %}
-              <h2 class='text-center twitter'>
+              <h2 class='twitter'>
                 <a href='https://twitter.com/{{ member.twitter }}' alt='{{ member.name }} on Twitter' title='{{ member.name }} on Twitter'>@{{ member.twitter }}</a>
               </h2>
             {% endif %}

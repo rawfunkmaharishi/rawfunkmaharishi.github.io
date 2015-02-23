@@ -18,6 +18,10 @@ a {
   color: $rfm-green;
 }
 
+h1, h2, h3, h4 {
+  text-align: center;
+}
+
 /* Sticky footer styles
 -------------------------------------------------- */
 
@@ -347,10 +351,10 @@ code {
 }
 
 .band-member {
-  h1, h2, h3, h4 {
+  h1, h2, h3 {
     margin-top: 0px;
   }
-  h2, h3, h4 {
+  h2, h3 {
     text-align: center;
     font-size: 0.7em;
   }
