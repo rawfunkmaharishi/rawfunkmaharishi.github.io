@@ -3,13 +3,11 @@ title: The Band
 ---
 
 <div class='row'>
-  <div class='col-md-3'></div>
     {% for member in site.data.band %}
       {% capture url %}/assets/images/the-band/{{ member.image }}{% endcapture %}
-      {% include picture.html cols = 2 class = 'band-member' url = url title = member.name photographer = member.photographer license = member.license license_url = member.license_url twitter = member.twitter index = forloop.rindex0 %}
+      {% include picture.html cols = 4 class = 'band-member' url = url title = member.name photographer = member.photographer license = member.license license_url = member.license_url twitter = member.twitter index = forloop.rindex0 %}
 
     {% endfor %}
-  <div class='col-md-3'></div>
 </div>
 
 {% include book-us.html %}
