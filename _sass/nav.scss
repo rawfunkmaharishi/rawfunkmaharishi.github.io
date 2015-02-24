@@ -1,0 +1,42 @@
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border: none;
+   padding-top: 2px;
+   font-weight: bolder;
+   text-transform: uppercase;
+
+  a {
+    color: black;
+  }
+
+  ul {
+    color: black;
+    font-size: 1.5em;
+    line-height: 4px;
+    text-align: right;
+  }
+}
+
+.nav {
+  li {
+    a:hover, a:focus {
+      background-color: $rfm-orange;
+      opacity: 0.7;
+    }
+  }
+}
+
+/* mobile version */
+.navbar-default .navbar-toggle {
+  border-color: $gray;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: $rfm-green;
+  opacity: 0.5;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: $gray;
+}

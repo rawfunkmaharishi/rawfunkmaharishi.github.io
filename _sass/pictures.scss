@@ -1,0 +1,60 @@
+$flickr-height: 160px;
+
+.flickr {
+  h1, h2, h3 {
+    font-size: 1em;
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+
+  h2, h3 {
+    font-size: 0.7em;
+  }
+
+  .caption dl {
+    padding-top: 0px;
+    margin-top: 0px;
+    font-size: 0.7em;
+  }
+
+  .caption dt {
+  }
+
+  .caption dd {
+  }
+
+  img {
+    max-height: $flickr-height;
+  }
+}
+
+img.thumb {
+  max-height: 200px;
+}
+
+.caption {
+  h1, h2 {
+    color: black;
+  }
+}
+
+.band-member {
+  h1, h2, h3 {
+    margin-top: 0px;
+  }
+
+  h2, h3 {
+    text-align: center;
+    font-size: 0.7em;
+  }
+
+  .twitter {
+    font-size: 1em;
+    margin-top: -12px;
+    text-transform: lowercase;
+  }
+}
+
+.thumbnail {
+  border: none;
+}

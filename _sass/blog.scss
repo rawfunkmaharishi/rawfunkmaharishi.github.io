@@ -1,0 +1,59 @@
+.blog {
+  background: $rfm-orange;
+  background-image: url('/assets/images/backgrounds/background_orange.jpg');
+  opacity: 1;
+
+ .nav {
+    li {
+
+      a:hover, a:focus {
+        background-color: $rfm-green;
+        opacity: 0.9;
+      }
+    }
+  }
+
+  .links {
+    a:hover, a:focus {
+      background-color: $rfm-green;
+      opacity: 0.9;
+    }
+  }
+}
+
+.sidebar {
+  text-align: right;
+  h2 {
+    font-size: 2.5em;
+  }
+  font-size: 0.5em;
+  background-color: $rfm-orange;
+  background-image: url('/assets/images/backgrounds/background_orange.jpg');
+  padding-top: $padding-small-vertical;
+  margin-bottom: $padding-large-vertical;
+
+  dt {
+    padding-bottom: $padding-large-vertical;
+  }
+}
+
+.blost {
+  text-transform: none;
+}
+
+.blog-archive {
+  list-style-type: none;
+  font-size: 2em;
+
+  dd {
+    font-size: 0.7em;
+    padding-bottom: $padding-small-vertical;
+  }
+}
+
+code {
+  font-family: 'Ubuntu Mono';
+  color: $gray-lighter;
+  background-color: $gray-dark;
+  font-size: 0.8em;
+}
