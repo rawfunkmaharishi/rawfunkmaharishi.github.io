@@ -242,18 +242,17 @@ p.splash{
 
 .giglist {
   padding-bottom: $padding-large-vertical;
-  h2, h3 {
-    text-align: left;
-  }
 
   h2 {
     text-transform: uppercase;
   }
-}
 
-.gig-archive {
-  h3 {
-    font-size: 1em;
+  .past-gigs {
+    font-size: 1.2em;
+  }
+
+  .future-gigs {
+    font-size: 2em;
   }
 }
 
