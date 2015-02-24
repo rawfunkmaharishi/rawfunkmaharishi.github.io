@@ -1,0 +1,21 @@
+<div class='col-md-3 thumbnail flickr'>
+  <a href='{{ include.photo_page }}' title='View full-size on Flickr'>
+    <img src='{{ include.url }}' alt='{{ include.title }}'/>
+  </a>
+  <div class='caption'>
+    <h1>
+      {{ include.title }}
+      {% if include.photographer %}
+        <small>
+          Photo by
+          <a href='{{ site.data.photographers[include.photographer].website }}'>
+            {{ include.photographer | capitalize }}
+          </a>
+        </small>
+      {% endif %}
+    </h1>
+    <h2>
+      License: <a href='{{ include.license_url }}'>{{ include.license }}</a>
+    </h2>
+  </div>
+</div>

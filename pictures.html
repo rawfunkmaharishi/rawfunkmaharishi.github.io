@@ -4,27 +4,7 @@ title: Pictures
 
 <div class='row'>
   {% for picture in site.data.pictures %}
-    <div class='col-md-3 thumbnail flickr'>
-      <a href='{{ picture["photo_page"] }}' title='View full-size on Flickr'>
-        <img src='{{ picture["photo_url"] }}' alt='{{ picture['title'] }}'/>
-      </a>
-      <div class='caption'>
-        <h1>
-          {{ picture['title'] }}
-          {% if picture['photographer'] %}
-            {% assign key = picture['photographer'] %}
-            {% assign url = site.data.photographers[key]['website'] %}
-            <small>
-              Photo by
-              <a href='{{ url }}'>
-                {{ picture['photographer'] | capitalize }}
-              </a>
-            </small>
-          {% endif %}
-        </h1>
-        <h2>License: <a href='{{ picture["license_url"]}}'>{{ picture['license']}}</a></h2>
-      </div>
-    </div>
+    {% include picture.html url = picture.photo_url title = picture.title photo_page = picture.photo_page photographer = picture.photographer license = picture.license license_url = picture.license_url %}
     {% cycle '', '', '', "</div><div class='row'>" %}
   {% endfor %}
 </div>
