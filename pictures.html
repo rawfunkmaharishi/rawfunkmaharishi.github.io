@@ -4,7 +4,7 @@ title: Pictures
 
 <div class='row'>
   {% for picture in site.data.pictures %}
-    {% include picture.html url = picture.photo_url title = picture.title photo_page = picture.photo_page photographer = picture.photographer license = picture.license license_url = picture.license_url %}
+    {% include picture.html cols = 3 class = 'flickr' url = picture.photo_url title = picture.title photo_page = picture.photo_page photographer = picture.photographer license = picture.license license_url = picture.license_url %}
     {% cycle '', '', '', "</div><div class='row'>" %}
   {% endfor %}
 </div>
