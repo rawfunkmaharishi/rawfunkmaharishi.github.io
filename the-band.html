@@ -5,35 +5,9 @@ title: The Band
 <div class='row'>
   <div class='col-md-3'></div>
     {% for member in site.data.band %}
-      <div class='col-md-2'>
-        <div class='thumbnail band-member'>
-          <img src='/assets/images/the-band/{{ member.image }}' alt='{{ member.image_caption }}' title='{{ member.image_caption }}' class='thumb' />
-          <div class='caption'>
-            <h1>{{ member.name }}</h1>
+      {% capture url %}/assets/images/the-band/{{ member.image }}{% endcapture %}
+      {% include picture.html cols = 2 class = 'band-member' url = url title = member.name photographer = member.photographer license = member.license license_url = member.license_url twitter = member.twitter index = forloop.rindex0 %}
 
-            {% if member.twitter %}
-              <h2 class='twitter'>
-                <a href='https://twitter.com/{{ member.twitter }}' alt='{{ member.name }} on Twitter' title='{{ member.name }} on Twitter'>@{{ member.twitter }}</a>
-              </h2>
-            {% endif %}
-
-            {% if member['photographer'] %}
-              {% assign key = member['photographer'] %}
-              {% assign url = site.data.photographers[key]['website'] %}
-              <h3>
-                Photo by
-                <a href='{{ url }}'>
-                  {{ member['photographer'] | capitalize }}
-                </a>. License: <a href='{{ member["license_url"]}}'>{{ member['license']}}</a>
-              </h3>
-            {% endif %}
-
-          </div>
-          {% if forloop.rindex0 > 0 %}
-            <hr class='hidden-md hidden-lg visible-sm visible-xs' />
-          {% endif %}
-        </div>
-      </div>
     {% endfor %}
   <div class='col-md-3'></div>
 </div>

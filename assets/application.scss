@@ -284,13 +284,6 @@ p.splash{
   }
 }
 
-.clinton {
-  padding-top: $padding-large-vertical;
-  h2 {
-    padding-top: $padding-large-vertical;
-  }
-}
-
 .license-note {
     text-align: center;
     font-size: 1em;
@@ -306,7 +299,6 @@ p.splash{
   font-size: 2em;
 
   dd {
-  //  text-transform: none;
     font-size: 0.7em;
     padding-bottom: $padding-small-vertical;
   }
@@ -350,9 +342,6 @@ code {
 .reviews {
   dt {
     font-size: 1.5em;
-//    background-color: $gray-lighter;
-//    padding-left: 5px;
-//    padding-right: 5px;
   }
 
   dd {
@@ -365,6 +354,7 @@ code {
   h1, h2, h3 {
     margin-top: 0px;
   }
+
   h2, h3 {
     text-align: center;
     font-size: 0.7em;
@@ -374,6 +364,10 @@ code {
     font-size: 1em;
     margin-top: -12px;
     text-transform: lowercase;
+  }
+
+  img {
+    max-height: $flickr-height;
   }
 }
 

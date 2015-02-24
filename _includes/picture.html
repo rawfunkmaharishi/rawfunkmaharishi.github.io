@@ -1,12 +1,26 @@
 <div class='col-md-{{ include.cols}} thumbnail {{ include.class }}'>
-  <a href='{{ include.photo_page }}'>
-    <img src='{{ include.url }}' alt='{{ include.title }}'/>
-  </a>
+  {% if include.photo_page %}
+    <a href='{{ include.photo_page }}'>
+  {% endif %}
+
+  <img src='{{ include.url }}' alt='{{ include.title }}'/>
+
+  {% if include.photo_page %}
+    </a>
+  {% endif %}
+
   <div class='caption'>
     <h1>
       {{ include.title }}
     </h1>
-    <h2>
+
+    {% if include.twitter %}
+      <h2 class='twitter'>
+        <a href='https://twitter.com/{{ include.twitter }}' alt='{{ include.title }} on Twitter' title='{{ include.title }} on Twitter'>@{{ member.twitter }}</a>
+      </h2>
+    {% endif %}
+
+    <h3>
       {% if include.photographer %}
         Photo by
         <a href='{{ site.data.photographers[include.photographer].website }}'>
@@ -14,6 +28,10 @@
         </a> -
       {% endif %}
       License: <a href='{{ include.license_url }}'>{{ include.license }}</a>
-    </h2>
+    </h3>
+
+    {% if include.index > 0 %}
+      <hr class='hidden-md hidden-lg visible-sm visible-xs' />
+    {% endif %}
   </div>
 </div>
