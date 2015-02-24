@@ -22,10 +22,9 @@
 
     <h3>
       {% if include.photographer %}
-        Photo by
+        Photographer:
         <a href='{{ site.data.photographers[include.photographer].website }}'>
-          {{ include.photographer | capitalize }}
-        </a> -
+          {{ include.photographer | capitalize }}</a>,
       {% endif %}
       License: <a href='{{ include.license_url }}'>{{ include.license }}</a>
     </h3>
