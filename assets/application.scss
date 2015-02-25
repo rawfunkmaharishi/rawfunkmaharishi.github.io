@@ -16,7 +16,6 @@ body {
 }
 
 h1 {
-  color: $rfm-orange;
 }
 
 a {
@@ -31,6 +30,7 @@ h1, h2, h3, h4 {
   font-weight: bolder;
   text-align: center;
   text-transform: uppercase;
+  color: $rfm-orange;
 }
 
 .plain {
@@ -65,13 +65,14 @@ p.splash{
 .subtitle {
   margin-top: 0px;
   text-align: center;
-  color: $gray-light;
   font-size: 1em;
 }
 
 .book-us, .call-for-feedback {
+  h1 {
+    font-size: 1.2em;
+  }
   font-weight: lighter;
-  color: $gray-light;
 }
 
 .reviews {
@@ -91,7 +92,11 @@ p.splash{
     background-color: $gray-lighter;
   }
 
-  font-size: 1.5em;
+  font-size: 1em;
+
+  ul {
+    font-size: 1.5em;
+  }
 }
 
 .certificate {
@@ -99,10 +104,11 @@ p.splash{
 }
 
 .soundcloud {
-  h2 {
+  h1 {
     font-size: 0.7em;
     padding: 5px;
     margin: 0px;
+    color: black;
   }
 }
 

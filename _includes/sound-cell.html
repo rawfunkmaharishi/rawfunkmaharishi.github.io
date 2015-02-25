@@ -1,8 +1,8 @@
 <div class='col-md-{{ include.width }}'>
-  <div class='thumbnail soundcloud'>
+  <section class='thumbnail soundcloud'>
     <div class='embed-responsive embed-responsive-16by9'>
       {% include sound.html id = include.id %}
     </div>
-    <h2>Recorded at {{ include.location }}, {{ include.date | date_to_long_string }}</h2>
-  </div>
+    <h1>Recorded at {{ include.location }}, {{ include.date | date_to_long_string }}</h1>
+  </section>
 </div>
