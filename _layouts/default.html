@@ -29,10 +29,10 @@
         {% endif %}
         <h1 class='main-title'>{{ title }}</h1>
       {% endunless %}
+      {{ content }}
       {% if page.license_these %}
         {% include license_note.html licensed = page.license_these version = page.license_version %}
       {% endif %}
-      {{ content }}
     </div>
     {% include footer.html trim_class = page.trim_class %}
   </body>
