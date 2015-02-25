@@ -57,9 +57,9 @@ p.splash{
 }
 
 .license-note {
-    text-align: center;
-    font-size: 1em;
-    margin-top: 0px;
+  text-align: center;
+  font-size: 1em;
+  margin-top: 0px;
 }
 
 .subtitle {
@@ -103,5 +103,13 @@ p.splash{
     font-size: 0.7em;
     padding: 5px;
     margin: 0px;
+  }
+}
+
+.attribution {
+  font-size: 0.5em;
+  background: $rfm-orange;
+  a {
+    color: $rfm-green;
   }
 }

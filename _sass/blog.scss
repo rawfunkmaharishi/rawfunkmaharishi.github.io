@@ -25,6 +25,7 @@
   text-align: right;
   h2 {
     font-size: 2.5em;
+    text-align: right;
   }
   font-size: 0.5em;
   background-color: $rfm-orange;
@@ -35,10 +36,6 @@
   dt {
     padding-bottom: $padding-large-vertical;
   }
-}
-
-.blost {
-  text-transform: none;
 }
 
 .blog-archive {

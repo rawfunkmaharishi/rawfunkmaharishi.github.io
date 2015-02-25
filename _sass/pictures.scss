@@ -3,7 +3,6 @@ $flickr-height: 160px;
 .flickr {
   h1, h2, h3 {
     font-size: 1em;
-    padding-top: 0px;
     margin-top: 0px;
   }
 
@@ -11,27 +10,10 @@ $flickr-height: 160px;
     font-size: 0.7em;
   }
 
-  dl {
-    padding-top: 0px;
-    margin-top: 0px;
-    font-size: 0.7em;
-  }
-
-  dt {
-  }
-
-  dd {
-  }
-
   img {
     max-height: $flickr-height;
   }
 }
-
-// Suspect this one is redundant
-//img.thumb {
-//  max-height: 200px;
-//}
 
 .caption {
   h1, h2 {
@@ -45,7 +27,6 @@ $flickr-height: 160px;
   }
 
   h2, h3 {
-    text-align: center;
     font-size: 0.7em;
   }
 

@@ -4,7 +4,6 @@ $header-height: 270px;
   top: 0;
   width: 100%;
 
-  background: $brand-primary;
   background-image: url('/assets/images/backgrounds/background.jpg');
   height: $header-height;
   margin-top: 0px;
@@ -20,11 +19,6 @@ $header-height: 270px;
     height: auto;
     position: relative;
     top: -200px;
-  }
-
-  p {
-    text-transform: uppercase;
-    text-align: right;
   }
 
   .header-container {
