@@ -6,12 +6,12 @@ license_version: 3.0
 
 <div class='row'>
   {% for video in site.data.videos %}
-  <div class='col-md-6'>
-    <div class='thumbnail'>
-      <div class='embed-responsive embed-responsive-16by9'>
-        {% include video.html id = video.id %}
-      </div>
+    <div class='col-md-6'>
+      <section class='thumbnail'>
+        <div class='embed-responsive embed-responsive-16by9'>
+          {% include video.html id = video.id %}
+        </div>
+      </section>
     </div>
-  </div>
   {% endfor %}
 </div>
