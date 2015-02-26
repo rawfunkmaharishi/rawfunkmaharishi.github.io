@@ -3,6 +3,25 @@
     <div class='embed-responsive embed-responsive-16by9'>
       {% include sound.html id = include.id %}
     </div>
-    <h1>Recorded at {{ include.location }}, {{ include.date | date_to_long_string }}</h1>
+    <dl class='dl-horizontal'>
+      <dt>
+        Recorded at:
+      </dt>
+      <dd>
+        {{ include.location }}
+      </dd>
+      <dt>
+        Date:
+      </dt>
+      <dd>
+        {{ include.date | date_to_long_string }}
+      </dd>
+      <dt>
+        License:
+      </dt>
+      <dd>
+        <a href='{{ include.license_url}}'>{{ site.data.licenses[include.license].short-name }}</a>
+      </dd>
+    </dl>
   </section>
 </div>

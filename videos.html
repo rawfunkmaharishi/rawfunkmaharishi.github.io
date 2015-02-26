@@ -1,16 +1,22 @@
 ---
 title: Videos
-license_these: videos
-license_version: 3.0
 ---
 
 <div class='row'>
   {% for video in site.data.videos %}
     <div class='col-md-6'>
-      <section class='thumbnail'>
+      <section class='thumbnail vimeo'>
         <div class='embed-responsive embed-responsive-16by9'>
           {% include video.html id = video.id %}
         </div>
+        <dl class='dl-horizontal'>
+          <dt>
+            License:
+          </dt>
+          <dd>
+            <a href='{{ video.license_url}}'>{{ site.data.licenses[video.license].short-name }}</a>
+          </dd>
+        </dl>
       </section>
     </div>
   {% endfor %}

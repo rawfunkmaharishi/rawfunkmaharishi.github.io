@@ -1,7 +1,5 @@
 ---
 title: Sounds
-license_these: tracks
-license_version: 3.0
 ---
 
 <script src="http://connect.soundcloud.com/sdk.js"></script>
@@ -12,16 +10,16 @@ license_version: 3.0
 </script>
 
 <div class='row'>
-  {% include sound-cell.html id = site.data.sounds.first.id location = site.data.sounds.first.location date = site.data.sounds.first.date width = 6 %}
+  {% include sound-cell.html id = site.data.sounds.first.id location = site.data.sounds.first.location date = site.data.sounds.first.date license = site.data.sounds.first.license license_url = site.data.sounds.first.license_url width = 6 %}
   <div class='col-md-6'>
     <div class='row'>
       {% for sound in site.data.sounds limit:2 offset:1 %}
-        {% include sound-cell.html id = sound.id location = sound.location date = sound.date width = 6 %}
+        {% include sound-cell.html id = sound.id location = sound.location date = sound.date license = sound.license license_url = sound.license_url width = 6 %}
       {% endfor %}
     </div>
     <div class='row'>
       {% for sound in site.data.sounds limit:2 offset:3 %}
-        {% include sound-cell.html id = sound.id location = sound.location date = sound.date width = 6 %}
+        {% include sound-cell.html id = sound.id location = sound.location date = sound.date license = sound.license license_url = sound.license_url width = 6 %}
       {% endfor %}
     </div>
   </div>
@@ -29,6 +27,6 @@ license_version: 3.0
 
 <div class='row'>
   {% for sound in site.data.sounds limit:4 offset:5 %}
-    {% include sound-cell.html id = sound.id location = sound.location date = sound.date width = 3 %}
+    {% include sound-cell.html id = sound.id location = sound.location date = sound.date license = sound.license license_url = sound.license_url width = 3 %}
   {% endfor %}
 </div>

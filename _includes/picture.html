@@ -21,14 +21,23 @@
         </h3>
       {% endif %}
 
-      <h2>
+      <dl class='dl-horizontal'>
         {% if include.photographer %}
-          Photographer:
-          <a href='{{ site.data.photographers[include.photographer].website }}'>
-            {{ include.photographer | capitalize }}</a>,
+          <dt>
+            Photographer:
+          </dt>
+          <dd>
+            <a href='{{ site.data.photographers[include.photographer].website }}'>
+            {{ include.photographer | capitalize }}</a>
+          </dd>
         {% endif %}
-        License: <a href='{{ include.license_url }}'>{{ include.license }}</a>
-      </h2>
+        <dt>
+          License:
+        </dt>
+        <dd>
+          <a href='{{ include.license_url }}'>{{ site.data.licenses[include.license].short-name }}</a>
+        </dd>
+      </dl>
 
       {% if include.index > 0 %}
         <hr class='hidden-md hidden-lg visible-sm visible-xs' />
