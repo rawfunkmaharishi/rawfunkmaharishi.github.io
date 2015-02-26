@@ -1,16 +1,18 @@
-<dt
-{% if include.with_caps %}
- class='heading'
-{% endif %}
->
-  <a href='{{ include.url }}'>{{ include.title }}</a>
-</dt>
-{% unless include.no_excerpts %}
-  <dd>
-    {{ include.excerpt | strip_html | truncate: 150, '...' }}
-    <span class='small'><a href='{{ include.url }}'>[read more]</a></span>
-  </dd>
-  {% if include.hr %}
-    <hr />
+<section>
+  <dt
+  {% if include.with_caps %}
+   class='heading'
   {% endif %}
-{% endunless %}
+  >
+    <a href='{{ include.url }}'>{{ include.title }}</a>
+  </dt>
+  {% unless include.no_excerpts %}
+    <dd>
+      {{ include.excerpt | strip_html | truncate: 150, '...' }}
+      <span class='small'><a href='{{ include.url }}'>[read more]</a></span>
+    </dd>
+    {% if include.hr %}
+      <hr />
+    {% endif %}
+  {% endunless %}
+</section>

@@ -1,36 +1,38 @@
-<div class='col-md-{{ include.cols}} thumbnail {{ include.class }}'>
-  {% if include.photo_page %}
-    <a href='{{ include.photo_page }}'>
-  {% endif %}
-
-  <img src='{{ include.url }}' alt='{{ include.title }}'/>
-
-  {% if include.photo_page %}
-    </a>
-  {% endif %}
-
-  <div class='caption'>
-    <h1>
-      {{ include.title }}
-    </h1>
-
-    {% if include.twitter %}
-      <h2 class='twitter'>
-        <a href='https://twitter.com/{{ include.twitter }}' alt='{{ include.title }} on Twitter' title='{{ include.title }} on Twitter'>@{{ member.twitter }}</a>
-      </h2>
+<div class='col-md-{{ include.cols}}'>
+  <section class='thumbnail {{ include.class }}'>
+    {% if include.photo_page %}
+      <a href='{{ include.photo_page }}'>
     {% endif %}
 
-    <h3>
-      {% if include.photographer %}
-        Photographer:
-        <a href='{{ site.data.photographers[include.photographer].website }}'>
-          {{ include.photographer | capitalize }}</a>,
+    <img src='{{ include.url }}' alt='{{ include.title }}'/>
+
+    {% if include.photo_page %}
+      </a>
+    {% endif %}
+
+    <div class='caption'>
+      <h1>
+        {{ include.title }}
+      </h1>
+
+      {% if include.twitter %}
+        <h3 class='twitter'>
+          <a href='https://twitter.com/{{ include.twitter }}' alt='{{ include.title }} on Twitter' title='{{ include.title }} on Twitter'>@{{ member.twitter }}</a>
+        </h3>
       {% endif %}
-      License: <a href='{{ include.license_url }}'>{{ include.license }}</a>
-    </h3>
 
-    {% if include.index > 0 %}
-      <hr class='hidden-md hidden-lg visible-sm visible-xs' />
-    {% endif %}
-  </div>
+      <h2>
+        {% if include.photographer %}
+          Photographer:
+          <a href='{{ site.data.photographers[include.photographer].website }}'>
+            {{ include.photographer | capitalize }}</a>,
+        {% endif %}
+        License: <a href='{{ include.license_url }}'>{{ include.license }}</a>
+      </h2>
+
+      {% if include.index > 0 %}
+        <hr class='hidden-md hidden-lg visible-sm visible-xs' />
+      {% endif %}
+    </div>
+  </section>
 </div>

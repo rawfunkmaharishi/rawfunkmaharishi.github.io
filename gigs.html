@@ -14,37 +14,44 @@ title: Gigs
 
     <div class='col-md-2'></div>
     <div class='col-md-4'>
-      <h2>Upcoming</h2>
-      <dl class='dl-horizontal future-gigs'>
+      <section>
 
-        {% for post in site.categories.gigs reversed %}
-          {% capture postseconds %}{{ post.date | date: '%s' }}{% endcapture %}
-          {% capture future %}{{ nowseconds | minus:postseconds }}{% endcapture %}
-          {% if future < '0' %}
-            {% capture upcoming_gigs %}{{ 'true' }}{% endcapture %}
-            {% include gig.html date = post.date url = post.url title = post.title %}
+        <h2>Upcoming</h2>
+        <dl class='dl-horizontal future-gigs'>
+
+          {% for post in site.categories.gigs reversed %}
+            {% capture postseconds %}{{ post.date | date: '%s' }}{% endcapture %}
+            {% capture future %}{{ nowseconds | minus:postseconds }}{% endcapture %}
+            {% if future < '0' %}
+              {% capture upcoming_gigs %}{{ 'true' }}{% endcapture %}
+              {% include gig.html date = post.date url = post.url title = post.title %}
+            {% endif %}
+          {% endfor %}
+          {% if upcoming_gigs != 'true' %}
+            <dt class='title'>Nothing in the calendar. Why not <a href='/book-the-band/'>book us?</a></dt>
           {% endif %}
-        {% endfor %}
-        {% if upcoming_gigs != 'true' %}
-          <dt class='title'>Nothing in the calendar. Why not <a href='/book-the-band/'>book us?</a></dt>
-        {% endif %}
 
-      </dl>
+        </dl>
+      </section>
     </div>
 
     <div class='col-md-4'>
-      <h2>Archive</h2>
-      <dl class='dl-horizontal past-gigs'>
+      <section>
 
-        {% for post in site.categories.gigs %}
-          {% capture postseconds %}{{ post.date | date: '%s' }}{% endcapture %}
-          {% capture future %}{{ nowseconds | minus:postseconds }}{% endcapture %}
-          {% if future > '0' %}
-            {% include gig.html date = post.date url = post.url title = post.title %}
-          {% endif %}
-        {% endfor %}
+        <h2>Archive</h2>
+        <dl class='dl-horizontal past-gigs'>
 
-      </dl>
+          {% for post in site.categories.gigs %}
+            {% capture postseconds %}{{ post.date | date: '%s' }}{% endcapture %}
+            {% capture future %}{{ nowseconds | minus:postseconds }}{% endcapture %}
+            {% if future > '0' %}
+              {% include gig.html date = post.date url = post.url title = post.title %}
+            {% endif %}
+          {% endfor %}
+
+        </dl>
+
+      </section>
     </div>
     <div class='col-md-2'></div>
   </div>
