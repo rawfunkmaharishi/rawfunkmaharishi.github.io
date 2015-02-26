@@ -73,6 +73,7 @@ p.splash{
   h1 {
     font-size: 1.2em;
   }
+  
   font-weight: lighter;
 }
 
@@ -102,14 +103,6 @@ p.splash{
 
 .certificate {
   padding-bottom: 10px;
-}
-
-.attribution {
-  font-size: 0.5em;
-  background: $rfm-orange;
-  a {
-    color: $rfm-green;
-  }
 }
 
 // cargo-culted straight outta bootstrap
