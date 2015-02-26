@@ -16,9 +16,6 @@ body {
   color: black;
 }
 
-h1 {
-}
-
 a {
   color: $rfm-green;
 }
@@ -34,6 +31,10 @@ h1, h2, h3, h4 {
   color: $rfm-orange;
 }
 
+p {
+  font-size: 1.5em;
+}
+
 .plain {
   background-image: none;
   opacity: 0.7;
@@ -41,10 +42,6 @@ h1, h2, h3, h4 {
 
 dt.heading {
   text-transform: uppercase;
-}
-
-p {
-  font-size: 1.5em;
 }
 
 .splash {
@@ -73,7 +70,7 @@ p.splash{
   h1 {
     font-size: 1.2em;
   }
-  
+
   font-weight: lighter;
 }
 
