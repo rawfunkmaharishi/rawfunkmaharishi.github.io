@@ -10,6 +10,7 @@
 @import 'nav';
 @import 'pictures';
 @import 'gigs';
+@import 'credits';
 
 body {
   color: black;
@@ -103,19 +104,26 @@ p.splash{
   padding-bottom: 10px;
 }
 
-.soundcloud {
-  h1 {
-    font-size: 0.7em;
-    padding: 5px;
-    margin: 0px;
-    color: black;
-  }
-}
-
 .attribution {
   font-size: 0.5em;
   background: $rfm-orange;
   a {
     color: $rfm-green;
+  }
+}
+
+// cargo-culted straight outta bootstrap
+.dl-horizontal {
+  @media (min-width: 0) {
+    dt {
+      float: left;
+      width: ($dl-horizontal-offset - 20);
+      clear: left;
+      text-align: right;
+      @include text-overflow();
+    }
+    dd {
+      margin-left: $dl-horizontal-offset;
+    }
   }
 }
