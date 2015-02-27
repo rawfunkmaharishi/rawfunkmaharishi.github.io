@@ -1,4 +1,4 @@
-# Featured track
+# Featured tracks
 - title:       Bernard
   id:          192841052
   location:    Islington Academy
@@ -6,7 +6,6 @@
   license:     Attribution-NonCommercial-ShareAlike
   license_url: http://creativecommons.org/licenses/by-nc-sa/3.0/
 
-# Four to the right
 - title:       Junalbandi
   id:          193005357
   location:    Islington Academy
@@ -14,6 +13,7 @@
   license:     Attribution-NonCommercial-ShareAlike
   license_url: http://creativecommons.org/licenses/by-nc-sa/3.0/
 
+# Second row
 - title:       Beer Of Course But Why?
   id:          193006525
   location:    Islington Academy
@@ -35,7 +35,6 @@
   license:     Attribution-NonCommercial-ShareAlike
   license_url: http://creativecommons.org/licenses/by-nc-sa/3.0/
 
-# Four along the bottom
 - title:       Old Cotswold Legbar
   id:          191432275
   location:    Rogue Studios
@@ -43,6 +42,7 @@
   license:     Attribution-NonCommercial-ShareAlike
   license_url: http://creativecommons.org/licenses/by-nc-sa/3.0/
 
+# Bottom row
 - title:       Not Bernard
   id:          190803089
   location:    Rogue Studios
@@ -64,6 +64,13 @@
   license:     Attribution-NonCommercial-ShareAlike
   license_url: http://creativecommons.org/licenses/by-nc-sa/3.0/
 
+- title:       Trapped In Hawaii
+  id:          162634747
+  location:    Enterprise Studios
+  date:        '2014-08-05'
+  license:     Attribution-NonCommercial-ShareAlike
+  license_url: http://creativecommons.org/licenses/by-nc-sa/3.0/
+
 # Sorry, you will not currently be shown
 - title:       Aquamarine
   id:          132829451
@@ -72,11 +79,6 @@
 
 - title:       Siren
   id:          160530965
-  location:    Unknown
-  date:        '1970-01-01'
-
-- title:       Trapped In Hawaii
-  id:          162634747
   location:    Unknown
   date:        '1970-01-01'
 
