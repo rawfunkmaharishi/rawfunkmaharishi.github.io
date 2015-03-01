@@ -6,7 +6,7 @@ title: What people are saying about us
   <div class='col-md-3'></div>
   <div class='col-md-6'>
     <dl class='reviews'>
-      {% for review in site.data.reviews %}
+      {% for review in site.data.reviews reversed %}
         <dt>
           '{{ review.quote }}'
         </dt>
