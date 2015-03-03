@@ -10,20 +10,20 @@ title: Sounds
 </script>
 
 <div class='row'>
-  {% for sound in site.data.sounds limit:2 %}
+  {% for sound in site.data.soundcloud limit:2 %}
   {% include sound-cell.html id = sound.id location = sound.location date = sound.date license = sound.license license_url = sound.license_url width = 6 %}
   {% endfor %}
 </div>
 
 <div class='row'>
-  {% for sound in site.data.sounds limit:4 offset:2 %}
+  {% for sound in site.data.soundcloud limit:4 offset:2 %}
     {% include sound-cell.html id = sound.id location = sound.location date = sound.date license = sound.license license_url = sound.license_url width = 3 %}
   {% endfor %}
 </div>
 
 
 <div class='row'>
-  {% for sound in site.data.sounds limit:4 offset:6 %}
+  {% for sound in site.data.soundcloud limit:4 offset:6 %}
     {% include sound-cell.html id = sound.id location = sound.location date = sound.date license = sound.license license_url = sound.license_url width = 3 %}
   {% endfor %}
 </div>
