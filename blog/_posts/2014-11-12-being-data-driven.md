@@ -44,7 +44,7 @@ Take a look at [this](https://github.com/rawfunkmaharishi/rawfunkmaharishi.githu
     longitude:   -0.1032551
     ---
 
-That's all the data we need to describe a Raw Funk Maharishi gig (or at least it is for now, it would be trivially easy to support other fields for EventBrite or whatever). Jekyll rummages through our site, looking for any files within *_posts/* directories and rendering them as pages - it also parses the filenames to give us a nice _/YYYY/MM/DD/title-slug/_ URL, as well as _page.date_ and _page.title_ - and because of [this bit](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/_config.yml#L9-L14) in *_config.yml* it defaults to using the [gig layout](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/_layouts/gig.html),
+That's all the data we need to describe a Raw Funk Maharishi gig (or at least it is for now, it would be trivially easy to support other fields for EventBrite or whatever). Jekyll rummages through our site, looking for any files within *_posts/* directories and rendering them as pages - it also parses the filenames to give us a nice _/YYYY/MM/DD/title-slug/_ URL, as well as _page.date_ and _page.title_ - and because of [this bit](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/_config.yml#L9-L16) in *_config.yml* it defaults to using the [gig layout](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/_layouts/gig.html),
 which has access to those items via _page.location_, etc:
 
 {% raw %}
@@ -78,6 +78,6 @@ which has access to those items via _page.location_, etc:
 
 and of course _page.latitude_ and _page.longitude_ with which it [renders an OSM map](http://rawfunkmaharishi.uk/blog/2014/11/10/embedding-open-street-map/).
 
-This data is also exposed as _site.categories.gigs_ - the hash key there is the directory under which our *_posts* appear, we also have _site.categories.blog_ on this site, as well as all *_posts* as _site.posts_ - which we can [iterate through to construct an archive page](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/gigs.html#L16-L23).
+This data is also exposed as _site.categories.gigs_ - the hash key there is the directory under which our *_posts* appear, we also have _site.categories.blog_ on this site, as well as all *_posts* as _site.posts_ - which we can [iterate through to construct an archive page](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/gigs.html#L22-L32).
 
 I have a nagging feeling that this might be a misuse of tools (a gig is not really a blog post), but I'm still feeling my way around Jekyll and this works just fine for now.
