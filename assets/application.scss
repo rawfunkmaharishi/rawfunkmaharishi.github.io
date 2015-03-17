@@ -118,3 +118,14 @@ p.splash{
     }
   }
 }
+
+#floatDiv {
+  position:absolute;
+  top:20%;
+  left:0%;
+  font-size: 1em;
+  color: $rfm-orange;
+  opacity: 0.7;
+  margin: 0px;
+  padding: 0px;
+}
