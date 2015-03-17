@@ -15,7 +15,7 @@ with_nav: true
 
   <div class="panel panel-info next-gig">
     <div class="panel-body">
-      Next gig:<br/><a href='{{ next_gig.url }}'>{{ next_gig.date | date_to_long_string}}<br />{{ next_gig.title }}</a>
+      Next gig: <a href='{{ next_gig.url }}'>{{ next_gig.date | date_to_long_string}} at {{ next_gig.title }}</a>
     </div>
   </div>
 {% endif %}
