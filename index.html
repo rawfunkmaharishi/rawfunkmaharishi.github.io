@@ -7,26 +7,17 @@ no_title: true
 trim_class: plain
 with_nav: true
 ---
-<script language="javascript">
-  $(document).ready(function(){
-    $(window).scroll(function () {
-      set = $(document).scrollTop()+"px";
-      $('#floatDiv').animate({top:set},{duration:1000,queue:false});
-    });
-  });
-</script>
 
 {% assign next_gig = site.categories.gigs.first %}
 {% capture gigseconds %}{{ next_gig.date | date: '%s' }}{% endcapture %}
 {% capture future %}{{ nowseconds | minus:gigseconds }}{% endcapture %}
 {% if future < '0' %}
-<div id="floatDiv">
-  <div class="panel panel-default">
+
+  <div class="panel panel-info next-gig">
     <div class="panel-body">
-      Next gig: <a href='{{ next_gig.url }}'>{{ next_gig.date | date_to_long_string}} at {{ next_gig.title }}</a>
+      Next gig:<br/><a href='{{ next_gig.url }}'>{{ next_gig.date | date_to_long_string}}<br />{{ next_gig.title }}</a>
     </div>
   </div>
-</div>
 {% endif %}
 
 <img src='/assets/images/logos/wide/banner.png'

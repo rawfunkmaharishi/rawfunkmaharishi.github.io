@@ -119,13 +119,14 @@ p.splash{
   }
 }
 
-#floatDiv {
+.next-gig {
   position:absolute;
-  top:20%;
-  left:0%;
-  font-size: 1.2em;
+  bottom:20%;
+  right:1%;
+  font-size: 1.3em;
   color: $rfm-orange;
-  opacity: 0.7;
+  opacity: 0.8;
   margin: 0px;
   padding: 0px;
+  text-align: right;
 }
