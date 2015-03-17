@@ -8,6 +8,18 @@ trim_class: plain
 with_nav: true
 ---
 
+{% assign next_gig = site.categories.gigs.first %}
+{% capture gigseconds %}{{ next_gig.date | date: '%s' }}{% endcapture %}
+{% capture future %}{{ nowseconds | minus:gigseconds }}{% endcapture %}
+{% if future < '0' %}
+
+  <div class="panel panel-info next-gig">
+    <div class="panel-body">
+      Next gig:<br/><a href='{{ next_gig.url }}'>{{ next_gig.date | date_to_long_string}}<br />{{ next_gig.title }}</a>
+    </div>
+  </div>
+{% endif %}
+
 <img src='/assets/images/logos/wide/banner.png'
      alt='Raw Funk Maharish'
      class='splash center-block hidden-xs hidden-sm'/>
