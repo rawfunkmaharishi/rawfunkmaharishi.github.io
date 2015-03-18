@@ -10,11 +10,11 @@
 }
 
 .expanding-circle {
-  width: 60px; height: 60px;
-  top: -5px; left: 6px;
+  width: 100px; height: 100px;
+  top: -23px; left: -11px;
 
   animation: pulsate 1.8s ease-out infinite;
-  border: 2px solid $rfm-orange;;
+  border: 5px dotted $rfm-orange;
   border-radius: 100%;
   opacity: 1;
   position: absolute;
