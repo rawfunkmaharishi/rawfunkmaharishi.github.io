@@ -12,9 +12,10 @@ with_nav: true
 {% capture gigseconds %}{{ next_gig.date | date: '%s' }}{% endcapture %}
 {% capture future %}{{ nowseconds | minus:gigseconds }}{% endcapture %}
 {% if future < '0' %}
-
   <div class="panel panel-info next-gig">
     <div class="panel-body">
+      <div class="expanding-circle"></div>
+
       Next gig: <a href='{{ next_gig.url }}'>{{ next_gig.date | date_to_long_string}} at {{ next_gig.title }}</a>
     </div>
   </div>

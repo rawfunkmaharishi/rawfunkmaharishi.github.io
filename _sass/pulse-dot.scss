@@ -1,6 +1,6 @@
 .pulse-dot {
   width: 6px; height: 6px;
-  top: 53%; left: 69%;
+  top: 0%; left: 0%;
 
   background-color: #ffffff;
   border: 2px solid #000000;
@@ -11,10 +11,10 @@
 
 .expanding-circle {
   width: 60px; height: 60px;
-  top: 82px; right: 40px;
+  top: -5px; left: 6px;
 
   animation: pulsate 1.8s ease-out infinite;
-  border: 2px solid $gray-light;
+  border: 2px solid $rfm-orange;;
   border-radius: 100%;
   opacity: 1;
   position: absolute;
