@@ -119,25 +119,3 @@ p.splash{
     }
   }
 }
-
-.next-gig {
-  position:absolute;
-  bottom:11%;
-  right:1%;
-  font-size: 1em;
-  background-color: $rfm-green;
-  color: $rfm-orange;
-  opacity: 0.7;
-  margin: 0px;
-  padding: 0px;
-  text-align: right;
-
-  a {
-    color: black;
-  }
-
-  a:hover {
-    background-color: $rfm-orange;
-    text-decoration: none;
-  }
-}
