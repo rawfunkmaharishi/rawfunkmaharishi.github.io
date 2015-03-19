@@ -11,9 +11,6 @@
 
     <!-- desktop -->
     <ul class='nav nav-stacked nav-pills pull-right hidden-xs hidden-sm' role='tablist'>
-      {% if include.with_circle %}
-        <div class="expanding-circle"></div>
-      {% endif %}
       {% for item in site.data.navigation %}
         {% include nav-item.html title = item.title path = item.path current = page.url %}
       {% endfor %}
