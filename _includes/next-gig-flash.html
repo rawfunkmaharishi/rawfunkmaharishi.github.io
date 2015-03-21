@@ -1,0 +1,12 @@
+{% assign next_gig = site.categories.gigs.first %}
+{% capture gigseconds %}{{ next_gig.date | date: '%s' }}{% endcapture %}
+{% capture nowseconds %}{{ 'now' | date: '%s' }}{% endcapture %}
+{% capture future %}{{ nowseconds | minus:gigseconds }}{% endcapture %}
+{% if future < '0' %}
+  <div class="panel panel-info next-gig">
+    <div class="panel-body">
+      <div class="throbbing-gristle"></div>
+      Next gig: <a href='{{ next_gig.url }}'>{{ next_gig.date | date: "%A %-d %B" }} at {{ next_gig.title }}</a>
+    </div>
+  </div>
+{% endif %}
