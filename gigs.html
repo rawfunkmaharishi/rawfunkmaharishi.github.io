@@ -27,11 +27,10 @@ title: Gigs
               {% include gig.html date = post.date url = post.url title = post.title %}
             {% endif %}
           {% endfor %}
-          {% if upcoming_gigs != 'true' %}
-            <dt class='title'>Nothing in the calendar. Why not <a href='/book-the-band/'>book us?</a></dt>
-          {% endif %}
-
         </dl>
+        {% if upcoming_gigs != 'true' %}
+          <p>Nothing in the calendar. Why not <a href='/book-the-band/'>book us?</a></p>
+        {% endif %}
       </section>
     </div>
 
