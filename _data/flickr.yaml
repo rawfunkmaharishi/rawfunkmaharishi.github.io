@@ -1,4 +1,11 @@
 ---
+- title: New Cross Inn
+  date: '2015-07-06'
+  photo_page: https://www.flickr.com/photos/rawfunkmaharishi/19437246576/
+  photo_url: https://farm1.staticflickr.com/409/19437246576_69eeebcd10_m.jpg
+  license: Attribution-NonCommercial-ShareAlike
+  license_url: https://creativecommons.org/licenses/by-nc-sa/2.0/
+  photographer: sam
 - title: Raw Funk Maharishi
   date: '2015-02-18'
   photo_page: https://www.flickr.com/photos/cluttercup/15950875724/
@@ -129,13 +136,6 @@
   date: '2014-10-22'
   photo_page: https://www.flickr.com/photos/rawfunkmaharishi/15628658301/
   photo_url: https://farm6.staticflickr.com/5609/15628658301_16132cf4ff_m.jpg
-  license: Attribution-NonCommercial-ShareAlike
-  license_url: https://creativecommons.org/licenses/by-nc-sa/2.0/
-  photographer: kim
-- title: The Comedy, October 2014
-  date: '2014-10-22'
-  photo_page: https://www.flickr.com/photos/rawfunkmaharishi/15011139813/
-  photo_url: https://farm4.staticflickr.com/3956/15011139813_24453e4922_m.jpg
   license: Attribution-NonCommercial-ShareAlike
   license_url: https://creativecommons.org/licenses/by-nc-sa/2.0/
   photographer: kim
