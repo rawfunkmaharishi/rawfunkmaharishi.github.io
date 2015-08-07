@@ -13,7 +13,15 @@
     {% endif %}
     <title>{{ title }}</title>
 
-    {% include open-graph.html title = page.title %}
+    {% if title contains 'Gig ' %}
+      {% capture title %}Raw Funk Maharishi LIVE at {{ page.location | split:"," | first }} on {{ page.date | date_to_long_string }} at {{ page.time }}{% endcapture %}
+
+      {% capture description %}Raw Funk Maharishi will bring the LIVE FUNK to {{ page.location }} on {{ page.date | date_to_long_string }} at {{ page.time }}{% endcapture %}
+    {% else %}
+      {% capture title %}Raw Funk Maharishi » {{ title }}{% endcapture %}
+    {% endif %}
+
+    {% include open-graph.html title = title description = description %}
 
   </head>
 
