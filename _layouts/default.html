@@ -12,6 +12,10 @@
       {% capture title %}{{ page.pretitle}} » {{ page.title }}{% endcapture %}
     {% endif %}
     <title>{{ title }}</title>
+
+    {% include open-graph.html title = page.title %}
+
+
   </head>
 
   <body>
