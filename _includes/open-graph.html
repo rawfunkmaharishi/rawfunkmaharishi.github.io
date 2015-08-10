@@ -1,9 +1,15 @@
+{% assign description = 'Raw Funk Maharishi, exploring the deep funk grooves of the 70s, fused with improvised avant-groove jams' %}
+{% if page.gig_og %}
+  {% capture title %}Raw Funk Maharishi LIVE at {{ page.location | split:"," | first }} on {{ page.date | date_to_long_string }} at {{ page.time }}{% endcapture %}
+
+  {% capture description %}Raw Funk Maharishi will bring the LIVE FUNK to {{ page.location }} on {{ page.date | date_to_long_string }} at {{ page.time }}{% endcapture %}
+{% else %}
+  {% capture title %}Raw Funk Maharishi » {{ page.title }}{% endcapture %}
+{% endif %}
+
 {% assign og_site = 'http://rawfunkmaharishi.uk' %}
 {% assign og_site_name = 'Raw Funk Maharishi' %}
-{% assign description = 'Raw Funk Maharishi, exploring the deep funk grooves of the 70s, fused with improvised avant-groove jams' %}
-{% if include.description %}
-  {% assign description = include.description %}
-{% endif %}
+
 
 <meta property="og:title" content="{{ title }}" />
 <meta property="og:site_name" content="{{ og_site_name }}" />
