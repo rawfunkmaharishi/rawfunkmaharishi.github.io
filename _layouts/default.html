@@ -13,7 +13,7 @@
     {% endif %}
     <title>{{ title }}</title>
 
-    {% if title contains 'Gig ' %}
+    {% if page.gig_og %}
       {% capture title %}Raw Funk Maharishi LIVE at {{ page.location | split:"," | first }} on {{ page.date | date_to_long_string }} at {{ page.time }}{% endcapture %}
 
       {% capture description %}Raw Funk Maharishi will bring the LIVE FUNK to {{ page.location }} on {{ page.date | date_to_long_string }} at {{ page.time }}{% endcapture %}
