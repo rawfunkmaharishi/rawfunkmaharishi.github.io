@@ -3,7 +3,7 @@
   "@context" : "http://schema.org",
   "@type" : "MusicEvent",
   "name" : "Raw Funk Maharishi live at {{ include.title }}",
-  "startDate" : "{{ include.date }}T{{ include.time }}",
+  "startDate" : "{{ include.date | date: "%Y-%m-%d" }}T{{ include.time }}",
   "location" : {
     "@type" : "Place",
     "name" : "{{ include.title }}",
