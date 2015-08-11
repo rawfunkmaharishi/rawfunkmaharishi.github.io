@@ -10,7 +10,7 @@ In the source of [this gig page](http://rawfunkmaharishi.uk/gigs/2015/01/15/namb
       "@context" : "http://schema.org",
       "@type" : "MusicEvent",
       "name" : "Raw Funk Maharishi live at Nambucca",
-      "startDate" : "2015-01-15 00:00:00 +0000T20:00",
+      "startDate" : "2015-01-15T20:00",
       "location" : {
         "@type" : "Place",
         "name" : "Nambucca",
@@ -37,7 +37,7 @@ This is a job for [yet another Jekyll *_include*](https://github.com/rawfunkmaha
       "@context" : "http://schema.org",
       "@type" : "MusicEvent",
       "name" : "Raw Funk Maharishi live at {{ include.title }}",
-      "startDate" : "{{ include.date }}T{{ include.time }}",
+      "startDate" : "{{ include.date | date: "%Y-%m-%d" }}T{{ include.time }}",
       "location" : {
         "@type" : "Place",
         "name" : "{{ include.title }}",
