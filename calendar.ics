@@ -31,7 +31,7 @@ END:VTIMEZONE
 {% capture start_time %}{{ gig.date | date: '%Y%m%d' }}T{{ gig.time | replace: ':', ''}}00{% endcapture %}
 BEGIN:VEVENT
 UID:{{ start_time }}@rawfunkmaharishi.uk
-DTSTART;TZID='Europe/London':{{ start_time }}
+DTSTART;TZID=Europe/London:{{ start_time }}
 DTEND;TZID=Europe/London:{{ gig.date | date: '%Y%m%d' }}T230000
 SUMMARY:Raw Funk Maharishi live at {{ gig.title }}
 DESCRIPTION:{{ gig.location }}
