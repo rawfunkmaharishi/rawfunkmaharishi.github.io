@@ -2,11 +2,12 @@
 title: Gigs
 ---
 
+{% include constants.html %}
 {% assign upcoming_gigs = '' %}
 {% capture nowseconds %}
   {{ 'now' | date: '%s' }}
 {% endcapture %}
-{% capture nowseconds %}{{ nowseconds | minus:86400 }}{% endcapture %}
+{% capture nowseconds %}{{ nowseconds | minus:time_offset }}{% endcapture %}
 
 {% include calendar-subscribe.html %}
 
