@@ -1,4 +1,5 @@
 {% capture nowseconds %}{{ 'now' | date: '%s' }}{% endcapture %}
+{% capture nowseconds %}{{ nowseconds | minus:86400 }}{% endcapture %}
 
 {% for gig in site.categories.gigs reversed %}
   {% capture gigseconds %}{{ gig.date | date: '%s' }}{% endcapture %}

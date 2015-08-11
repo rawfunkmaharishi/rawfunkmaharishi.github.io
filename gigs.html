@@ -6,6 +6,7 @@ title: Gigs
 {% capture nowseconds %}
   {{ 'now' | date: '%s' }}
 {% endcapture %}
+{% capture nowseconds %}{{ nowseconds | minus:86400 }}{% endcapture %}
 
 {% include calendar-subscribe.html %}
 
