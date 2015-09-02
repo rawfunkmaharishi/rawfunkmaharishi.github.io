@@ -26,7 +26,7 @@ title: Gigs
             {% capture future %}{{ nowseconds | minus:postseconds }}{% endcapture %}
             {% if future < '0' %}
               {% capture upcoming_gigs %}{{ 'true' }}{% endcapture %}
-              {% include gig.html date = post.date url = post.url title = post.title %}
+              {% include gig.html date = post.date url = post.url title = post.title with_day = true %}
             {% endif %}
           {% endfor %}
         </dl>
