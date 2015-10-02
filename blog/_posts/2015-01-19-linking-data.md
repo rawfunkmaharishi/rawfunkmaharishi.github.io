@@ -1,4 +1,4 @@
-Due to working at the [Open Data Institute](http://theodi.org), I sometimes cross paths with [Sir Tim Berners-Lee](http://www.w3.org/People/Berners-Lee/), and it was from him I learned that musicians are using [JSON-LD](http://json-ld.org/) to publish [Linked Data](http://linkeddata.org/) about their live performances.
+Due to working at the [Open Data Institute](http://theodi.org), I sometimes cross paths with [Sir Tim Berners-Lee](https://theodi.org/team/timbl), and it was from him I learned that musicians are using [JSON-LD](http://json-ld.org/) to publish [Linked Data](http://linkeddata.org/) about their live performances.
 
 ##What does JSON-LD look like, then?
 
