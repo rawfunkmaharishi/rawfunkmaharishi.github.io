@@ -27,8 +27,12 @@
             Photographer:
           </dt>
           <dd>
-            <a href='{{ site.data.photographers[include.photographer].website }}'>
-            {{ include.photographer | capitalize }}</a>
+            {% if site.data.photographers[include.photographer].website %}
+              <a href='{{ site.data.photographers[include.photographer].website }}'>
+              {{ include.photographer | capitalize }}</a>
+            {% else %}
+              {{ include.photographer | capitalize }}
+            {% endif %}
           </dd>
         {% endif %}
         <dt>
