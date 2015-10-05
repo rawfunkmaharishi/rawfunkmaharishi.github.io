@@ -1,4 +1,4 @@
-{% capture description %}Raw Funk Maharishi, {{ site.data.attributes.strapline | downcase }}{% endcapture %}
+{% capture description %}Raw Funk Maharishi, {{ site.data.attributes.strapline.opengraph }}{% endcapture %}
 {% if page.gig_og %}
   {% capture title %}Raw Funk Maharishi LIVE at {{ page.location | split:"," | first }} on {{ page.date | date_to_long_string }} at {{ page.time }}{% endcapture %}
 
