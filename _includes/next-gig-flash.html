@@ -12,6 +12,9 @@
         Next gig: <a href='{{ gig.url }}'>{{ gig.date | date: "%A %-d %B" }} at {{ gig.title }}</a>
       </div>
     </div>
+
+    {% include json-ld.html title = gig.title date = gig.date time = gig.time location = gig.location %}
+
     {% break %}
   {% endif %}
 {% endfor %}
