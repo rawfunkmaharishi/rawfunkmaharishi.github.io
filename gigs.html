@@ -2,12 +2,10 @@
 title: Gigs
 ---
 
-{% include constants.html %}
 {% assign upcoming_gigs = '' %}
 {% capture nowseconds %}
   {{ 'now' | date: '%s' }}
 {% endcapture %}
-{% capture nowseconds %}{{ nowseconds | minus:time_offset }}{% endcapture %}
 
 {% include calendar-subscribe.html %}
 
@@ -22,7 +20,8 @@ title: Gigs
         <dl class='dl-horizontal future-gigs'>
 
           {% for post in site.categories.gigs reversed %}
-            {% capture postseconds %}{{ post.date | date: '%s' }}{% endcapture %}
+            {% capture datetime %}{{ post.date | date: '%Y-%m-%d' }}T{{ post.time }}{% endcapture %}
+            {% capture postseconds %}{{ datetime | date: '%s' }}{% endcapture %}
             {% capture future %}{{ nowseconds | minus:postseconds }}{% endcapture %}
             {% if future < '0' %}
               {% capture upcoming_gigs %}{{ 'true' }}{% endcapture %}
@@ -43,7 +42,8 @@ title: Gigs
         <dl class='dl-horizontal past-gigs'>
 
           {% for post in site.categories.gigs %}
-            {% capture postseconds %}{{ post.date | date: '%s' }}{% endcapture %}
+            {% capture datetime %}{{ post.date | date: '%Y-%m-%d' }}T{{ post.time }}{% endcapture %}
+            {% capture postseconds %}{{ datetime | date: '%s' }}{% endcapture %}
             {% capture future %}{{ nowseconds | minus:postseconds }}{% endcapture %}
             {% if future > '0' %}
               {% include gig.html date = post.date url = post.url title = post.title %}

@@ -1,9 +1,8 @@
-{% include constants.html %}
 {% capture nowseconds %}{{ 'now' | date: '%s' }}{% endcapture %}
-{% capture nowseconds %}{{ nowseconds | minus:time_offset }}{% endcapture %}
 
 {% for gig in site.categories.gigs reversed %}
-  {% capture gigseconds %}{{ gig.date | date: '%s' }}{% endcapture %}
+  {% capture datetime %}{{ gig.date | date: '%Y-%m-%d' }}T{{ gig.time }}{% endcapture %}
+  {% capture gigseconds %}{{ datetime | date: '%s' }}{% endcapture %}
   {% capture future %}{{ nowseconds | minus:gigseconds }}{% endcapture %}
   {% if future < '0' %}
     <div class="panel panel-info next-gig">
