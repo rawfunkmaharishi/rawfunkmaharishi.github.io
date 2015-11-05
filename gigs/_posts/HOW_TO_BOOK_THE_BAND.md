@@ -1,6 +1,7 @@
 #Book us by pull-request
 
-* Clone the repo
+* Fork the repo
+* Clone your fork
 * Create a branch
 * Create a YAML file here (in `gigs/_posts/`), named as `YYYY-MM-DD-this-bit-will-become-the-title.yml`
 * containing these fields:
