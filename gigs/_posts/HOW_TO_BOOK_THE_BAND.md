@@ -50,6 +50,6 @@ This will also embed JSON-LD in the event page:
 </script>
 ```
 
-because who doesn't like a bit of Linked Data?
+because who doesn't like a bit of [Linked Data](http://rawfunkmaharishi.uk/blog/2015/01/19/linking-data/)?
 
 Seriously, if you do this, you have a _very very good chance_ of us playing your show
