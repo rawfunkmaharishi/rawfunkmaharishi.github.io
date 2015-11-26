@@ -10,6 +10,14 @@
       <dd>
         {{ include.location }}
       </dd>
+      {% if include.engineer %}
+      <dt>
+        Engineered by:
+      </dt>
+      <dd>
+        {{ include.engineer }}
+      </dd>
+      {% endif %}
       <dt>
         Date:
       </dt>
