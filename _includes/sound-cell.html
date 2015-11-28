@@ -10,14 +10,16 @@
       <dd>
         {{ include.location }}
       </dd>
-      {% if include.engineer %}
       <dt>
         Engineered by:
       </dt>
       <dd>
-        {{ include.engineer }}
+        {% if include.engineer %}
+          {{ include.engineer }}
+        {% else %}
+          Joe
+        {% endif %}
       </dd>
-      {% endif %}
       <dt>
         Date:
       </dt>
