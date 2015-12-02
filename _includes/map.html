@@ -1,6 +1,7 @@
 <!-- I Cargo-Culted this so hard I still have marks from the bamboo headphones -->
 <div id='map' class='map'></div>
 <script src='http://openlayers.org/api/OpenLayers.js'></script>
+
 <script>
     var lat            = {{ include.latitude }};
     var lon            = {{ include.longitude }};
@@ -12,8 +13,26 @@
 
     map = new OpenLayers.Map('map');
 
-    var mapnik         = new OpenLayers.Layer.OSM();
-    map.addLayer(mapnik);
+    {% if site.data.attributes.map_tiles %}
+
+      var layer = new OpenLayers.Layer.OSM('{{ site.data.attributes.map_tiles }}', [
+        {% assign url = site.data.maps[site.data.attributes.map_tiles].generic_url %}
+        {% if url %}
+          {% assign first = url | split: '[' %}
+          {% assign last = first[1] | split: ']' %}
+          {% assign hosts = last[0] | split: '' %}
+          {% for host in hosts %}
+            '{{ first[0] }}{{ host }}{{ last[1] | replace: '/{', '/${' }}',
+          {% endfor %}
+        {% else %}
+          {{ site.data.maps[site.data.attributes.map_tiles].url | replace: '/{', '/${' }}
+        {% endif %}
+      ]);
+    {% else %}
+      var layer = new OpenLayers.Layer.OSM();
+    {% endif %}
+
+    map.addLayer(layer);
 
     var markers = new OpenLayers.Layer.Markers( 'Markers' );
     map.addLayer(markers);

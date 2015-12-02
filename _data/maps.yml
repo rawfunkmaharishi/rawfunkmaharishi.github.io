@@ -1,0 +1,5 @@
+Pioneer:
+  generic_url: https://[abc].tile.thunderforest.com/pioneer/{z}/{x}/{y}.png
+
+Watercolor:
+  generic_url: http://[abc].tile.stamen.com/watercolor/{z}/{x}/{y}.jpg
