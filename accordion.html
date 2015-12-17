@@ -1,0 +1,39 @@
+---
+title: accordion
+---
+
+<ul class='list-inline'>
+  <li>
+    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      Collapsible Group Item #1
+    </a>
+  </li>
+  <li>
+    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+      Collapsible Group Item #2
+    </a>
+  </li>
+  <li>
+    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+      Collapsible Group Item #3
+    </a>
+  </li>
+</ul>
+
+<div class="panel-group" id="accordion" aria-multiselectable="true">
+  <div class="panel">
+    <p id="collapseOne" class="panel-collapse collapse in">
+      words
+    </p>
+  </div>
+  <div class="panel">
+    <p id="collapseTwo" class="panel-collapse collapse">
+      words
+    </p>
+  </div>
+  <div class="panel">
+    <p id="collapseThree" class="panel-collapse collapse">
+      words
+    </p>
+  </div>
+</div>
