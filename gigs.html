@@ -42,8 +42,14 @@ title: Gigs
         <dl class='dl-horizontal past-gigs'>
 
           {% assign year = site.data.attributes.current_year %}
-          <div id='gigs-{{ year }}'>
-            <h3>{{ year }}</h3>
+            <a class='collapsed'
+               data-toggle='collapse'
+               href='#gigs-{{ year }}'
+               aria-expanded='false'
+               aria-controls='gigs-{{ year }}'>
+              <h3>{{ year }}</h3>
+            </a>
+          <div id='gigs-{{ year }}' class='collapse'>
           {% for post in site.categories.gigs %}
             {% capture datetime %}{{ post.date | date: '%Y-%m-%d' }}T{{ post.time }}{% endcapture %}
             {% capture postseconds %}{{ datetime | date: '%s' }}{% endcapture %}
@@ -54,8 +60,14 @@ title: Gigs
               {% if gigyear < year %}
                 {% assign year = gigyear %}
                 </div>
-                <div id='gigs-{{ year }}'>
+                <a class='collapsed'
+                   data-toggle='collapse'
+                   href='#gigs-{{ year }}'
+                   aria-expanded='false'
+                   aria-controls='gigs-{{ year }}'>
                   <h3>{{ year }}</h3>
+                </a>
+                <div id='gigs-{{ year }}' class='collapse'>
               {% endif %}
               {% include gig.html date = post.date url = post.url title = post.title %}
             {% endif %}
