@@ -39,8 +39,9 @@ title: Gigs
       <section>
 
         <h2>Archive</h2>
-        <div class="panel-group" id="accordion" aria-multiselectable="true">
-          {% assign year = site.data.attributes.years[0] %}
+        <div class='panel-group' id='accordion' aria-multiselectable='true'>
+          {% capture year %}{{ 'now' | date: '%Y' }}{% endcapture %}
+          {% assign year = year | plus: 0 %}
           <div class='panel'>
             <div class='panel-heading'>
               <a class='collapsed'
