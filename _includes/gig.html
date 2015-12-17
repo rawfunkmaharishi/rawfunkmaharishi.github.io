@@ -1,4 +1,4 @@
-{% capture date_string %}{{ include.date | date: "%-d %B %Y" }}{% endcapture %}
+{% capture date_string %}{{ include.date | date: "%-d %B" }}{% endcapture %}
 {% if include.with_day == true %}
   {% capture date_string %}{{ include.date | date: "%A %-d %B" }}{% endcapture %}
 {% endif %}
