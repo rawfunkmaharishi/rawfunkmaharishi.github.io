@@ -58,7 +58,7 @@ title: Gigs
         <div class="panel-group" id="accordion" aria-multiselectable="true">
           {% assign year = site.data.attributes.years[0] %}
           <div class='panel'>
-            <dl id='gigs-{{ year }}' class='panel-collapse collapse dl-horizontal'>
+            <dl id='gigs-{{ year }}' class='panel-collapse collapse in dl-horizontal'>
               {% for post in site.categories.gigs %}
                 {% capture datetime %}{{ post.date | date: '%Y-%m-%d' }}T{{ post.time }}{% endcapture %}
                 {% capture postseconds %}{{ datetime | date: '%s' }}{% endcapture %}
