@@ -39,25 +39,19 @@ title: Gigs
       <section>
 
         <h2>Archive</h2>
-        <ul class='list-inline text-center past-gigs'>
-
-          {% for year in site.data.attributes.years %}
-            <li>
+        <div class="panel-group" id="accordion" aria-multiselectable="true">
+          {% assign year = site.data.attributes.years[0] %}
+          <div class='panel'>
+            <div class='panel-heading'>
               <a class='collapsed'
                  data-parent='#accordion'
                  data-toggle='collapse'
                  href='#gigs-{{ year }}'
                  aria-expanded='false'
                  aria-controls='gigs-{{ year }}'>
-                <h3>{{ year }}</h3>
+                <h3 class='panel-title'>{{ year }}</h3>
               </a>
-            </li>
-          {% endfor %}
-        </ul>
-
-        <div class="panel-group" id="accordion" aria-multiselectable="true">
-          {% assign year = site.data.attributes.years[0] %}
-          <div class='panel'>
+            </div>
             <dl id='gigs-{{ year }}' class='panel-collapse collapse in dl-horizontal'>
               {% for post in site.categories.gigs %}
                 {% capture datetime %}{{ post.date | date: '%Y-%m-%d' }}T{{ post.time }}{% endcapture %}
@@ -71,6 +65,16 @@ title: Gigs
                       </dl>
                     </div>
                     <div class='panel'>
+                      <div class='panel-heading'>
+                        <a class='collapsed'
+                           data-parent='#accordion'
+                           data-toggle='collapse'
+                           href='#gigs-{{ year }}'
+                           aria-expanded='false'
+                           aria-controls='gigs-{{ year }}'>
+                          <h3 class='panel-title'>{{ year }}</h3>
+                        </a>
+                      </div>
                       <dl id='gigs-{{ year }}' class='panel-collapse collapse dl-horizontal'>
                   {% endif %}
                   {% include gig.html date = post.date url = post.url title = post.title %}
