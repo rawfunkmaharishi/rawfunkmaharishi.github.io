@@ -2,9 +2,66 @@
 title: Pictures
 ---
 
+<div id="photo-carousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    {% assign count = 0 %}
+    {% for picture in site.data.flickr %}
+      <li data-target="#photo-carousel" data-slide-to="{{ count }}"{% if count == 0 %} class='active'{% endif %}></li>
+      {% assign count = count | plus: 1 %}
+    {% endfor %}
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    {% assign count = 0 %}
+    {% for picture in site.data.flickr %}
+      <div class="item{% if count == 0 %} active{% endif %}">
+        {% assign count = count | plus: 1 %}
+        <img src="{{ picture.photo_url }}" alt="{{ picture.title }}">
+        <div class="carousel-caption">
+          <dl class='dl-horizontal'>
+            {% if picture.photographer %}
+              <dt>
+                Photographer:
+              </dt>
+              <dd>
+                {% if site.data.photographers[include.photographer].website %}
+                  <a href='{{ site.data.photographers[include.photographer].website }}'>
+                  {{ picture.photographer | capitalize }}</a>
+                {% else %}
+                  {{ picture.photographer | capitalize }}
+                {% endif %}
+              </dd>
+            {% endif %}
+            <dt>
+              License:
+            </dt>
+            <dd>
+              <a href='{{ picture.license_url }}'>{{ site.data.licenses[picture.license].short-name }}</a>
+            </dd>
+          </dl>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#photo-carousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#photo-carousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!--
 <div class='row'>
   {% for picture in site.data.flickr %}
     {% include picture.html cols = 3 class = 'flickr' url = picture.photo_url title = picture.title photo_page = picture.photo_page photographer = picture.photographer license = picture.license license_url = picture.license_url %}
     {% cycle '', '', '', "</div><div class='row'>" %}
   {% endfor %}
 </div>
+-->

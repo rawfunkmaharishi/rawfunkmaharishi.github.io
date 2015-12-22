@@ -2,3 +2,7 @@ photographer_lookups:
   cluttercup: jane
 
 default_title: Raw Funk Maharishi
+
+services:
+  Flickr:
+    size: 300
