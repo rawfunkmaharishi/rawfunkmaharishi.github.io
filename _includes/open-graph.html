@@ -1,15 +1,14 @@
 {% capture description %}Raw Funk Maharishi, {{ site.data.attributes.strapline.opengraph }}{% endcapture %}
 {% if page.gig_og %}
-  {% capture title %}Raw Funk Maharishi LIVE at {{ page.location | split:"," | first }} on {{ page.date | date_to_long_string }} at {{ page.time }}{% endcapture %}
+  {% capture title %}Raw Funk Maharishi LIVE at {{ page.title }}, {{ page.location | split:"," | first }} on {{ page.date | date_to_long_string }} at {{ page.time }}{% endcapture %}
 
-  {% capture description %}Raw Funk Maharishi will bring the LIVE FUNK to {{ page.location }} on {{ page.date | date_to_long_string }} at {{ page.time }}{% endcapture %}
+  {% capture description %}Raw Funk Maharishi will bring the LIVE FUNK to {{ page.title }}, {{ page.location }} on {{ page.date | date_to_long_string }} at {{ page.time }}{% endcapture %}
 {% else %}
   {% capture title %}Raw Funk Maharishi » {{ page.title }}{% endcapture %}
 {% endif %}
 
 {% assign og_site = 'http://rawfunkmaharishi.uk' %}
 {% assign og_site_name = 'Raw Funk Maharishi' %}
-
 
 <meta property="og:title" content="{{ title }}" />
 <meta property="og:site_name" content="{{ og_site_name }}" />
