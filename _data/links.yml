@@ -25,3 +25,7 @@
 - title:       Developer blog
   url:         /blog/
   fontawesome: fa-code
+
+- title:       Data API
+  url:         http://data.rawfunkmaharishi.uk/
+  fontawesome: fa-database
