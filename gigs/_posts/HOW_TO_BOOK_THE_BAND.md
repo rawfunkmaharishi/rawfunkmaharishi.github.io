@@ -3,7 +3,7 @@
 * Fork the repo
 * Clone your fork
 * Create a branch
-* Create a YAML file here (in `gigs/_posts/`), named as `YYYY-MM-DD-this-bit-will-become-the-title.yml`
+* Create a markdown file here (in `gigs/_posts/`), named as `YYYY-MM-DD-this-bit-will-become-the-title.md`
 * containing these fields:
 
 ```
@@ -17,7 +17,7 @@ longitude:   {is your place located?}
 ---
 ```
 
-(The dashes top-and-bottom are __important__. See this [existing event](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/gigs/_posts/2014-10-22-the-comedy.yml) as a guide)
+(The dashes top-and-bottom are __important__. See this [existing event](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/gigs/_posts/2014-10-22-the-comedy.md) as a guide)
 
 * `bundle`
 * `jekyll serve`
