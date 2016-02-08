@@ -22,10 +22,14 @@
   url:         https://github.com/rawfunkmaharishi/
   fontawesome: fa-github
 
+- title:       Snapchat
+  url:         /snapchat
+  fontawesome: fa-comment
+
 - title:       Data API
   url:         http://data.rawfunkmaharishi.uk/
   fontawesome: fa-database
-  
+
 - title:       Developer blog
   url:         /blog/
   fontawesome: fa-code
