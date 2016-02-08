@@ -22,10 +22,10 @@
   url:         https://github.com/rawfunkmaharishi/
   fontawesome: fa-github
 
-- title:       Developer blog
-  url:         /blog/
-  fontawesome: fa-code
-
 - title:       Data API
   url:         http://data.rawfunkmaharishi.uk/
   fontawesome: fa-database
+  
+- title:       Developer blog
+  url:         /blog/
+  fontawesome: fa-code
