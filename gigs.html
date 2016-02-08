@@ -38,52 +38,20 @@ title: Gigs
     <div class='col-md-4'>
       <section>
 
-        <h2>Archive</h2>
-        <div class='panel-group' id='accordion' aria-multiselectable='true'>
-          {% capture year %}{{ 'now' | date: '%Y' }}{% endcapture %}
-          {% assign year = year | plus: 0 %}
-          <div class='panel'>
-            <div class='panel-heading'>
-              <a class='collapsed'
-                 data-parent='#accordion'
-                 data-toggle='collapse'
-                 href='#gigs-{{ year }}'
-                 aria-expanded='false'
-                 aria-controls='gigs-{{ year }}'>
-                <h3 class='panel-title'>{{ year }}</h3>
-              </a>
-            </div>
-            <dl id='gigs-{{ year }}' class='panel-collapse collapse in dl-horizontal'>
-              {% for post in site.categories.gigs %}
-                {% capture datetime %}{{ post.date | date: '%Y-%m-%d' }}T{{ post.time }}{% endcapture %}
-                {% capture postseconds %}{{ datetime | date: '%s' }}{% endcapture %}
-                {% capture future %}{{ nowseconds | minus:postseconds }}{% endcapture %}
-                {% if future > '0' %}
-                  {% capture gigyear %}{{ post.date | date: '%Y' }}{% endcapture %}
-                  {% assign gigyear = gigyear | plus: 0 %}
-                  {% if gigyear < year %}
-                    {% assign year = gigyear %}
-                      </dl>
-                    </div>
-                    <div class='panel'>
-                      <div class='panel-heading'>
-                        <a class='collapsed'
-                           data-parent='#accordion'
-                           data-toggle='collapse'
-                           href='#gigs-{{ year }}'
-                           aria-expanded='false'
-                           aria-controls='gigs-{{ year }}'>
-                          <h3 class='panel-title'>{{ year }}</h3>
-                        </a>
-                      </div>
-                      <dl id='gigs-{{ year }}' class='panel-collapse collapse dl-horizontal'>
-                  {% endif %}
-                  {% include gig.html date = post.date url = post.url title = post.title %}
-                {% endif %}
-              {% endfor %}
-            </dl>
-          </div>
-        </div>
+
+          <h2>Archive</h2>
+          <dl class='dl-horizontal past-gigs'>
+
+            {% for post in site.categories.gigs %}
+              {% capture datetime %}{{ post.date | date: '%Y-%m-%d' }}T{{ post.time }}{% endcapture %}
+              {% capture postseconds %}{{ datetime | date: '%s' }}{% endcapture %}
+              {% capture future %}{{ nowseconds | minus:postseconds }}{% endcapture %}
+              {% if future > '0' %}
+                {% include gig.html date = post.date url = post.url title = post.title with_year = true %}
+              {% endif %}
+            {% endfor %}
+
+          </dl>
       </section>
     </div>
     <div class='col-md-2'></div>
