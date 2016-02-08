@@ -32,10 +32,10 @@
 
     <link rel='icon' type='image/png' href='/assets/favicon.ico' />
     <link rel='stylesheet' href='/assets/application.css' type='text/css' />
-    <style>body { background-image: url('/assets/images/backgrounds/background.jpg'); background-position: center }</style>
+    <style></style>
     
     
-    <title>Raw Funk Maharishi</title>
+    <title>Linking Data</title>
 
     
 
@@ -43,9 +43,9 @@
 
 
 
-<meta property="og:title" content="Raw Funk Maharishi » Raw Funk Maharishi" />
+<meta property="og:title" content="Raw Funk Maharishi » Linking Data" />
 <meta property="og:site_name" content="Raw Funk Maharishi" />
-<meta property="og:url" content="http://rawfunkmaharishi.uk/" />
+<meta property="og:url" content="http://rawfunkmaharishi.uk/blog/2015/01/19/linking-data/" />
 <meta property="og:description" content="Raw Funk Maharishi, exploring the deep funk grooves of the 70s, fused with improvised avant-groove jams" />
 <meta property="og:type" content="article" />
 <meta property="og:image" content="http://rawfunkmaharishi.uk/assets/images/logos/wide/header_green.png" />
@@ -55,8 +55,11 @@
 
   <body>
     
-    
-      <nav class='navbar navbar-default' role='navigation'>
+      <div class='header '>
+  <div class='container header-container'>
+    <div class='row'>
+      <div class='col-md-4 col-md-push-8'>
+        <nav class='navbar navbar-default' role='navigation'>
   <!-- Brand and toggle get grouped for better mobile display -->
 <div class='navbar-header'>
   <button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='#navbar-collapse'>
@@ -171,118 +174,47 @@
   </div>
 </nav>
 
+      </div>
+
+      <div class='col-md-8 col-md-pull-4 hidden-sm'>
+        <a href='/'>
+          <img src='/assets/images/logos/wide/banner.png' alt='Raw Funk Maharishi' class='logo'/>
+        </a>
+      </div>
+
+      <div class='col-md-8 col-md-pull-4 visible-sm'>
+        <a href='/'>
+          <img src='/assets/images/logos/wide/banner.png' alt='Raw Funk Maharishi' class='little-logo'/>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
     
     <div class='container'>
       
+        
+        
+        <h1 class='main-title'>Linking Data</h1>
       
+      <p>Due to working at the <a href="http://theodi.org">Open Data Institute</a>, I sometimes cross paths with <a href="https://www.w3.org/People/Berners-Lee/">Sir Tim Berners-Lee</a>, and it was from him I learned that musicians are using <a href="http://json-ld.org/">JSON-LD</a> to publish <a href="http://linkeddata.org/">Linked Data</a> about their live performances.</p>
 
+<h2 id="what-does-json-ld-look-like-then">What does JSON-LD look like, then?</h2>
 
-  
-  
-  
-  
+<p>In the source of <a href="http://rawfunkmaharishi.uk/gigs/2015/01/15/nambucca/">this gig page</a>, you will find the following chunk of JSON:</p>
 
-  
-  
-  
-  
-
-  
-  
-  
-  
-
-  
-  
-  
-  
-
-  
-  
-  
-  
-
-  
-  
-  
-  
-
-  
-  
-  
-  
-
-  
-  
-  
-  
-
-  
-  
-  
-  
-
-  
-  
-  
-  
-
-  
-  
-  
-  
-
-  
-  
-  
-  
-
-  
-  
-  
-  
-
-  
-  
-  
-  
-
-  
-  
-  
-  
-
-  
-  
-  
-  
-
-  
-  
-  
-  
-
-  
-  
-  
-  
-    <div class="panel panel-info next-gig">
-      <div class="panel-body">
-        <div class="throbbing-gristle"></div>
-        Next gig: <a href='/gigs/2016/02/15/hoxton-underbelly/'>Monday 15 February at Hoxton Underbelly</a>
-      </div>
-    </div>
-
-    <script type="application/ld+json">
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;script type="application/ld+json"&gt;
 [{
   "@context" : "http://schema.org",
   "@type" : "MusicEvent",
-  "name" : "Raw Funk Maharishi live at Hoxton Underbelly",
-  "startDate" : "2016-02-15T21:00",
+  "name" : "Raw Funk Maharishi live at Nambucca",
+  "startDate" : "2015-01-15T20:00",
   "location" : {
     "@type" : "Place",
-    "name" : "Hoxton Underbelly",
-    "address" : "Zigfrid von Underbelly, 11 Hoxton Square, N1 6NU"
+    "name" : "Nambucca",
+    "address" : "596 Holloway Road, London, N7"
   },
   "performer" : [{
     "@type" : "MusicGroup",
@@ -290,27 +222,52 @@
     "sameAs" : "http://rawfunkmaharishi.uk/"
   }]
 }]
-</script>
+&lt;/script&gt;
+</code></pre>
+</div>
 
+<p>which neatly describes the event. I <a href="http://en.wikipedia.org/wiki/Cargo_cult">cargo-culted</a> most of this directly from <a href="https://support.google.com/webmasters/answer/4620133?hl=en">here</a>, but as far as I can tell, it’s valid.</p>
 
-    
+<h2 id="constructing-the-json-blocks">Constructing the JSON blocks</h2>
 
+<p>This is a job for <a href="https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/_includes/json-ld.html">yet another Jekyll <em>_include</em></a>.</p>
 
-<img src='/assets/images/logos/wide/banner.png'
-     alt='Raw Funk Maharish'
-     class='splash center-block hidden-xs hidden-sm'/>
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;script type="application/ld+json"&gt;
+[{
+  "@context" : "http://schema.org",
+  "@type" : "MusicEvent",
+  "name" : "Raw Funk Maharishi live at {{ include.title }}",
+  "startDate" : "{{ include.date | date: "%Y-%m-%d" }}T{{ include.time }}",
+  "location" : {
+    "@type" : "Place",
+    "name" : "{{ include.title }}",
+    "address" : "{{ include.location }}"
+    },
+    "performer" : [{
+      "@type" : "MusicGroup",
+      "name" : "Raw Funk Maharishi",
+      "sameAs" : "http://rawfunkmaharishi.uk/"
+  }]
+}]
+&lt;/script&gt;
+</code></pre>
+</div>
 
-<img src='/assets/images/logos/stacked/logo.png'
-     alt='Raw Funk Maharish'
-     class='splash center-block visible-xs-inline-block visible-sm-inline-block'/>
+<p>Then that gets called from <a href="https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/_layouts/gig.html#L42">this layout</a> which already has all the relevant data, and because building with Jekyll is basically like sticking Lego bricks together, every gig page magically gets some Linked Data.</p>
 
-<p class='splash pull-right'>
-  Exploring the deep funk grooves of the 70s, fused with improvised avant-groove jams
-</p>
+<p>I guess one day this stuff will show up on the right-hand side of the page when you Google for us, like it does for <a href="https://www.google.co.uk/search?q=squarepusher">this guy</a>.</p>
+
+<h2 id="certified-open-data">Certified Open Data</h2>
+
+<p>Something else we’ve developed at the ODI is the <a href="https://certificates.theodi.org/">Open Data Certificate</a>, so of course I <a href="http://rawfunkmaharishi.uk/licensing/">got a certificate for this data</a>.</p>
+
+<h2 id="help-yourself">Help yourself</h2>
+
+<p>All of the code driving this site is <a href="https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/LICENSE.md">MIT Licensed</a>, so please feel free to use this <em>_include</em> file in your own Jekyll sites (or help me make it better!)</p>
 
       
     </div>
-    <div class='footer plain'>
+    <div class='footer '>
   <div class='text-center bottom links'>
     
       <a href='https://twitter.com/uncookedfunk' title='Twitter'><i class='fa fa-twitter'></i><span class='hidden-xs'> Twitter</span></a>

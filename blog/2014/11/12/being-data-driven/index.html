@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+<meta name='viewport' content='width=device-width, initial-scale=1' />
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js'></script>
+  <script src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js'></script>
+<![endif]-->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56995544-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src='/javascript/bootstrap.js'></script>
+
+
+    <link rel='icon' type='image/png' href='/assets/favicon.ico' />
+    <link rel='stylesheet' href='/assets/application.css' type='text/css' />
+    <style></style>
+    
+    
+    <title>Being Data Driven</title>
+
+    
+
+
+
+
+
+<meta property="og:title" content="Raw Funk Maharishi » Being Data Driven" />
+<meta property="og:site_name" content="Raw Funk Maharishi" />
+<meta property="og:url" content="http://rawfunkmaharishi.uk/blog/2014/11/12/being-data-driven/" />
+<meta property="og:description" content="Raw Funk Maharishi, exploring the deep funk grooves of the 70s, fused with improvised avant-groove jams" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="http://rawfunkmaharishi.uk/assets/images/logos/wide/header_green.png" />
+
+
+  </head>
+
+  <body>
+    
+      <div class='header '>
+  <div class='container header-container'>
+    <div class='row'>
+      <div class='col-md-4 col-md-push-8'>
+        <nav class='navbar navbar-default' role='navigation'>
+  <!-- Brand and toggle get grouped for better mobile display -->
+<div class='navbar-header'>
+  <button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='#navbar-collapse'>
+    <span class='sr-only'>Toggle navigation</span>
+    <span class='icon-bar'></span>
+    <span class='icon-bar'></span>
+    <span class='icon-bar'></span>
+  </button>
+</div>
+
+  <div class='collapse navbar-collapse' id='navbar-collapse'>
+
+    <!-- mobile -->
+    <ul class='nav hidden-md hidden-lg mobile' role='tablist'>
+      
+        <li>
+  <a href='/the-band/'>The Band</a>
+</li>
+
+      
+        <li>
+  <a href='/sounds/'>Sounds</a>
+</li>
+
+      
+        <li>
+  <a href='/pictures/'>Pictures</a>
+</li>
+
+      
+        <li>
+  <a href='/videos/'>Videos</a>
+</li>
+
+      
+        <li>
+  <a href='/gigs/'>Gigs</a>
+</li>
+
+      
+        <li>
+  <a href='/book-the-band/'>Bookings</a>
+</li>
+
+      
+        <li>
+  <a href='/feedback/'>Reviews</a>
+</li>
+
+      
+        <li>
+  <a href='/merchandise/'>Merchandise</a>
+</li>
+
+      
+        <li>
+  <a href='/licensing/'>Licensing</a>
+</li>
+
+      
+    </ul>
+
+    <!-- desktop -->
+    <ul class='nav nav-stacked nav-pills pull-right hidden-xs hidden-sm' role='tablist'>
+      
+        <li>
+  <a href='/the-band/'>The Band</a>
+</li>
+
+      
+        <li>
+  <a href='/sounds/'>Sounds</a>
+</li>
+
+      
+        <li>
+  <a href='/pictures/'>Pictures</a>
+</li>
+
+      
+        <li>
+  <a href='/videos/'>Videos</a>
+</li>
+
+      
+        <li>
+  <a href='/gigs/'>Gigs</a>
+</li>
+
+      
+        <li>
+  <a href='/book-the-band/'>Bookings</a>
+</li>
+
+      
+        <li>
+  <a href='/feedback/'>Reviews</a>
+</li>
+
+      
+        <li>
+  <a href='/merchandise/'>Merchandise</a>
+</li>
+
+      
+        <li>
+  <a href='/licensing/'>Licensing</a>
+</li>
+
+      
+    </ul>
+  </div>
+</nav>
+
+      </div>
+
+      <div class='col-md-8 col-md-pull-4 hidden-sm'>
+        <a href='/'>
+          <img src='/assets/images/logos/wide/banner.png' alt='Raw Funk Maharishi' class='logo'/>
+        </a>
+      </div>
+
+      <div class='col-md-8 col-md-pull-4 visible-sm'>
+        <a href='/'>
+          <img src='/assets/images/logos/wide/banner.png' alt='Raw Funk Maharishi' class='little-logo'/>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    
+    <div class='container'>
+      
+        
+        
+        <h1 class='main-title'>Being Data Driven</h1>
+      
+      <p>We’re building a static site, but that doesn’t mean we’re going to hard-code everything and construct all the pages by hand - Jekyll has excellent support for driving your content with data. Let’s look at an example:</p>
+
+<h2 id="our-footer">Our Footer</h2>
+
+<p>The data for our site’s footer is in <em><a href="https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/_data/links.yml">_data/links.yml</a></em> and looks like this:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>- title:       Twitter
+  url:         https://twitter.com/uncookedfunk
+  fontawesome: fa-twitter
+
+- title:       Facebook
+  url:         https://www.facebook.com/rawfunkmaharishi
+  fontawesome: fa-facebook-square
+
+- title:       Soundcloud
+  url:         https://soundcloud.com/rawfunkmaharishi
+  fontawesome: fa-soundcloud
+</code></pre>
+</div>
+
+<p>Those titles, URLs and <a href="http://fortawesome.github.io/Font-Awesome/icons/">font-awesome</a> icons are exposed as <em>site.data.links[0].title</em> and so on, and we can iterate through them in <em><a href="https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/_includes/footer.html">_includes/footer.html</a></em> with something like</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">for</span><span class="w"> </span><span class="err">link</span><span class="w"> </span><span class="err">in</span><span class="w"> </span><span class="err">site.data.links</span><span class="w"> </span><span class="err">%</span><span class="p">}</span><span class="w">
+  </span><span class="err">&lt;a</span><span class="w"> </span><span class="err">href='</span><span class="p">{</span><span class="err">{</span><span class="w"> </span><span class="err">link.url</span><span class="w"> </span><span class="p">}</span><span class="err">}'</span><span class="w"> </span><span class="err">title='</span><span class="p">{</span><span class="err">{</span><span class="w"> </span><span class="err">link.title</span><span class="w"> </span><span class="p">}</span><span class="err">}'&gt;</span><span class="w">
+    </span><span class="err">&lt;i</span><span class="w"> </span><span class="err">class='fa</span><span class="w"> </span><span class="p">{</span><span class="err">{</span><span class="w"> </span><span class="err">link.fontawesome</span><span class="w"> </span><span class="p">}</span><span class="err">}'&gt;&lt;/i&gt;</span><span class="w">
+    </span><span class="err">&lt;span</span><span class="w"> </span><span class="err">class='hidden-xs'&gt;</span><span class="w"> </span><span class="p">{</span><span class="err">{</span><span class="w"> </span><span class="err">link.title</span><span class="w"> </span><span class="p">}</span><span class="err">}&lt;/span&gt;</span><span class="w">
+  </span><span class="err">&lt;/a&gt;</span><span class="w">
+</span><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">endfor</span><span class="w"> </span><span class="err">%</span><span class="p">}</span><span class="w">
+</span></code></pre>
+</div>
+
+<p>Building a footer or a navigation bar this way is all very well, but what about entirely data-driven blog posts? Well, those <a href="http://rawfunkmaharishi.uk/blog/2014/11/11/getting-started-with-jekyll/#create-some-content">sets of three dashes</a> that we have at the top of each content page are delimiters for <a href="http://jekyllrb.com/docs/frontmatter/">Jekyll front matter</a>, where we normally specify things like titles and layouts. However, it’s just YAML, and we can put anything we want in there. Which led me to the idea of</p>
+
+<h2 id="data-driven-gigs">Data-driven gigs</h2>
+
+<p>Take a look at <a href="https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/gigs/_posts/2014-12-04-buffalo-bar.yml">this</a>:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>---
+location:    259 Upper St, London, N1
+time:        '20:30'
+facebook_id: 1554796168085840
+latitude:    51.5461216
+longitude:   -0.1032551
+---
+</code></pre>
+</div>
+
+<p>That’s all the data we need to describe a Raw Funk Maharishi gig (or at least it is for now, it would be trivially easy to support other fields for EventBrite or whatever). Jekyll rummages through our site, looking for any files within <em>_posts/</em> directories and rendering them as pages - it also parses the filenames to give us a nice <em>/YYYY/MM/DD/title-slug/</em> URL, as well as <em>page.date</em> and <em>page.title</em> - and because of <a href="https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/_config.yml#L9-L16">this bit</a> in <em>_config.yml</em> it defaults to using the <a href="https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/_layouts/gig.html">gig layout</a>,
+which has access to those items via <em>page.location</em>, etc:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;dl class='dl-horizontal'&gt;
+
+  &lt;dt&gt;Date&lt;dt&gt;
+  &lt;dd&gt;{{ page.date | date_to_long_string }}&lt;/dd&gt;
+
+  &lt;dt&gt;Time&lt;/dt&gt;
+  &lt;dd&gt;{{ page.time }}&lt;/dd&gt;
+
+  &lt;dt&gt;Location&lt;/dt&gt;
+  &lt;dd&gt;{{ page.location }}&lt;/dd&gt;
+
+  {% if page.price %}
+    &lt;dt&gt;Price&lt;/dt&gt;
+    &lt;dd&gt;{{ page.price }}&lt;/dd&gt;
+  {% endif %}
+
+  {% if page.facebook_id %}
+    &lt;dt&gt;More info&lt;/dt&gt;
+    &lt;dd&gt;
+      &lt;a href='https://facebook.com/events/{{ page.facebook_id }}/' title='Facebook event'&gt;
+        Facebook
+      &lt;/a&gt;
+    &lt;/dd&gt;
+  {% endif %}
+
+&lt;/dl&gt;
+</code></pre>
+</div>
+
+<p>and of course <em>page.latitude</em> and <em>page.longitude</em> with which it <a href="http://rawfunkmaharishi.uk/blog/2014/11/10/embedding-open-street-map/">renders an OSM map</a>.</p>
+
+<p>This data is also exposed as <em>site.categories.gigs</em> - the hash key there is the directory under which our <em>_posts</em> appear, we also have <em>site.categories.blog</em> on this site, as well as all <em>_posts</em> as <em>site.posts</em> - which we can <a href="https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/gigs.html#L22-L32">iterate through to construct an archive page</a>.</p>
+
+<p>I have a nagging feeling that this might be a misuse of tools (a gig is not really a blog post), but I’m still feeling my way around Jekyll and this works just fine for now.</p>
+
+      
+    </div>
+    <div class='footer '>
+  <div class='text-center bottom links'>
+    
+      <a href='https://twitter.com/uncookedfunk' title='Twitter'><i class='fa fa-twitter'></i><span class='hidden-xs'> Twitter</span></a>
+      
+        |
+      
+    
+      <a href='https://facebook.com/rawfunkmaharishi' title='Facebook'><i class='fa fa-facebook-square'></i><span class='hidden-xs'> Facebook</span></a>
+      
+        |
+      
+    
+      <a href='https://soundcloud.com/rawfunkmaharishi' title='Soundcloud'><i class='fa fa-soundcloud'></i><span class='hidden-xs'> Soundcloud</span></a>
+      
+        |
+      
+    
+      <a href='https://vimeo.com/rawfunkmaharishi' title='Vimeo'><i class='fa fa-vimeo-square'></i><span class='hidden-xs'> Vimeo</span></a>
+      
+        |
+      
+    
+      <a href='http://flickr.com/photos/rawfunkmaharishi/' title='Flickr'><i class='fa fa-flickr'></i><span class='hidden-xs'> Flickr</span></a>
+      
+        |
+      
+    
+      <a href='https://github.com/rawfunkmaharishi/' title='Github'><i class='fa fa-github'></i><span class='hidden-xs'> Github</span></a>
+      
+        |
+      
+    
+      <a href='/blog/' title='Developer blog'><i class='fa fa-code'></i><span class='hidden-xs'> Developer blog</span></a>
+      
+        |
+      
+    
+      <a href='http://data.rawfunkmaharishi.uk/' title='Data API'><i class='fa fa-database'></i><span class='hidden-xs'> Data API</span></a>
+      
+    
+  </div>
+  <div class='text-center'>
+  <span class='attribution'>
+    Background image: remixed from
+    <a href='https://www.flickr.com/photos/thomashawk/9280743142/'>Sidewalks of New York</a>
+    by
+    <a href='https://www.flickr.com/photos/thomashawk/'>Thomas Hawk</a> -
+    <a href='https://creativecommons.org/licenses/by-nc/2.0'>CC-BY-NC</a>
+  </span>
+</div>
+
+</div>
+
+  </body>
+</html>

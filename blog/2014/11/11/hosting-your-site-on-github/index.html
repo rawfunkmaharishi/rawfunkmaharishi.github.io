@@ -32,10 +32,10 @@
 
     <link rel='icon' type='image/png' href='/assets/favicon.ico' />
     <link rel='stylesheet' href='/assets/application.css' type='text/css' />
-    <style>body { background-image: url('/assets/images/backgrounds/background.jpg'); background-position: center }</style>
+    <style></style>
     
     
-    <title>Raw Funk Maharishi</title>
+    <title>Hosting Your Site On Github</title>
 
     
 
@@ -43,9 +43,9 @@
 
 
 
-<meta property="og:title" content="Raw Funk Maharishi » Raw Funk Maharishi" />
+<meta property="og:title" content="Raw Funk Maharishi » Hosting Your Site On Github" />
 <meta property="og:site_name" content="Raw Funk Maharishi" />
-<meta property="og:url" content="http://rawfunkmaharishi.uk/" />
+<meta property="og:url" content="http://rawfunkmaharishi.uk/blog/2014/11/11/hosting-your-site-on-github/" />
 <meta property="og:description" content="Raw Funk Maharishi, exploring the deep funk grooves of the 70s, fused with improvised avant-groove jams" />
 <meta property="og:type" content="article" />
 <meta property="og:image" content="http://rawfunkmaharishi.uk/assets/images/logos/wide/header_green.png" />
@@ -55,8 +55,11 @@
 
   <body>
     
-    
-      <nav class='navbar navbar-default' role='navigation'>
+      <div class='header '>
+  <div class='container header-container'>
+    <div class='row'>
+      <div class='col-md-4 col-md-push-8'>
+        <nav class='navbar navbar-default' role='navigation'>
   <!-- Brand and toggle get grouped for better mobile display -->
 <div class='navbar-header'>
   <button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='#navbar-collapse'>
@@ -171,146 +174,64 @@
   </div>
 </nav>
 
+      </div>
+
+      <div class='col-md-8 col-md-pull-4 hidden-sm'>
+        <a href='/'>
+          <img src='/assets/images/logos/wide/banner.png' alt='Raw Funk Maharishi' class='logo'/>
+        </a>
+      </div>
+
+      <div class='col-md-8 col-md-pull-4 visible-sm'>
+        <a href='/'>
+          <img src='/assets/images/logos/wide/banner.png' alt='Raw Funk Maharishi' class='little-logo'/>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
     
     <div class='container'>
       
+        
+        
+        <h1 class='main-title'>Hosting Your Site On Github</h1>
       
+      <p>Github will host your site for free, which is incredibly nice of them. But for our purposes, there are some things to consider around how the repo is named:</p>
 
+<p>Generally, given a repo named <em>amazingrepo</em>, if you push your Jekyll site onto a branch called <em>gh-pages</em>, the content will appear under <a href="http://username.github.io/amazingrepo/">http://username.github.io/amazingrepo/</a> (which is what you want for project-specific Jekyll sites); however there are some names that Github considers special and which are subject to different rules: if the Github repo is named like <em>username.github.io</em>, or, within a Github organisation, <em>organisationname.github.io</em>, then Github will attempt to Jekylify whatever it finds in <em>master</em>  and the content will appear under <a href="http://username.github.io/">http://username.github.io/</a> - that’s why this particular repo is named <em>rawfunkmaharishi.github.io</em>. For the purposes of this document, I’m going to assume that you have a Github organisation for your band called <em>bandname</em> and your repo is called <em>bandname.github.io</em> (and that you have control of the <em>bandname.com</em> domain). Does that all make sense?</p>
 
-  
-  
-  
-  
+<p>So anyway, presuming you have some <a href="http://rawfunkmaharishi.uk/blog/2014/11/11/getting-started-with-jekyll/#a-wild-site-appears">committed content</a>, go create a Github repo with the appropriate name, then bring that remote in:</p>
 
-  
-  
-  
-  
+<p><code class="highlighter-rouge">
+git remote add origin git@github.com:bandname/bandname.github.io.git
+</code></p>
 
-  
-  
-  
-  
+<p>and push to it</p>
 
-  
-  
-  
-  
+<p><code class="highlighter-rouge">
+git push origin master
+</code></p>
 
-  
-  
-  
-  
+<p>then point your browser at <a href="http://bandname.github.io/">http://bandname.github.io/</a> and you should see either <em>Hello from Jekyll</em> once again, or a 404 with a message about <em>It may take up to ten minutes until your page is available</em>. In this case, go make some tea or something.</p>
 
-  
-  
-  
-  
+<h2 id="cname">CNAME</h2>
 
-  
-  
-  
-  
+<p>So you have some content hosted, for free, on Github, at <a href="http://bandname.github.io/">http://bandname.github.io/</a>. But wouldn’t it be nice if it was at <a href="http://bandname.github.io/">http://bandname.com</a> instead? Well that’s super-easy, too. You need a CNAME file at the root of the project (and note that you can only have the one CNAME, so you can’t have <em>bandname.com</em> and <em>www.bandname.com</em>, but it’s 2014 and it’s probably time we got past that):</p>
 
-  
-  
-  
-  
+<p><code class="highlighter-rouge">
+echo bandname.com &gt; CNAME
+</code></p>
 
-  
-  
-  
-  
+<p>Then you need to configure your DNS: until about two weeks ago I’d have told you to create an A record pointing the root domain at this Github IP address: <em>185.31.18.133</em>, but then I discovered that <a href="https://www.cloudflare.com">CloudFlare</a> have some advanced voodoo they call <a href="http://blog.cloudflare.com/introducing-cname-flattening-rfc-compliant-cnames-at-a-domains-root/">CNAME Flattening</a> which means that a root domain can be properly CNAMEd without breaking all your MX records, and now I don’t know what to think. You should probably take a look, it’s amazing.</p>
 
-  
-  
-  
-  
-
-  
-  
-  
-  
-
-  
-  
-  
-  
-
-  
-  
-  
-  
-
-  
-  
-  
-  
-
-  
-  
-  
-  
-
-  
-  
-  
-  
-
-  
-  
-  
-  
-
-  
-  
-  
-  
-    <div class="panel panel-info next-gig">
-      <div class="panel-body">
-        <div class="throbbing-gristle"></div>
-        Next gig: <a href='/gigs/2016/02/15/hoxton-underbelly/'>Monday 15 February at Hoxton Underbelly</a>
-      </div>
-    </div>
-
-    <script type="application/ld+json">
-[{
-  "@context" : "http://schema.org",
-  "@type" : "MusicEvent",
-  "name" : "Raw Funk Maharishi live at Hoxton Underbelly",
-  "startDate" : "2016-02-15T21:00",
-  "location" : {
-    "@type" : "Place",
-    "name" : "Hoxton Underbelly",
-    "address" : "Zigfrid von Underbelly, 11 Hoxton Square, N1 6NU"
-  },
-  "performer" : [{
-    "@type" : "MusicGroup",
-    "name" : "Raw Funk Maharishi",
-    "sameAs" : "http://rawfunkmaharishi.uk/"
-  }]
-}]
-</script>
-
-
-    
-
-
-<img src='/assets/images/logos/wide/banner.png'
-     alt='Raw Funk Maharish'
-     class='splash center-block hidden-xs hidden-sm'/>
-
-<img src='/assets/images/logos/stacked/logo.png'
-     alt='Raw Funk Maharish'
-     class='splash center-block visible-xs-inline-block visible-sm-inline-block'/>
-
-<p class='splash pull-right'>
-  Exploring the deep funk grooves of the 70s, fused with improvised avant-groove jams
-</p>
+<p>So after committing, pushing, and waiting the requisite DNS-propagation-time (which seems to getting shorter and shorter, maybe it’s just me, get off my lawn), your amazing site will be available at <a href="http://bandname.com">http://bandname.com</a>.</p>
 
       
     </div>
-    <div class='footer plain'>
+    <div class='footer '>
   <div class='text-center bottom links'>
     
       <a href='https://twitter.com/uncookedfunk' title='Twitter'><i class='fa fa-twitter'></i><span class='hidden-xs'> Twitter</span></a>
