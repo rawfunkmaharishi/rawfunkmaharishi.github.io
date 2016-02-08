@@ -1,0 +1,12 @@
+<p id='strapline' class='splash text-center'></p>
+
+<script>
+$(function() {
+  var lines = [
+  {% for line in site.data.attributes.straplines %}
+    '{{ line }}',
+  {% endfor %}
+  ]
+  $("#strapline").text(lines.splice(Math.floor(Math.random() * lines.length), 1)[0]);
+})
+</script>

@@ -18,16 +18,4 @@ with_nav: true
      alt='Raw Funk Maharish'
      class='splash center-block visible-xs-inline-block visible-sm-inline-block'/>
 
-<div id='strapline'>
-  {% for line in site.data.attributes.straplines %}
-    <p class='splash text-center'>{{ line }}</p>
-  {% endfor %}
-</div>
-
-<script>
-$(function() {
-  var parent = $("#strapline");
-  var divs = parent.children();
-  parent.html(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
-})
-</script>
+{% include straplines.html %}
