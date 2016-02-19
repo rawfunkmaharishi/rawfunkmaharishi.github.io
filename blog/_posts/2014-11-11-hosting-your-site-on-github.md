@@ -20,7 +20,7 @@ git push origin master
 
 then point your browser at [http://bandname.github.io/](http://bandname.github.io/) and you should see either _Hello from Jekyll_ once again, or a 404 with a message about _It may take up to ten minutes until your page is available_. In this case, go make some tea or something.
 
-##CNAME
+## CNAME
 
 So you have some content hosted, for free, on Github, at [http://bandname.github.io/](http://bandname.github.io/). But wouldn't it be nice if it was at [http://bandname.com](http://bandname.github.io/) instead? Well that's super-easy, too. You need a CNAME file at the root of the project (and note that you can only have the one CNAME, so you can't have _bandname.com_ and _www.bandname.com_, but it's 2014 and it's probably time we got past that):
 

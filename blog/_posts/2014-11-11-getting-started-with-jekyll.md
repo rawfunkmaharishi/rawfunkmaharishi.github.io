@@ -10,7 +10,7 @@ First, you need the _gh-pages_ gem. Add it to your Gemfile (or just use [ours](h
 gem install gh-pages
 ```
 
-##Create some content
+## Create some content
 
 Create a file called _index.md_ at the root of the project that looks like this:
 
@@ -29,7 +29,7 @@ jekyll serve --watch
 
 and point your browser at [http://localhost:4000/](http://localhost:4000/) and you should see those three words. You have successfully Jekylled.
 
-##A wild *_site* appears
+## A wild *_site* appears
 
 This is all about building a static site, right? What Jekyll has done, is create a directory called *_site* and filled it with the generated HTML of your actual site. This is an artefact and you don't really want it in Github. So
 

@@ -4,7 +4,7 @@ A band site needs music, right? We have a load of tracks up on [SoundCloud](http
 
 So, armed with my vanishingly small armoury of JavaScript skills, I set about looking for a more elegant solution.
 
-##oEmbed
+## oEmbed
 
 According to [this page](https://developers.soundcloud.com/docs/oembed), _oEmbed is an open standard to easily embed content from oEmbed providers into your site_, which seems to be _exactly_ what we're after. So I lashed together [this include](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/_includes/oembed-sound.html) from various bits and pieces I found around the place:
 
@@ -33,7 +33,7 @@ According to [this page](https://developers.soundcloud.com/docs/oembed), _oEmbed
 
 and do you know what? IT ACTUALLY WORKED. Yes, I was as surprised as anyone. You can see it in action [here](http://rawfunkmaharishi.uk/oembed-sounds/).
 
-##I do not think this word means what you think it means
+## I do not think this word means what you think it means
 
 Except it didn't quite work properly. It was all good on my desktop browsers, and it responded properly when I squished Chrome down to phone-size, but on an actual phone, NOTHING. We tried it on Android Chrome, the default Android Webkit browser, and on an iPhone, and those iframes refused to show their faces.
 
@@ -83,6 +83,6 @@ Yes, I realise that this is still pretty unwieldy, but [Liquid](http://liquidmar
 
 and get back a nice embeddable iframe _which seems to work everywhere_. (Incidentally, I've only been able to find the track id buried in the embed iframe line from SoundCloud, am I missing something else?).
 
-##Help yourself
+## Help yourself
 
 All of the code driving this site is [MIT Licensed](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/LICENSE.md), so as with the [OpenStreetMap embed](http://rawfunkmaharishi.uk/blog/2014/11/10/embedding-open-street-map/), please feel free to use this *_include* file in your own Jekyll sites (or help me make it redundant by showing me how I'm misunderstanding oEmbed!)
