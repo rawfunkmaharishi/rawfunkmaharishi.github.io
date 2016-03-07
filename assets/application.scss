@@ -104,6 +104,13 @@ p.splash{
   opacity: 0.8;
 }
 
+#strapline {
+  a {
+    color: white;
+    text-decoration: underline;
+  }
+}
+
 // cargo-culted straight outta bootstrap
 .dl-horizontal {
   @media (min-width: 0) {

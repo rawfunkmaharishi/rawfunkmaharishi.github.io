@@ -7,6 +7,6 @@ $(function() {
     '{{ line }}',
   {% endfor %}
   ]
-  $("#strapline").text(lines.splice(Math.floor(Math.random() * lines.length), 1)[0]);
+  $("#strapline").html(lines.splice(Math.floor(Math.random() * lines.length), 1)[0]);
 })
 </script>
