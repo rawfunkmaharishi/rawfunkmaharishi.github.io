@@ -1,0 +1,25 @@
+<!-- Modal -->
+<div class='modal' id='new-album-modal' tabindex='-1' role='dialog' aria-labelledby='new-album-label' aria-hidden='true'>
+  <div class='modal-dialog'>
+    <div class='modal-content'>
+      <div class='modal-body'>
+        <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
+          <span aria-hidden='true'><i class='fa fa-times-circle'></i></span>
+        </button>
+        <p class='album-news'>Check out our new album 'Takatsuka' on
+          {% for outlet in site.data.albums.takatsuka.outlets %}
+            <a href='{{ outlet.url }}'>{{ outlet.name }}</a>,
+          {% endfor %}
+          iTunes and plenty of other outlets
+        </p>
+        <img src='/assets/images/album-covers/takatsuka.jpg' />
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function () {
+  $('#new-album-modal').modal('show')
+})
+</script>

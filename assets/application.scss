@@ -111,6 +111,19 @@ p.splash{
   }
 }
 
+.album-news {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#new-album-modal {
+  height: 100%;
+
+  img {
+    width: 100%;
+  }
+}
+
 // cargo-culted straight outta bootstrap
 .dl-horizontal {
   @media (min-width: 0) {

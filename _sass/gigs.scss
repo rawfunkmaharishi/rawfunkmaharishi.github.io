@@ -41,7 +41,7 @@
 }
 
 
-.next-gig {
+.next-gig, .new-album {
   position:absolute;
   bottom:12%;
   right:1%;
@@ -52,6 +52,7 @@
   margin: 0px;
   padding: 0px;
   text-align: right;
+  max-width: 75%;
 
   a {
     color: black;
@@ -62,4 +63,8 @@
     color: $rfm-green;
     text-decoration: none;
   }
+}
+
+.new-album {
+  bottom: 22%;
 }
