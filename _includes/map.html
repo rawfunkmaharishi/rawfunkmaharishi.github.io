@@ -1,57 +1,38 @@
 <!-- I Cargo-Culted this so hard I still have marks from the bamboo headphones -->
 <div id='map' class='map'></div>
-<script src='http://openlayers.org/api/OpenLayers.js'></script>
 
 <script>
-    var lat            = {{ include.latitude }};
-    var lon            = {{ include.longitude }};
-    var zoom           = 16;
-
-    var fromProjection = new OpenLayers.Projection('EPSG:4326');   // Transform from WGS 1984
-    var toProjection   = new OpenLayers.Projection('EPSG:900913'); // to Spherical Mercator Projection
-    var position       = new OpenLayers.LonLat(lon, lat).transform( fromProjection, toProjection);
-
-    map = new OpenLayers.Map('map');
-
-    {% if site.data.attributes.map_tiles %}
-
-      var layer = new OpenLayers.Layer.OSM('{{ site.data.attributes.map_tiles }}', [
-        {% assign url = site.data.maps[site.data.attributes.map_tiles].generic_url %}
-        {% if url %}
-          {% assign first = url | split: '[' %}
-          {% assign last = first[1] | split: ']' %}
-          {% assign hosts = last[0] | split: '' %}
-          {% for host in hosts %}
-            '{{ first[0] }}{{ host }}{{ last[1] | replace: '/{', '/${' }}',
-          {% endfor %}
-        {% else %}
-          {{ site.data.maps[site.data.attributes.map_tiles].url | replace: '/{', '/${' }}
-        {% endif %}
-      ]);
-    {% else %}
-      var layer = new OpenLayers.Layer.OSM();
-    {% endif %}
-
-    map.addLayer(layer);
-
-    var markers = new OpenLayers.Layer.Markers( 'Markers' );
-    map.addLayer(markers);
-    markers.addMarker(
-      new OpenLayers.Marker(
-        position,
-        new OpenLayers.Icon(
-          'http://www.openstreetmap.org/assets/marker-red-b8b47a812d7ea38509ac24368c689ba8.png',
-          {
-            w: 20,
-            h: 30
-          },
-          new OpenLayers.Pixel(-10, -30)
-        )
-      )
+    var map = L.map('map').setView(
+      [
+        {{ include.latitude }},
+        {{ include.longitude }}
+      ],
+      {{ site.data.attributes.map.zoom }}
     );
 
-    map.setCenter(position, zoom);
+    L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.{ext}', {
+    	subdomains: 'abcd',
+    	minZoom: 1,
+    	maxZoom: 20,
+    	ext: 'png'
+    }).addTo(map)
+
+    L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/toner-labels/{z}/{x}/{y}.{ext}', {
+	    attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> | Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+	    subdomains: 'abcd',
+	    minZoom: 1,
+	    maxZoom: 20,
+	    ext: 'png'
+    }).addTo(map)
+
+    L.marker(
+      [
+        {{ include.latitude }},
+        {{ include.longitude }}
+      ]
+    ).addTo(map).bindPopup('{{ include.location }}').openPopup()
 </script>
+
 <p class='pull-right'>
   <a href='http://www.openstreetmap.org/?mlat={{ include.latitude }}&amp;mlon={{ include.longitude }}#map=16/{{ include.latitude }}/{{ page.longitude }}'>View larger map</a>
 </p>

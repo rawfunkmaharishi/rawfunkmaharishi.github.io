@@ -68,3 +68,11 @@
 .new-album {
   bottom: 22%;
 }
+
+.map {
+  font-family: $font-family-sans-serif;
+}
+
+.leaflet-container a {
+  color: $rfm-green;
+}

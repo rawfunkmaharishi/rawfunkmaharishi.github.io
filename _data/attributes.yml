@@ -4,4 +4,6 @@ straplines:
   - “What Herbie Hancock would sound like if he was a 3-piece band”
   - “Uncommonly good driving music”
   - As featured on <a href="https://news.ycombinator.com/item?id=11149584">Hacker News</a>
-#map_tiles: Pioneer
+
+map:
+  zoom: 16
