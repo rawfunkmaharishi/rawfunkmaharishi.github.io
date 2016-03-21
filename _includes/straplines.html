@@ -7,6 +7,12 @@ $(function() {
     '{{ line }}',
   {% endfor %}
   ]
-  $("#strapline").html(lines.splice(Math.floor(Math.random() * lines.length), 1)[0]);
+
+  var selection = lines.splice(Math.floor(Math.random() * lines.length), 1)[0]
+  if(selection[0] == '“') {
+    selection = "<a href='/feedback'>" + selection + '</a>'
+  }
+
+  $("#strapline").html(selection);
 })
 </script>
