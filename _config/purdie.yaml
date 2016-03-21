@@ -3,5 +3,6 @@ photographer_lookups:
 
 default_title: Raw Funk Maharishi
 
-flickr:
-  size: 500
+services:
+  Flickr:
+    size: 500

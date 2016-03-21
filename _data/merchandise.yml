@@ -1,0 +1,8 @@
+- name: Wide banner
+  path: /assets/images/logos/wide/banner.png
+
+- name: Stacked banner
+  path: /assets/images/logos/stacked/logo.png
+
+- name: Takatsuka
+  path: /assets/images/album-covers/takatsuka.jpg

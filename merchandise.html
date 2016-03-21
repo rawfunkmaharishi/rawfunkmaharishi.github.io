@@ -16,18 +16,13 @@ title: Merchandise
   </h2>
 
   <div class='row'>
-    <div class='col-md-1'></div>
-    <div class='col-md-7'>
-      <a href='http://rawfunkmaharishi.uk/assets/images/logos/wide/banner.png'>
-        <img src='http://rawfunkmaharishi.uk/assets/images/logos/wide/banner.png' alt='Wide Banner' />
-      </a>
-    </div>
-    <div class='col-md-3'>
-      <a href='http://rawfunkmaharishi.uk/assets/images/logos/stacked/logo.png'>
-        <img src='http://rawfunkmaharishi.uk/assets/images/logos/stacked/logo.png' alt='Stacked Banner' />
-      </a>
-    </div>
-    <div class='col-md-1'></div>
+    {% for merch in site.data.merchandise %}
+      <div class='col-md-4'>
+        <a href='{{ merch.path }}'>
+          <img src='{{ merch.path }}' alt='{{ merch.name }}' />
+        </a>
+      </div>
+    {% endfor %}
   </div>
 
   <p>
