@@ -9,14 +9,14 @@
       {{ site.data.attributes.map.zoom }}
     );
 
-    L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.{ext}', {
+    L.tileLayer('//stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.{ext}', {
     	subdomains: 'abcd',
     	minZoom: 1,
     	maxZoom: 20,
     	ext: 'png'
     }).addTo(map)
 
-    L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/toner-labels/{z}/{x}/{y}.{ext}', {
+    L.tileLayer('//stamen-tiles-{s}.a.ssl.fastly.net/toner-labels/{z}/{x}/{y}.{ext}', {
 	    attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> | Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
 	    subdomains: 'abcd',
 	    minZoom: 1,
@@ -33,5 +33,5 @@
 </script>
 
 <p class='pull-right'>
-  <a href='http://www.openstreetmap.org/?mlat={{ include.latitude }}&amp;mlon={{ include.longitude }}#map=16/{{ include.latitude }}/{{ page.longitude }}'>View larger map</a>
+  <a href='//www.openstreetmap.org/?mlat={{ include.latitude }}&amp;mlon={{ include.longitude }}#map=16/{{ include.latitude }}/{{ page.longitude }}'>View larger map</a>
 </p>
