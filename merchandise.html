@@ -18,9 +18,28 @@ title: Merchandise
   <div class='row'>
     {% for merch in site.data.merchandise %}
       <div class='col-md-4'>
-        <a href='{{ merch.path }}'>
+        <a href='#' data-toggle="modal" data-target="#{{ merch.name }}-modal">
           <img src='{{ merch.path }}' alt='{{ merch.name }}' />
         </a>
+      </div>
+
+      <!-- Modal -->
+      <div class='modal' id='{{ merch.name }}-modal' tabindex='-1' role='dialog' aria-labelledby='{{ merch.name }}-label' aria-hidden='true'>
+        <div class='modal-dialog'>
+          <div class='modal-content'>
+            <div class='modal-body'>
+              <img src='{{ merch.path }}' />
+            </div>
+            <div class='modal-footer'>
+              {% assign parts = merch.path | split: '/' %}
+              {% capture dl_path %}{{ parts[-2] }}-{{ parts[-1] }}{% endcapture %}
+              <a href="{{ merch.path }}" download="{{ dl_path }}" class='btn btn-info'>Download</a>
+              <button type='button' class='btn btn-warning' data-dismiss='modal' aria-label='Close'>
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     {% endfor %}
   </div>
