@@ -34,9 +34,7 @@ title: Merchandise
               {% assign parts = merch.path | split: '/' %}
               {% capture dl_path %}{{ parts[-2] }}-{{ parts[-1] }}{% endcapture %}
               <a href="{{ merch.path }}" download="{{ dl_path }}" class='btn btn-info'>Download</a>
-              <button type='button' class='btn btn-warning' data-dismiss='modal' aria-label='Close'>
-                Close
-              </button>
+              {% include modal-close-button.html %}
             </div>
           </div>
         </div>
