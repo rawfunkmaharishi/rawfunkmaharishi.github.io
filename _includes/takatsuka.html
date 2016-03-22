@@ -3,9 +3,6 @@
   <div class='modal-dialog'>
     <div class='modal-content'>
       <div class='modal-body'>
-        <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
-          <span aria-hidden='true'><i class='fa fa-times-circle'></i></span>
-        </button>
         <p class='album-news'>Check out our new album 'Takatsuka' on
           {% for outlet in site.data.albums.takatsuka.outlets %}
             <a href='{{ outlet.url }}'>{{ outlet.name }}</a>,
@@ -13,6 +10,11 @@
           iTunes, BitTorrent and elsewhere
         </p>
         <img src='/assets/images/album-covers/takatsuka.jpg' />
+      </div>
+      <div class='modal-footer'>
+        <button type='button' class='btn btn-warning' data-dismiss='modal' aria-label='Close'>
+          Close
+        </button>
       </div>
     </div>
   </div>
