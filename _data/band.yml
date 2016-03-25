@@ -1,24 +1,24 @@
 - name:          Joe
-  image:         joe.jpg
+  image:         joe.png
   instrument:    Guitar
   image_caption: Joe
-  photographer:  jane
-  license:       Attribution-NonCommercial
-  license_url:   https://creativecommons.org/licenses/by-nc/2.0/
+  photographer:  gary
+  license:       Attribution-NonCommercial-ShareAlike
+  license_url:   https://creativecommons.org/licenses/by-nc-sa/2.0/
 
 - name:          Matt
-  image:         matt.jpg
+  image:         matt.png
   instrument:    Bass
   image_caption: Matt
-  photographer:  jane
-  license:       Attribution-NonCommercial
-  license_url:   https://creativecommons.org/licenses/by-nc/2.0/
+  photographer:  gary
+  license:       Attribution-NonCommercial-ShareAlike
+  license_url:   https://creativecommons.org/licenses/by-nc-sa/2.0/
 
 - name:          Sam
-  image:         sam.jpg
+  image:         sam.png
   instrument:    Drums
   image_caption: Sam
-  photographer:  jane
+  photographer:  gary
+  license:       Attribution-NonCommercial-ShareAlike
+  license_url:   https://creativecommons.org/licenses/by-nc-sa/2.0/
   twitter:       pikesley
-  license:       Attribution-NonCommercial
-  license_url:   https://creativecommons.org/licenses/by-nc/2.0/
