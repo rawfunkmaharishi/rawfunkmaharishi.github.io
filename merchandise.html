@@ -28,7 +28,7 @@ title: Merchandise
         <div class='modal-dialog'>
           <div class='modal-content'>
             <div class='modal-body'>
-              <img src='{{ merch.path }}' />
+              <img src='{{ merch.path }}' alt='{{ merch.name }}' />
             </div>
             <div class='modal-footer'>
               {% assign parts = merch.path | split: '/' %}

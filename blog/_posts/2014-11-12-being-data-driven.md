@@ -34,7 +34,7 @@ Building a footer or a navigation bar this way is all very well, but what about 
 
 ## Data-driven gigs
 
-Take a look at [this](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/gigs/_posts/2014-12-04-buffalo-bar.yml):
+Take a look at [this](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/gigs/_posts/2014-12-04-buffalo-bar.md):
 
     ---
     location:    259 Upper St, London, N1
