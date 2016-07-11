@@ -1,4 +1,11 @@
 ---
+- title: Noble
+  id: 273156937
+  url: http://soundcloud.com/rawfunkmaharishi/noble
+  location: location:Rooz Studios
+  date: '2016-07-07'
+  license: Attribution-NonCommercial-ShareAlike
+  license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
 - title: Letter For Leona
   id: 265825956
   url: http://soundcloud.com/rawfunkmaharishi/letter-for-leona
@@ -62,54 +69,5 @@
   url: http://soundcloud.com/rawfunkmaharishi/beer-of-course-but-why
   location: Islington Academy
   date: '2015-02-18'
-  license: Attribution-NonCommercial-ShareAlike
-  license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
-- title: Hexaflexagon
-  id: 193008299
-  url: http://soundcloud.com/rawfunkmaharishi/hexaflexagon-1
-  location: Islington Academy
-  date: '2015-02-18'
-  license: Attribution-NonCommercial-ShareAlike
-  license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
-- title: Jessica's Cousin
-  id: 191308336
-  url: http://soundcloud.com/rawfunkmaharishi/jessicas-cousin
-  location: Rogue Studios
-  date: '2015-02-11'
-  license: Attribution-NonCommercial-ShareAlike
-  license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
-- title: Old Cotswold Legbar
-  id: 191432275
-  url: http://soundcloud.com/rawfunkmaharishi/old-cotswold-legbar-1
-  location: Rogue Studios
-  date: '2015-02-11'
-  license: Attribution-NonCommercial-ShareAlike
-  license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
-- title: Not Bernard
-  id: 190803089
-  url: http://soundcloud.com/rawfunkmaharishi/not-bernard
-  location: Rogue Studios
-  date: '2015-02-11'
-  license: Attribution-NonCommercial-ShareAlike
-  license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
-- title: Safety On Board
-  id: 174628735
-  url: http://soundcloud.com/rawfunkmaharishi/safety-on-board
-  location: Enterprise Studios
-  date: '2014-10-14'
-  license: Attribution-NonCommercial-ShareAlike
-  license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
-- title: Funk Taxi Berlin
-  id: 174065916
-  url: http://soundcloud.com/rawfunkmaharishi/funk-taxi-berlin
-  location: Enterprise Studios
-  date: '2014-10-14'
-  license: Attribution-NonCommercial-ShareAlike
-  license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
-- title: Trapped In Hawaii (feat. Kim)
-  id: 162634747
-  url: http://soundcloud.com/rawfunkmaharishi/trapped-in-hawaii-feat-kim
-  location: Enterprise Studios
-  date: '2014-08-05'
   license: Attribution-NonCommercial-ShareAlike
   license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
