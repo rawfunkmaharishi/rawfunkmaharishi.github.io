@@ -1,6 +1,6 @@
 ---
 location:    Victoria Road, North Acton, W3 6UL
-time:        'TBC'
+time:        '21:00'
 latitude:    51.5224867
 longitude:   -0.2586989
 other_bands:
