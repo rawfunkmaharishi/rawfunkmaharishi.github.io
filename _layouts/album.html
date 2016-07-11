@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<div class='row'>
+  <div class='col-md-3'>
+    <p class='album-news'>Released {{ page.release_date | date: "%B %Y"  }}</p>
+    <p class='album-news'> Available on
+      {% for outlet in page.outlets %}
+        <a href='{{ outlet.url }}'>{{ outlet.name }}</a>,
+      {% endfor %}
+      iTunes, BitTorrent and elsewhere
+    </p>
+  </div>
+  <div class='col-md-6 album'>
+    <img src='/assets/images/album-covers/{{ page.title | lowercase }}.jpg' alt='{{ page.title }}'/>
+  </div>
+  <div class='col-md-3'>
+    <h2>Tracks</h2>
+    <ul class='tracklisting'>
+      {% for track in page.tracks %}
+      <li>
+        {{ track }}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

@@ -25,6 +25,17 @@ defaults:
       pretitle: Blog
       priority: 100
 
+  -
+    scope:
+      type: albums
+      path: albums
+    values:
+      layout: album
+
+collections:
+  albums:
+    output: true
+
 permalink: pretty
 future: true
 exclude: [vendor]
