@@ -33,6 +33,19 @@ gig_og: true
             </dd>
           {% endif %}
 
+          {% if page.other_bands %}
+            <dt>Also appearing</dt>
+            <dd>
+              <ul class='other-bands'>
+                {% for band in page.other_bands %}
+                <li>
+                  <a href='{{ band.url }}' title='{{ band.name }}'>{{ band.name }}</a>
+                </li>
+                {% endfor %}
+              </ul>
+            </dd>
+          {% endif %}
+
         </dl>
       </div>
     </div>
