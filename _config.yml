@@ -28,7 +28,7 @@ defaults:
   -
     scope:
       type: albums
-      path: albums
+  #    path: albums
     values:
       layout: album
 
