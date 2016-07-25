@@ -15,6 +15,7 @@ defaults:
       layout: gig
       pretitle: Gig
       gig_og: true
+      no_title: true
 
   -
     scope:

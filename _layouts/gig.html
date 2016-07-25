@@ -2,6 +2,26 @@
 layout: default
 ---
 <div class='row'>
+  <div class='col-xs-3 preceeding-gig'>
+    {% if page.previous %}
+        <a href='{{ page.previous.url }}' class='btn btn-info'>
+          <i class='fa fa-angle-double-left'></i> <span class='hidden-xs'>{{ page.previous.title }}, {{ page.previous.date | date: "%-d %B"}}</span>
+        </a>
+    {% endif %}
+  </div>
+  <div class='col-xs-6'>
+    <h1 class='main-title'>{{ page.title }}</h1>
+  </div>
+  <div class='col-xs-3 following-gig'>
+    {% if page.next %}
+      <a href='{{ page.next.url }}' class='btn btn-info'>
+        <span class='hidden-xs'>{{ page.next.title }}, {{ page.next.date | date: "%-d %B"}}</span> <i class='fa fa-angle-double-right'></i>
+      </a>
+    {% endif %}
+  </div>
+</div>
+
+<div class='row'>
   <article>
 
     <div class='col-md-6'>
@@ -49,10 +69,9 @@ layout: default
     </div>
 
     <div class='col-md-6'>
-      {% include map.html latitude = page.latitude longitude = page.longitude location = page.location %}
+      {% include shitty-map.html latitude = page.latitude longitude = page.longitude location = page.location %}
     </div>
   </article>
-
 </div>
 
 {% include json-ld.html title = page.title date = page.date time = page.time location = page.location %}

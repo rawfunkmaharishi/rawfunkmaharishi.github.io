@@ -81,3 +81,15 @@
   list-style: none;
   padding-left: 0px;
 }
+
+.preceeding-gig {
+  text-align: left;
+}
+
+.following-gig {
+  text-align: right;
+}
+
+.preceeding-gig, .following-gig {
+  font-size: 1.2em;
+}
