@@ -7,6 +7,6 @@ facebook_id: 628621097296358
 other_bands:
   - name: The Higher Planes
     url:  http://www.thehigherplanes.com/
-  - name: Matt Beirrum
+  - name: Matt Bierrum
     url:  https://www.facebook.com/mattbierrum/
 ---
