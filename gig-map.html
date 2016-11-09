@@ -1,4 +1,5 @@
 ---
+title: Every gig we've ever played
 ---
 
 <div id='gig-map' class='gig-map'></div>
@@ -9,7 +10,7 @@
       51.50979,
       -0.13204
     ],
-    11
+    10
   );
 
   L.tileLayer('//stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.png', {
@@ -44,7 +45,7 @@
 
     $.each(feature.properties.gigs, function(index, gig) {
       s += '<a href="' + gig.url + '">'
-      s += moment(gig.date).format('dd YYYY')
+      s += moment(gig.date).format('Do MMMM YYYY')
       s += '</a>'
       s += '<br />'
     })
