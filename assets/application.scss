@@ -163,3 +163,21 @@ p.splash{
     }
   }
 }
+
+.gig-map {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 300px;
+}
+
+.gig-popup {
+  text-align: center;
+
+  hr {
+    padding: 0;
+    margin: $padding-small-vertical;
+    border-color: $brand-primary;
+  }
+}
