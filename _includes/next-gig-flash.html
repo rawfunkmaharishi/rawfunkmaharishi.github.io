@@ -1,19 +1,39 @@
-{% capture nowseconds %}{{ 'now' | date: '%s' }}{% endcapture %}
-
-{% for gig in site.categories.gigs reversed %}
-  {% capture datetime %}{{ gig.date | date: '%Y-%m-%d' }}T{{ gig.time }}{% endcapture %}
-  {% capture gigseconds %}{{ datetime | date: '%s' }}{% endcapture %}
-  {% capture future %}{{ nowseconds | minus:gigseconds }}{% endcapture %}
-  {% if future < '0' %}
-    <div class="panel panel-info next-gig">
-      <div class="panel-body">
-        <div class="throbbing-gristle"></div>
-        Next gig: <a href='{{ gig.url }}'>{{ gig.date | date: "%A %-d %B" }} at {{ gig.title }}</a>
-      </div>
-    </div>
-
-    {% include json-ld.html title = gig.title date = gig.date time = gig.time location = gig.location %}
-
-    {% break %}
-  {% endif %}
+<script>
+gigs = [
+{% for gig in site.categories.gigs %}
+  {
+    "date": "{{ gig.date }}",
+    "time": "{{ gig.time }}",
+    "title": "{{ gig.title }}",
+    "location": "{{ gig.location }}",
+    "url": "{{ gig.url }}"
+  },
 {% endfor %}
+]
+
+now = new Date().getTime()
+next = null
+
+$(gigs).each(function(index, gig) {
+  dt = moment(gig.date).format('YYYY-MM-DD') + 'T' + moment(gig.time, 'HH:mm').format('HH:mm')
+  then = new Date(dt).getTime()
+  // a gig expires 2 hours after its start time
+  if((then + (120 * 60 * 1000)) > now) {
+    next = gig
+  }
+})
+
+if(next) {
+  d = '<div class="panel panel-info next-gig">'
+  d += '<div class="panel-body">'
+  d += '<div class="throbbing-gristle"></div>'
+  d += 'Next gig: <a href="' + next.url + '">' + moment(next.date).format('dddd, Do MMMM') + ' at ' + next.title + '</a>'
+  d += '</div>'
+  d += '</div>'
+
+  console.log(d)
+
+  $(d).appendTo('body')
+}
+
+</script>
