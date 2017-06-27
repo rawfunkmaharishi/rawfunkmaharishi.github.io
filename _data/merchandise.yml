@@ -1,3 +1,15 @@
+- name: wide-banner-white-2017
+  path: /assets/images/logos/2017/wide/white.png
+
+- name: wide-banner-black-2017
+  path: /assets/images/logos/2017/wide/black.png
+
+- name: square-banner-white-2017
+  path: /assets/images/logos/2017/square/white.png
+
+- name: square-banner-black-2017
+  path: /assets/images/logos/2017/square/black.png
+
 - name: wide-banner
   path: /assets/images/logos/wide/banner.png
 
