@@ -19,7 +19,7 @@ body {
 }
 
 a {
-  color: $rfm-green;
+  color: $brand-complement;
 }
 
 h1, h2, h3, h4 {
@@ -30,7 +30,7 @@ h1, h2, h3, h4 {
   font-weight: bolder;
   text-align: center;
   text-transform: uppercase;
-  color: $rfm-orange;
+  color: $brand-primary;
 }
 
 p {
@@ -47,7 +47,7 @@ dt.heading {
 }
 
 .splash {
-  width: 80%;
+  width: 100%;
   height: auto;
 }
 
@@ -125,7 +125,7 @@ p.splash{
   }
 
   .close {
-    color: $rfm-orange;
+    color: $brand-primary;
   }
 }
 
@@ -180,4 +180,8 @@ p.splash{
     margin: $padding-small-vertical;
     border-color: $brand-primary;
   }
+}
+
+.top-banner {
+  padding-top: 40px;
 }

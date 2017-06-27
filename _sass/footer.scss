@@ -1,4 +1,4 @@
-$footer-height: 50px;
+$footer-height: 40px;
 
 html {
   position: relative;
@@ -18,7 +18,8 @@ body {
   text-transform: uppercase;
 
   margin-top: $padding-large-vertical;
-  background-image: url('/assets/images/backgrounds/background.jpg');
+  background-image: $background-image;
+  background-position: center;
 
   opacity: 1;
   color: white;
@@ -27,11 +28,13 @@ body {
   padding: $padding-large-vertical $padding-large-horizontal;
 
   a {
-    color: white;
+    color: $white;
+    opacity: $opacity;
   }
 
-  a:hover {
-    background: $rfm-orange;
+  a:hover, a:focus {
+    background: transparent;
     text-decoration: none;
+    opacity: 1;
   }
 }

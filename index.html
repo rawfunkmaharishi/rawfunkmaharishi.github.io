@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Raw Funk Maharishi
-extra_styles: "body { background-image: url('/assets/images/backgrounds/background.jpg'); background-position: center }"
+extra_styles: "body { background-image: url('https://www.goodfreephotos.com/albums/sky-and-clouds/above-the-sea-of-clouds.jpg'); background-position: center }"
 no_header: true
 no_title: true
 trim_class: plain
@@ -10,12 +10,10 @@ with_nav: true
 
 {% include next-gig-flash.html %}
 
-<img src='/assets/images/logos/wide/banner.png'
-     alt='Raw Funk Maharish'
-     class='splash center-block hidden-xs hidden-sm'/>
+<div class='splash center-block hidden-xs hidden-sm'>
+  {% include_relative assets/images/logos/wide/banner.svg %}
+</div>
 
-<img src='/assets/images/logos/stacked/logo.png'
-     alt='Raw Funk Maharish'
-     class='splash center-block visible-xs-inline-block visible-sm-inline-block'/>
-
-{% include straplines.html %}
+<div class='splash center-block visible-xs-inline-block visible-sm-inline-block'>
+  {% include_relative assets/images/logos/stacked/banner.svg %}
+</div>

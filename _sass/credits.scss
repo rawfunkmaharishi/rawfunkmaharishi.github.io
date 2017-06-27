@@ -6,7 +6,7 @@
     dt {
       width: 50%;
       margin-right: 5px;
-      color: $rfm-orange;
+      color: $brand-primary;
       white-space: normal;
     }
 
@@ -22,8 +22,8 @@
 
 .attribution {
   font-size: 0.5em;
-  background: $rfm-orange;
+  background: $brand-primary;
   a {
-    color: $rfm-green;
+    color: $brand-complement;
   }
 }

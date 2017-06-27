@@ -4,9 +4,12 @@ $header-height: 270px;
   top: 0;
   width: 100%;
 
-  background-image: url('/assets/images/backgrounds/background.jpg');
+  background-image: $background-image;
+  background-position: center;
   height: $header-height;
-  margin-top: 0px;
+  margin-top: 0;
+  padding-right: 0;
+  margin-right: 0;
   margin-bottom: 20px;
 
   .logo {

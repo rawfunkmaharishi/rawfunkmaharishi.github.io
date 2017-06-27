@@ -1,21 +1,19 @@
 <div class='header {{ include.trim_class }}'>
-  <div class='container header-container'>
     <div class='row'>
       <div class='col-md-4 col-md-push-8'>
         {% include navigation.html %}
       </div>
 
-      <div class='col-md-8 col-md-pull-4 hidden-sm'>
+      <div class='col-md-8 col-md-pull-4 hidden-sm top-banner'>
         <a href='/'>
-          <img src='/assets/images/logos/wide/banner.svg' alt='Raw Funk Maharishi' class='logo'/>
+          {% include logos/wide/banner.svg %}
         </a>
       </div>
 
       <div class='col-md-8 col-md-pull-4 visible-sm'>
         <a href='/'>
-          <img src='/assets/images/logos/wide/banner.svg' alt='Raw Funk Maharishi' class='little-logo'/>
+          {% include logos/square/banner.svg %}
         </a>
       </div>
     </div>
-  </div>
 </div>
