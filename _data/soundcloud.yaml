@@ -6,6 +6,13 @@
   date: '2017-06-14'
   license: Attribution-NonCommercial-ShareAlike
   license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
+- title: jj3
+  id: 330389348
+  url: https://soundcloud.com/rawfunkmaharishi/jj3
+  location: Rooz Studios
+  date: '2017-06-14'
+  license: Attribution-NonCommercial-ShareAlike
+  license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
 - title: Tokyo Used Guitar
   id: 329956606
   url: https://soundcloud.com/rawfunkmaharishi/tokyo-used-guitar-1
@@ -58,9 +65,8 @@
 - title: Plimsole
   id: 217587811
   url: https://soundcloud.com/rawfunkmaharishi/plimsole
-  location: 'Rogue Studios
-
-'
+  location: |
+    Rogue Studios
   date: '2015-07-30'
   license: Attribution-NonCommercial-ShareAlike
   license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -74,9 +80,8 @@
 - title: Glockenspiel
   id: 200762822
   url: https://soundcloud.com/rawfunkmaharishi/glockenspiel
-  location: 'Rogue Studios
-
-'
+  location: |
+    Rogue Studios
   date: '2015-04-09'
   license: Attribution-NonCommercial-ShareAlike
   license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
