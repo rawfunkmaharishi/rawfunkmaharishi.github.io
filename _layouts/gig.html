@@ -61,8 +61,8 @@ layout: default
               <ul class='more-info'>
                 {% if page.venue_website %}
                   <li>
-                    <a href='{{ page.venue_website }}' title='More information'>
-                      http://{{ page.venue_website | split: '://'| last | split: '/' | first }}/
+                    <a href='{{ page.venue_website.url }}' title='More information'>
+                      {{ page.venue_website.text }}
                     </a>
                   </li>
                 {% endif %}
