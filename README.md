@@ -194,3 +194,5 @@ People tell me this is great
 ##Being responsive
 
 ##Licensing
+
+This is amazing.
